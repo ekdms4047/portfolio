@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family:'Spoqa Han Sans Neo', 'sans-serif'  */
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+/* 변수 선언 */
+:root {
+  /* 13.02px */
+  --font-size-13: 0.814rem;
+  --font-size-14: 0.875rem;
+  /* 15.96px */
+  --font-size-16: 0.998rem;
+  /* 16.94px */
+  --font-size-17: 1.059rem;
+  /* 19.04px */
+  --font-size-19: 1.19rem;
+  /* 30.94 */
+  --font-size-31: 1.943rem;
+  /* 38.92px */
+  --font-size-39: 2.433rem;
+  --font-size-53: 3.313rem;
+
+  --point-color: #68b984;
+
+  --en-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Malgun Gothic',
+    '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+
+  --kr-font: 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+
+  /* =================== */
+
+  --font-size-15: 0.938rem;
+  --font-size-16: 1rem;
+  --font-size-17: 1.063rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-21: 1.313rem;
+  --font-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  /* 36.05px */
+  --font-size-36: 2.253rem;
+  /* 50.3167px */
+  --font-size-50: 3.145rem;
+  --font-size-56: 3.5rem;
+  --font-size-72: 4.5rem;
+
+  --bg-color: rgba(248, 249, 250);
+  --txt-main-color: rgb(33, 37, 41);
+  --txt-sub-color: rgba(0, 0, 0, 0.5);
+  /* =================== */
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #68b984;
+  border-radius: 20px;
+}
