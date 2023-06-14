@@ -49,9 +49,6 @@
   --font-size-56: 3.5rem;
   --font-size-72: 4.5rem;
 
-  --bg-color: rgba(248, 249, 250);
-  --txt-main-color: rgb(33, 37, 41);
-  --txt-sub-color: rgba(0, 0, 0, 0.5);
   /* =================== */
 }
 ::-webkit-scrollbar {
