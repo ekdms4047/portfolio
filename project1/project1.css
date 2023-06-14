@@ -117,13 +117,13 @@ header .header-wrapper .mobile_btn span {
   color: var(--point-color);
   font-size: var(--font-size-14);
   font-family: var(--en-font);
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 10px;
 }
 .main-attention .attention .attention-img h3 {
   color: #fff;
   font-family: var(--kr-font);
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--font-size-31);
   padding-bottom: 15px;
 }
@@ -155,7 +155,7 @@ header .header-wrapper .mobile_btn span {
 .main-attention .attention .attention-img .attention-box1 h3 {
   font-family: var(--kr-font);
   font-size: var(--font-size-31);
-  font-weight: 600;
+  font-weight: 700;
   padding: 10px 10px 40px;
 }
 .main-attention .attention .attention-img .attention-box1 p {
@@ -174,8 +174,9 @@ header .header-wrapper .mobile_btn span {
 }
 .main-attention .attention .attention-img .attention-box3 {
   background: url(./images/attention03.png) no-repeat 50% / cover;
-  padding: 30px 20px 70px;
+  padding: 30px 20px 50px;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 /***** main-vision *****/
@@ -406,6 +407,7 @@ footer .footer-info .footer-info-list {
     position: fixed;
     border-bottom: 1.5px solid #ddd;
     background-color: #fff;
+    z-index: 9999;
   }
   header .header-wrapper nav {
     display: flex;
@@ -448,7 +450,7 @@ footer .footer-info .footer-info-list {
   }
   /***** main-innovation *****/
   .main-innovation {
-    padding: 100px 10px 120px;
+    padding: 200px 10px 120px;
   }
   .main-innovation section h2 {
     font-size: 105px;
@@ -463,36 +465,132 @@ footer .footer-info .footer-info-list {
   }
   .main-slide .swiper .swiper-wrapper .swiper-slide1 {
     border-radius: 50px;
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 125px 30px 105px;
+    margin-bottom: 110px;
   }
   .main-slide .swiper .swiper-wrapper .swiper-slide1 h2 {
     font-size: 72px;
   }
   .main-slide .swiper .swiper-wrapper .swiper-slide1 p {
     font-size: 17px;
+    margin-top: 10px;
   }
   /***** main-attention *****/
+  .main-attention {
+   
+  }
   .main-attention .attention .attention-img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+  }
+  .main-attention .attention .attention-img h5 {
+    font-size: 17px;
+    letter-spacing: -1px;
+  }
+  .main-attention .attention .attention-img h3 {
+    font-size: 50px;
+    letter-spacing: -1px;
+  }
+  .main-attention .attention .attention-img p {
+    letter-spacing: -0.5px;
+    font-size: 17px;
+    padding: 25px 0 0;
+    line-height: 1.7;
   }
   .main-attention .attention .attention-img .attention-box1 {
-    height: 60vw;
+    height: 67vw;
     width: 100%;
-  }
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
   .main-attention .attention .attention-img .attention-box1 h5 {
     font-size: 21px;
+    letter-spacing: -1px;
   }
   .main-attention .attention .attention-img .attention-box1 h3 {
     font-size: 61px;
+    letter-spacing: -1px;
+  }
+  .main-attention .attention .attention-img .attention-box1 p {
+    letter-spacing: -0.5px;
+    font-size: 17px;
   }
   .main-attention .attention .attention-img .attention-box2 {
-    width: 50%;
+    width: 31%;
+    padding: 60px 50px 250px;
+    border-radius: 30px;
+    margin-bottom: 0;
+  }
+  .main-attention .attention .attention-img .attention-box2 h3 {
+    padding-right: 0;
   }
   .main-attention .attention .attention-img .attention-box3 {
-    width: 50%;
+    width: 66%;
+    padding: 60px 50px 250px;
+    border-radius: 30px;
+    margin-bottom: 0;
   }
   /***** main-vision *****/
+  .main-vision {
+    padding: 220px 15px 500px ;
+    position: relative;
+    background: url(./images/vision_bg.png) no-repeat 220% / contain;
+  }
+  .main-vision .vision {
+    /* display: flex; */
+  }
+  .main-vision .main-title h3 {
+    padding-bottom: 0;
+    margin-bottom: 200px;
+  }
+  .main-vision .vision .vision-img {
+    
+  }
+  .main-vision .vision .vision-img h3 img {
+    width: 48vw;
+    position: absolute;
+    top:30%;
+    right: 7%;
+  }
+  .main-vision .vision .vision-img h3:nth-child(2) img {
+    width: 20vw;
+    display: inherit;
+    position: absolute;
+    top:12%;
+    right: 12%;
+  }
+  .main-vision .vision .vision-img h3:nth-child(3) img {
+    width: 20vw;
+    display: inherit;
+    position: absolute;
+    top:72%;
+    right: 12%;
+  }
+  .main-vision .vision .vision-img h5 {
+    font-size: 50px;
+    padding: 0 0 20px 0;
+  } 
+  .main-vision .vision .vision-icon img {
+    width: 5vw;
+  }
+  .main-vision .vision .vision-icon p {
+    font-size: 17px;
+  }
+  .main-vision .vision .vision-icon strong {
+    font-size: 22px;
+  }
   /***** main-rental *****/
+  .main-rental {
+    /* padding: 100px 0; */
+  }
   /***** footer *****/
 }
