@@ -226,7 +226,7 @@ header .header-wrapper .mobile_btn span {
   font-size: var(--font-size-14);
 }
 .main-vision .vision .vision-icon img {
-  width: 10vw;
+  width: 50px;
   margin-right: 10px;
 }
 .main-vision .vision .vision-list {
@@ -426,8 +426,7 @@ footer .footer-info .footer-info-list {
   /***** header *****/
   header .header-wrapper {
     width: 100%;
-    /* margin: 0 auto; */
-    padding: 25px 50px;
+    /* padding: 25px 50px; */
     position: fixed;
     border-bottom: 1.5px solid #ddd;
     background-color: #fff;
@@ -637,7 +636,6 @@ footer .footer-info .footer-info-list {
     padding-top: 20px;
   }
   .main-vision .vision .vision-icon img {
-    width: 5vw;
     margin-right: 15px;
   }
   .main-vision .vision .vision-icon p {
@@ -727,6 +725,9 @@ footer .footer-info .footer-info-list {
     height: 30%;
   }
   /***** footer *****/
+  footer {
+    padding: 90px 0;
+  }
   footer .footer-info {
     flex-direction: row;
     margin: 0 15px;
@@ -745,21 +746,52 @@ footer .footer-info .footer-info-list {
   footer .footer-info-list :nth-child(3) {
     float: right;
   }
-  /* footer .footer-info-list :nth-child(3)::after {
-    content: "";
-    display: inline-block;
-    width: 2px; height: 15px;
-    background-color:tomato;
-    color:#000;
-    margin-left: 20px; 
-    position: absolute;
-    top:0; bottom: 0; left: 50px;
-    margin: auto;
-  } */
   footer .footer-info-list :nth-child(4) {
     float: right;
     margin: 0 12px;
   }
 }
 
+/* pc 2 */
+@media (min-width: 1600px) {
+  header .header-wrapper {
+    padding: 25px 5vw;
+  }
+  .main-innovation {
+    padding: 200px 5vw 150px;
+  }
+  
+  .main-innovation section {
+    margin: 0 auto;
+  }
+  .main-attention {
+    padding: 90px 5vw;
+  }
+  .main-vision {
+    padding: 70px 15px 10px 5vw;
+  }
+  .main-rental {
+    padding: 20px 5vw 200px;
+  }
+  .main-rental .rental .rental-box1 {
+    width: 836px;
+    height: 1050px;
+    aspect-ratio: 1;
+  }
+  .main-rental .rental .rental-box2 {
+    width: 634px;
+    height: 320px;
+  }
+  .main-rental .rental .rental-box3 {
+    width: 634px;
+    height: 320px;
+  }
+  .main-rental .rental .rental-box4 {
+    width: 634px;
+    height: 320px;
+  }
+  footer {
+    padding: 90px 5vw;
+  }
+}
 /* 브레이크포인트 4개 */
