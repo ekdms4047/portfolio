@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* 모바일 우선!! 다은아!! */
+/* 모바일 */
 .inline-block {
   display: inline-block;
 }
@@ -803,4 +803,3 @@ footer .footer-info .footer-info-list {
     padding: 90px 5vw;
   }
 }
-/* 브레이크포인트 4개 */
