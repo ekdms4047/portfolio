@@ -51,14 +51,3 @@
 
   /* =================== */
 }
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-track {
-  background-color: #ddd;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #68b984;
-  border-radius: 20px;
-}

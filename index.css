@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* 다은아 !!!!! about 플러스 부분 bg로 넣을지 img 넣을지 생각하고 해라 !!! */
+.menu {
+  font-family: var(--en-menu-font);
+  font-size: var(--font-size-20);
+  color: var(--point-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+}
+/***** header *****/
+header {
+  width: 100%;
+  font-weight: bold;
+  padding: 20px 50px;
+  color: var(--point-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+header .header-wrapper {
+  font-family: var(--en-txt-font);
+  font-size: var(--font-size-30);
+  font-style: italic;
+  background-color: rgba(32, 38, 46, 0.7);
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+header .global-nav {
+  font-family: var(--en-menu-font);
+  font-size: var(--font-size-20);
+  text-transform: uppercase;
+  background-color: rgba(32, 38, 46, 0.7);
+  border-radius: 10px;
+  display: flex;
+}
+header .global-nav li a {
+  padding: 10px 30px;
+  display: block;
+}
+header .global-nav li :hover {
+  /* 글씨순서바뀌는거 넣기! */
+  /* background-color: aqua; 영역 확인하려고 한거임 */
+}
+
+/***** contents *****/
+/*** main-title ***/
+.main-title {
+  background-color: var(--bg-color);
+  font-weight: bold;
+  position: relative;
+}
+.main-title .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-title .main h1 {
+  font-family: var(--en-txt-font);
+  font-size: var(--font-size-380);
+  color: var(--point-color);
+  padding-bottom: 30px;
+  flex-shrink: 0;
+  align-self: center;
+}
+.main-title .main img {
+  width: 915px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-title .main .suv_title {
+  width: 100%;
+  font-family: var(--en-menu-font);
+  color: var(--txt-color);
+  font-style: italic;
+  font-size: var(--font-size-20);
+  padding: 0 80px 50px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+.main-title .main .suv_title h3:last-child {
+  text-align: right;
+}
+
+/*** main-about ***/
+.main-about {
+  font-family: var(--kr-font);
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+.main-about .about {
+  padding: 200px 80px 120px;
+}
+.main-about .about .menu {
+}
+.main-about .about .txt p {
+  font-size: var(--font-size-32);
+}
+.main-about .about .txt h3 {
+  font-size: var(--font-size-40);
+}
+.main-about .about .img_box {
+  display: flex;
+  justify-content: flex-end;
+  margin: 70px 0;
+}
+.main-about .about .img_box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-about .about .img_box img {
+  /* width: 40px;
+  height: 40px; */
+}
+.main-about .about .img_box .img_02 {
+  padding: 0 0 0 130px;
+}
+.main-about .about .img_box .img_03 {
+  padding: 0 0 0 130px;
+}
+.main-about .about .img_box .img_01 img {
+  width: 280px;
+  height: 280px;
+  background: url(./images/about_01.png) no-repeat 50% / 102px;
+}
+.main-about .about .img_box .img_02 img {
+  width: 280px;
+  height: 280px;
+  background: url(./images/about_02.png) no-repeat 50% / 100px;
+}
+.main-about .about .img_box .img_03 img {
+  width: 280px;
+  height: 280px;
+  background: url(./images/about_03.png) no-repeat 50% / 140px;
+}
+.main-about .about .img_box h3 {
+  font-size: var(--font-size-40);
+  font-weight: 500;
+}
+.main-about .about .img_box img {
+}
+/*** main-project ***/
+/*** main-skills ***/
+/*** main-contact ***/
+
+/***** footer *****/

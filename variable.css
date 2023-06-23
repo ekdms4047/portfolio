@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* font-family: 'Space Mono', monospace;  */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+/* 변수 선언 */
+:root {
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-30: 1.875rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+  --font-size-45: 2.813rem;
+  --bold-size-50: 3.125rem;
+  --font-size-380: 23.75rem;
+
+  --en-menu-font: 'Space Mono', monospace;
+  --en-txt-font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Malgun Gothic',
+    '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+  --kr-font: 'Noto Sans KR', sans-serif-apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo';
+
+  --point-color: #cd5888;
+  --txt-color: #eff0f2;
+  --bg-color: #20262e;
+
+  /* =================== */
+  /* 13.02px */
+  --font-size-13: 0.814rem;
+  --font-size-14: 0.875rem;
+  /* 15.96px */
+  --font-size-16: 0.998rem;
+  /* 16.94px */
+  --font-size-17: 1.059rem;
+  /* 19.04px */
+  --font-size-19: 1.19rem;
+  /* 30.94 */
+  --font-size-31: 1.943rem;
+  /* 38.92px */
+  --font-size-39: 2.433rem;
+  --font-size-53: 3.313rem;
+
+  /* =================== */
+
+  --font-size-15: 0.938rem;
+  --font-size-16: 1rem;
+  --font-size-17: 1.063rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-21: 1.313rem;
+  --font-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  /* 36.05px */
+  --font-size-36: 2.253rem;
+  /* 50.3167px */
+  --font-size-50: 3.145rem;
+  --font-size-56: 3.5rem;
+  --font-size-72: 4.5rem;
+
+  /* =================== */
+}
