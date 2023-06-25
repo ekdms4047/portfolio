@@ -166,6 +166,7 @@ header .global-nav li :hover {
   color: var(--txt-color);
   font-family: var(--kr-font);
   padding-bottom: 130px;
+  /* -webkit-overflow-scrolling: touch; */
 }
 .main-project .menu {
   padding: 20px 80px;
@@ -182,9 +183,6 @@ header .global-nav li :hover {
   /* margin-right: 50px; */
  
 }
-.main-project .project_box .project_img p{
-  align-self:flex-start;
-}
 .main-project .project_box .project_img h3{
   font-size: var(--font-size-24);
   margin-bottom: 20px;
@@ -193,6 +191,7 @@ header .global-nav li :hover {
   font-size: 18px
 }
 .main-project .project_box .project_img p{
+  align-self:flex-start;
   font-size: 15px;
   font-weight: bold;
 }
