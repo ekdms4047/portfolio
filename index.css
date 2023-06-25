@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* 다은아 !!!!! about 플러스 부분 bg로 넣을지 img 넣을지 생각하고 해라 !!! */
+::selection {
+  background-color: var(--txt-color);
+  color:var(--point-color);
+}
 .menu {
   font-family: var(--en-menu-font);
   font-size: var(--font-size-20);
@@ -7,6 +11,10 @@
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
+}
+.txt h3 {
+  font-size: var(--font-size-40);
+  font-family: var(--kr-font);
 }
 /***** header *****/
 header {
@@ -99,31 +107,37 @@ header .global-nav li :hover {
   padding: 200px 80px 120px;
 }
 .main-about .about .menu {
+  display: flex;
+  justify-content: flex-end;
 }
 .main-about .about .txt p {
   font-size: var(--font-size-32);
 }
-.main-about .about .txt h3 {
-  font-size: var(--font-size-40);
-}
 .main-about .about .img_box {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin: 70px 0;
+  position: relative;
 }
 .main-about .about .img_box h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-.main-about .about .img_box img {
-  /* width: 40px;
-  height: 40px; */
+.main-about .about .img_box .plus {
+  width: 40px;
+  height: 40px;
+  margin-top: 58px;
+}
+.main-about .about .img_box .img_01 {
+  padding: 0 65px 0 0;
 }
 .main-about .about .img_box .img_02 {
-  padding: 0 0 0 130px;
+  padding: 0 65px 0 65px;
+  
 }
 .main-about .about .img_box .img_03 {
-  padding: 0 0 0 130px;
+  padding: 0 0 0 65px;
 }
 .main-about .about .img_box .img_01 img {
   width: 280px;
@@ -147,7 +161,122 @@ header .global-nav li :hover {
 .main-about .about .img_box img {
 }
 /*** main-project ***/
+.main-project {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-family: var(--kr-font);
+  padding-bottom: 130px;
+}
+.main-project .menu {
+  padding: 20px 80px;
+}
+.main-project .project_box {
+  display: flex;
+  gap:50px
+}
+.main-project .project_box .project_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* margin-right: 50px; */
+ 
+}
+.main-project .project_box .project_img p{
+  align-self:flex-start;
+}
+.main-project .project_box .project_img h3{
+  font-size: var(--font-size-24);
+  margin-bottom: 20px;
+}
+.main-project .project_box .project_img h4{
+  font-size: 18px
+}
+.main-project .project_box .project_img p{
+  font-size: 15px;
+  font-weight: bold;
+}
+.main-project .project_box .project_img img{
+  width: 750px;
+  height: 423px;
+  margin-bottom: 30px;
+}
 /*** main-skills ***/
+.main-skills {
+  background-color: var(--bg-color);
+  color:var(--txt-color);
+  height: 500px;
+}
+.main-skills .skills {
+  padding: 0 80px;
+}
+.main-skills .skills .txt {
+  width: 35%;
+  float: left;
+}
+.main-skills .skills .txt_box {
+  float: left;
+  width: 65%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.main-skills .skills .txt_box li {
+  display: flex;
+  border-bottom: 2px solid var(--point-color);
+}
+.main-skills .skills .txt_box li h3{
+  font-family: var(--en-txt-font);
+  font-weight: 500;
+  font-size: var(--font-size-50);
+}
+.main-skills .skills .txt_box li p{
+  font-family: var(--kr-font);
+  font-size: var(--font-size-20);
+}
 /*** main-contact ***/
-
+.main-contact {
+  background-color: var(--bg-color);
+  color:var(--txt-color);
+  text-align: center;
+}
+.main-contact .contact {}
+.main-contact .contact img {
+  width: 1447px;
+}
+.main-contact .contact a{
+  font-family: var(--en-txt-font);
+  font-size: var(--bold-size-80);
+  font-weight: 500;
+}
+.main-contact .contact p{
+  font-family: var(--kr-font);
+  font-size: var(--font-size-36);
+}
 /***** footer *****/
+footer {
+  font-family: var(--en-menu-font);
+  font-size: var(--font-size-20);
+  font-weight: bold;
+  background-color: var(--bg-color);
+  color:var(--txt-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 80px ;
+}
+footer .time img {
+  width: 47px;
+  height: 47px;
+  margin-right: 12px;
+}
+footer .time {
+display: flex;
+align-items: center;
+}
+footer .tiem p {
+
+}
+footer .sns {
+  text-align: right;
+}
+footer .sns p {}
+footer .sns a {}
