@@ -2,7 +2,7 @@
 /* 다은아 !!!!! about 플러스 부분 bg로 넣을지 img 넣을지 생각하고 해라 !!! */
 ::selection {
   background-color: var(--txt-color);
-  color:var(--point-color);
+  color: var(--point-color);
 }
 .menu {
   font-family: var(--en-menu-font);
@@ -11,6 +11,7 @@
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
+  padding: 80px 0;
 }
 .txt h3 {
   font-size: var(--font-size-40);
@@ -32,15 +33,19 @@ header .header-wrapper {
   font-family: var(--en-txt-font);
   font-size: var(--font-size-30);
   font-style: italic;
-  background-color: rgba(32, 38, 46, 0.7);
+  background-color: rgba(32, 38, 46, 0.5);
   padding: 10px 30px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  transition: 0.4s;
+}
+header .header-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 header .global-nav {
   font-family: var(--en-menu-font);
   font-size: var(--font-size-20);
   text-transform: uppercase;
-  background-color: rgba(32, 38, 46, 0.7);
+  background-color: rgba(32, 38, 46, 0.5);
   border-radius: 10px;
   display: flex;
 }
@@ -59,6 +64,7 @@ header .global-nav li :hover {
   background-color: var(--bg-color);
   font-weight: bold;
   position: relative;
+  overflow: hidden;
 }
 .main-title .main {
   display: flex;
@@ -71,13 +77,43 @@ header .global-nav li :hover {
   font-size: var(--font-size-380);
   color: var(--point-color);
   padding-bottom: 30px;
-  flex-shrink: 0;
-  align-self: center;
+  animation: move 6s linear infinite;
+  width: 200%;
+  /* height: 30%; */
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.main-title .main h1:nth-child(1) {
+  /* float: left; */
+}
+.main-title .main h1:nth-child(2) {
+  /* float: left; */
+  /* left: 90%; */
+}
+.main-title .main .upTo {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(90deg);
+  font-size: 1.5rem;
+  font-family: var(--kr-font);
+  line-height: 40px;
+  color: var(--txt-color);
+  text-align: center;
+  transition: 0.4s;
+}
+.main-title .main .upTo:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .main-title .main img {
-  width: 915px;
+  width: 900px;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -134,7 +170,6 @@ header .global-nav li :hover {
 }
 .main-about .about .img_box .img_02 {
   padding: 0 65px 0 65px;
-  
 }
 .main-about .about .img_box .img_03 {
   padding: 0 0 0 65px;
@@ -167,13 +202,14 @@ header .global-nav li :hover {
   font-family: var(--kr-font);
   padding-bottom: 130px;
   /* -webkit-overflow-scrolling: touch; */
+  overflow: hidden;
 }
 .main-project .menu {
-  padding: 20px 80px;
+  /* padding: 80px 0 인 상태임*/
 }
 .main-project .project_box {
   display: flex;
-  gap:50px
+  gap: 50px;
 }
 .main-project .project_box .project_img {
   display: flex;
@@ -181,21 +217,20 @@ header .global-nav li :hover {
   justify-content: space-between;
   align-items: flex-end;
   /* margin-right: 50px; */
- 
 }
-.main-project .project_box .project_img h3{
+.main-project .project_box .project_img h3 {
   font-size: var(--font-size-24);
   margin-bottom: 20px;
 }
-.main-project .project_box .project_img h4{
-  font-size: 18px
+.main-project .project_box .project_img h4 {
+  font-size: 18px;
 }
-.main-project .project_box .project_img p{
-  align-self:flex-start;
+.main-project .project_box .project_img p {
+  align-self: flex-start;
   font-size: 15px;
   font-weight: bold;
 }
-.main-project .project_box .project_img img{
+.main-project .project_box .project_img img {
   width: 750px;
   height: 423px;
   margin-bottom: 30px;
@@ -203,11 +238,12 @@ header .global-nav li :hover {
 /*** main-skills ***/
 .main-skills {
   background-color: var(--bg-color);
-  color:var(--txt-color);
-  height: 500px;
+  color: var(--txt-color);
+  /* height: 500px; */
 }
 .main-skills .skills {
   padding: 0 80px;
+  height: 110vh;
 }
 .main-skills .skills .txt {
   width: 35%;
@@ -222,32 +258,54 @@ header .global-nav li :hover {
 .main-skills .skills .txt_box li {
   display: flex;
   border-bottom: 2px solid var(--point-color);
+  width: 100%;
+  justify-content: space-between;
+  padding: 90px 0 30px;
 }
-.main-skills .skills .txt_box li h3{
+.main-skills .skills .txt_box li:nth-child(1) {
+  padding: 0 0 30px;
+}
+.main-skills .skills .txt_box li h3 {
   font-family: var(--en-txt-font);
   font-weight: 500;
   font-size: var(--font-size-50);
 }
-.main-skills .skills .txt_box li p{
+.main-skills .skills .txt_box li p {
   font-family: var(--kr-font);
   font-size: var(--font-size-20);
 }
 /*** main-contact ***/
 .main-contact {
   background-color: var(--bg-color);
-  color:var(--txt-color);
+  color: var(--txt-color);
   text-align: center;
 }
-.main-contact .contact {}
+.main-contact .contact {
+}
 .main-contact .contact img {
   width: 1447px;
+  /* animation: shadow 1s infinite; */
+  transition: 0.4s;
 }
-.main-contact .contact a{
+.main-contact .contact img:hover {
+  /* animation: shadow 0.8s; */
+}
+.main-contact .contact a {
   font-family: var(--en-txt-font);
   font-size: var(--bold-size-80);
   font-weight: 500;
 }
-.main-contact .contact p{
+.main-contact .contact a:hover {
+  background: linear-gradient(90deg, #cd5888, #fdfdfd, #cd5888, #fdfdfd);
+  background-clip: 'text';
+  -webkit-background-clip: text; /* 웹킷 브라우저 지원을 위해 추가 */
+  background-position-x: 0;
+  background-size: 400%;
+  color: transparent;
+  transform: none;
+  animation: gradient 7s ease-in-out infinite;
+}
+.main-contact .contact p {
   font-family: var(--kr-font);
   font-size: var(--font-size-36);
 }
@@ -257,25 +315,21 @@ footer {
   font-size: var(--font-size-20);
   font-weight: bold;
   background-color: var(--bg-color);
-  color:var(--txt-color);
+  color: var(--txt-color);
   display: flex;
   justify-content: space-between;
-  padding: 100px 80px ;
+  padding: 100px 80px;
 }
 footer .time img {
   width: 47px;
   height: 47px;
   margin-right: 12px;
+  float: left;
 }
 footer .time {
-display: flex;
-align-items: center;
-}
-footer .tiem p {
-
+  display: flex;
+  align-items: center;
 }
 footer .sns {
   text-align: right;
 }
-footer .sns p {}
-footer .sns a {}

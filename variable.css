@@ -31,40 +31,56 @@
   --point-color: #cd5888;
   --txt-color: #eff0f2;
   --bg-color: #20262e;
-
-  /* =================== */
-  /* 13.02px */
-  --font-size-13: 0.814rem;
-  --font-size-14: 0.875rem;
-  /* 15.96px */
-  --font-size-16: 0.998rem;
-  /* 16.94px */
-  --font-size-17: 1.059rem;
-  /* 19.04px */
-  --font-size-19: 1.19rem;
-  /* 30.94 */
-  --font-size-31: 1.943rem;
-  /* 38.92px */
-  --font-size-39: 2.433rem;
-  --font-size-53: 3.313rem;
-
-  /* =================== */
-
-  --font-size-15: 0.938rem;
-  --font-size-16: 1rem;
-  --font-size-17: 1.063rem;
-  --font-size-18: 1.125rem;
-  --font-size-20: 1.25rem;
-  --font-size-21: 1.313rem;
-  --font-size-24: 1.5rem;
-  --font-size-28: 1.75rem;
-  --font-size-32: 2rem;
-  /* 36.05px */
-  --font-size-36: 2.253rem;
-  /* 50.3167px */
-  --font-size-50: 3.145rem;
-  --font-size-56: 3.5rem;
-  --font-size-72: 4.5rem;
-
-  /* =================== */
 }
+
+@keyframes gradient {
+  0% {
+    background-position-x: 0;
+  }
+  25% {
+    background-position-x: -100%;
+  }
+  50% {
+    background-position-x: -200%;
+  }
+  75% {
+    background-position-x: -300%;
+  }
+  100% {
+    background-position-x: -400%;
+  }
+}
+@keyframes move {
+  0% {
+    left: 0;
+    animation-timing-function: linear;
+  }
+  33% {
+    left: -100%;
+    animation-timing-function: step-start;
+  }
+  66% {
+    left: -100%;
+    animation-timing-function: linear;
+  }
+  100% {
+    left: 0;
+  }
+}
+/* @keyframes shadow {
+  0% {
+    filter: drop-shadow(0 5px #fdfdfd);
+  }
+  25% {
+    filter: drop-shadow(15px 5px #fdfdfd);
+  }
+  50% {
+    filter: drop-shadow(30px 5px #fdfdfd);
+  }
+  75% {
+    filter: drop-shadow(15px 5px 5px #fdfdfd);
+  }
+  100% {
+    filter: drop-shadow(0 5px 5px #fdfdfd);
+  }
+} */

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./variable.css">
   <link rel="stylesheet" href="./index.css">
   <!-- script -->
+  <script src="../common/jquery-3.7.0.min.js"></script>
+  <script src="../common/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -33,11 +35,13 @@
   <article class="main-title" id="title">
     <div class="main">
       <h1>Web Publisher</h1>
+      <h1>Web Publisher</h1>
       <img src="./images/main.png" alt="캐릭터">
       <div class="suv_title">
         <h3>I'm studying<br>web publishers</h3>
         <h3>Living in<br>Suwon, Gyeonggi-do</h3>
       </div>
+      <div class="upTo"><a href="#">&lt;</a></div>
     </div>
   </article>
 
@@ -79,7 +83,8 @@
       <article class="project_img">
         <h3>리싸이클오피스</h3>
         <h4>23.06.02~.06.17</h4>
-        <img src="./images/project_01.png" alt="소파가 중심에 있는 집 안 인테리어 사진">
+        <a href="https://ekdms4047.github.io/portfolio/project1/project1.html"><img src="./images/project_01.png"
+            alt="소파가 중심에 있는 집 안 인테리어 사진"></a>
         <p>project1</p>
         <p>전체적으로 리싸이클의 친환경 무드를 살려 그린, 화이트, 블루 계열의 컬러를 적용하였고
           <br>정결과 가독성을 살리기 위해 텍스트를 깔끔하게 배치했습니다.
@@ -88,7 +93,7 @@
       <article class="project_img">
         <h3>프로젝트명</h3>
         <h4>23.00.00~00.00</h4>
-        <img src="./images/project_02.png" alt="img">
+        <a href=""><img src="./images/project_02.png" alt="img"></a>
         <p>project2</p>
         <p>프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명
           <br>프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명
@@ -97,7 +102,7 @@
       <article class="project_img">
         <h3>프로젝트명</h3>
         <h4>23.00.00~00.00</h4>
-        <img src="./images/project_03.png" alt="img">
+        <a href="#"><img src="./images/project_03.png" alt="img"></a>
         <p>project3</p>
         <p>프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명
           <br>프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명
@@ -106,7 +111,7 @@
       <article class="project_img">
         <h3>프로젝트명</h3>
         <h4>23.00.00~00.00</h4>
-        <img src="./images/project_04.png" alt="img">
+        <a href=""><img src="./images/project_04.png" alt="img"></a>
         <p>project4</p>
         <p>프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명
           <br>프로젝트에 대한 간단한 설명프로젝트에 대한 간단한 설명
@@ -122,36 +127,32 @@
       <div class="txt">
         <h3>정직하게 자기개발을 위해<br>꾸준히 도모하겠습니다.</h3>
       </div>
-      <!-- <div class="txt_container"> -->
-        <!-- <div class="txt_h3">
+      <ul class="txt_box">
+        <li>
           <h3>HTML5&CSS3</h3>
+          <p>웹 접근성을 고려한 시맨틱 태그, 반응형 웹...
+            <br>웹 접근성을 고려한 시맨틱 태그, 반응형 웹...
+          </p>
+        </li>
+        <li>
           <h3>JavaScript & jQuery</h3>
+          <p>ES6+ 문법, 비동기 통신 ​Ajax를 이용한 JSON 데이터 활용...
+            <br>ES6+ 문법, 비동기 통신 ​Ajax를 이용한 JSON 데이터 활용...
+          </p>
+        </li>
+        <li>
           <h3>Tool</h3>
+          <p>VSCode, Figma - 프로토타입 제작, photoshop & illustrator...
+            <br>VSCode, Figma - 프로토타입 제작, photoshop & illustrator...
+          </p>
+        </li>
+        <li>
           <h3>Etc</h3>
-        </div> -->
-        <ul class="txt_box">
-          <li>
-            <h3>HTML5&CSS3</h3>
-            <p>웹 접근성을 고려한 시맨틱 태그, 반응형 웹...
-            <br>웹 접근성을 고려한 시맨틱 태그, 반응형 웹...</p>
-          </li>
-          <li>
-            <h3>JavaScript & jQuery</h3>
-            <p>ES6+ 문법, 비동기 통신 ​Ajax를 이용한 JSON 데이터 활용...
-            <br>ES6+ 문법, 비동기 통신 ​Ajax를 이용한 JSON 데이터 활용...</p>
-          </li>
-          <li>
-            <h3>Tool</h3>
-            <p>VSCode, Figma - 프로토타입 제작, photoshop & illustrator...
-            <br>VSCode, Figma - 프로토타입 제작, photoshop & illustrator...</p>
-          </li>
-          <li>
-            <h3>Etc</h3>
-            <p>UI 디자인, open API, Git,Github...
-            <br>UI 디자인, open API, Git,Github...</p>
-          </li>
-        </ul>
-      <!-- </div> -->
+          <p>UI 디자인, open API, Git,Github...
+            <br>UI 디자인, open API, Git,Github...
+          </p>
+        </li>
+      </ul>
     </div>
   </article>
 
@@ -168,16 +169,49 @@
   <footer>
     <div class="time">
       <img src="./images/smile.png" alt="스마일">
-      <p>korea time
-      <br>시간</p>
+      <div class="time_box">
+        <p>korea time</p>
+        <p id="clock"></p>
+      </div>
     </div>
     <div class="sns">
       <p>Copyright 2023 Oh da eun</p>
-      <p><a href="https://ekdms4047.github.io/portfolio/index.html"
-          target="_blank">https://ekdms4047.github.io/portfolio/index.html</a></p>
+      <p><a href="https://ekdms4047.github.io/portfolio" target="_blank">https://ekdms4047.github.io/portfolio</a></p>
     </div>
   </footer>
 
+  <script>
+    var Target = document.getElementById('clock');
+    function clock() {
+      var time = new Date();
+
+      var hours = time.getHours();
+      var minutes = time.getMinutes();
+
+      Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes
+        }`;
+    }
+    clock();
+    // const textElement = document.querySelector('.global-nav');
+    // let count = 5;
+    // const initCharacters = textElement.textContent;
+    // const characters = textElement.textContent.split('');
+    // const suffle = () => {
+    //   for (let i = characters.length - 1; i > 0; i—) {
+    //     const j = Math.floor(Math.random() * (i + 1));
+    //     [characters[i], characters[j]] = [characters[j], characters[i]];
+    //   }
+    //   textElement.textContent = characters.join('');
+    // };
+    // const interval = setInterval(() => {
+    //   suffle();
+    //   count—;
+    //   if (count === 0) {
+    //     textElement.textContent = initCharacters;
+    //     clearInterval(interval);
+    //   }
+    // }, 500);
+  </script>
 </body>
 
 </html>
