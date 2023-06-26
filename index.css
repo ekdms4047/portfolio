@@ -72,24 +72,19 @@ header .global-nav li :hover {
   align-items: center;
   height: 100vh;
 }
-.main-title .main h1 {
+.main-title .main .main_slide {
   font-family: var(--en-txt-font);
-  font-size: var(--font-size-380);
   color: var(--point-color);
-  padding-bottom: 30px;
-  animation: move 6s linear infinite;
-  width: 200%;
-  /* height: 30%; */
-  position: absolute;
-  top: 20%;
-  left: 20%;
+  font-size: var(--font-size-380);
+  font-style: italic;
+  display: flex;
+  overflow: hidden;
+  gap: 10vw;
 }
-.main-title .main h1:nth-child(1) {
-  /* float: left; */
-}
-.main-title .main h1:nth-child(2) {
-  /* float: left; */
-  /* left: 90%; */
+.main-title .main .main_slide h1 {
+  flex-shrink: 0;
+  animation: slide 5s linear infinite;
+  /* letter-spacing: -5px; */
 }
 .main-title .main .upTo {
   background-color: rgba(0, 0, 0, 0.2);
