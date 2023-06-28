@@ -50,23 +50,7 @@
     background-position-x: -400%;
   }
 }
-/* @keyframes move {
-  0% {
-    left: 0;
-    animation-timing-function: linear;
-  }
-  33% {
-    left: -100%;
-    animation-timing-function: step-start;
-  }
-  66% {
-    left: -100%;
-    animation-timing-function: linear;
-  }
-  100% {
-    left: 0;
-  }
-} */
+
   @keyframes slide {
       0% {
           transform: translateX(0%);
@@ -76,20 +60,3 @@
           transform: translateX(calc(-100% - 10vw));
       }
   }
-/* @keyframes shadow {
-  0% {
-    filter: drop-shadow(0 5px #fdfdfd);
-  }
-  25% {
-    filter: drop-shadow(15px 5px #fdfdfd);
-  }
-  50% {
-    filter: drop-shadow(30px 5px #fdfdfd);
-  }
-  75% {
-    filter: drop-shadow(15px 5px 5px #fdfdfd);
-  }
-  100% {
-    filter: drop-shadow(0 5px 5px #fdfdfd);
-  }
-} */

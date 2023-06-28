@@ -1,12 +1,21 @@
 @charset "utf-8";
-/* 모바일 */
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color:var(--point-color);
+  border-radius: 10px;
+}
 .inline-block {
   display: inline-block;
 }
 html {
   word-break: keep-all;
   word-wrap: break-word;
+  scroll-behavior: smooth;
 }
+
 .main-title h5 {
   color: var(--point-color);
   font-family: var(--kr-font);
@@ -22,7 +31,7 @@ html {
   line-height: 1.2;
   letter-spacing: -2.5px;
 }
-
+/* 모바일 */
 /***** header *****/
 header {
   /* width: 100%; */
