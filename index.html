@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="./variable.css">
   <link rel="stylesheet" href="./index.css">
   <!-- script -->
- <script src="./index.js" defer></script>
- <!-- og -->
- <meta property="og:title" content="index">
- <meta property="og:description" content="오다은 포트폴리오 입니다.">
- <meta property="og:image" content="https://ekdms4047.github.io/portfolio/images/main.png">
- <meta property="og:url" content="https://ekdms4047.github.io/portfolio/index.html">
+  <script src="./index.js" defer></script>
+  <!-- og -->
+  <meta property="og:title" content="index">
+  <meta property="og:description" content="오다은 포트폴리오 입니다.">
+  <meta property="og:image" content="https://ekdms4047.github.io/portfolio/images/main.png">
+  <meta property="og:url" content="https://ekdms4047.github.io/portfolio/index.html">
 
 </head>
 
@@ -29,10 +29,18 @@
       <div class="side"><a href="#">Oh da eun</a></div>
     </div>
     <menu class="global-nav">
-      <div class="side1"><li><a href="#about" class="mixing">about</a></li></div>
-      <div class="side2"><li><a href="#project" class="mixing">project</a></li></div>
-      <div class="side3"><li><a href="#skills" class="mixing">skills</a></li></div>
-      <div class="side4"><li><a href="#contact" class="mixing">contact</a></li></div>
+      <div class="side1">
+        <li><a href="#about" class="mixing">about</a></li>
+      </div>
+      <div class="side2">
+        <li><a href="#project" class="mixing">project</a></li>
+      </div>
+      <div class="side3">
+        <li><a href="#skills" class="mixing">skills</a></li>
+      </div>
+      <div class="side4">
+        <li><a href="#contact" class="mixing">contact</a></li>
+      </div>
     </menu>
   </header>
 
@@ -57,7 +65,7 @@
   <!-- main-about -->
   <article class="main-about" id="about">
     <div class="about">
-      <h2 class="menu mixing" >about</h2>
+      <h2 class="menu mixing">about</h2>
       <div class="txt">
         <p>안녕하세요 오다은입니다.</p>
         <h3>첫째, 저는 모든 일에 신중하고 꼼꼼한 사람입니다!</h3>
@@ -188,39 +196,6 @@
       <p><a href="https://ekdms4047.github.io/portfolio" target="_blank">https://ekdms4047.github.io/portfolio</a></p>
     </div>
   </footer>
-
-  <script>
-    var Target = document.getElementById('clock');
-    function clock() {
-      var time = new Date();
-
-      var hours = time.getHours();
-      var minutes = time.getMinutes();
-
-      Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes
-        }`;
-    }
-    clock();
-    // const textElement = document.querySelector('.global-nav');
-    // let count = 5;
-    // const initCharacters = textElement.textContent;
-    // const characters = textElement.textContent.split('');
-    // const suffle = () => {
-    //   for (let i = characters.length - 1; i > 0; i—) {
-    //     const j = Math.floor(Math.random() * (i + 1));
-    //     [characters[i], characters[j]] = [characters[j], characters[i]];
-    //   }
-    //   textElement.textContent = characters.join('');
-    // };
-    // const interval = setInterval(() => {
-    //   suffle();
-    //   count—;
-    //   if (count === 0) {
-    //     textElement.textContent = initCharacters;
-    //     clearInterval(interval);
-    //   }
-    // }, 500);
-  </script>
 </body>
 
 </html>

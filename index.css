@@ -4,10 +4,10 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-   background-color:var(--bg-color);
+  background-color: var(--bg-color);
 }
 ::-webkit-scrollbar-thumb {
-  background-color:var(--point-color);
+  background-color: var(--point-color);
   border-radius: 10px;
 }
 ::selection {
@@ -26,7 +26,7 @@ html {
   text-transform: uppercase;
   display: flex;
   padding: 80px 0;
-  width: fit-content
+  width: fit-content;
 }
 
 .txt h3 {
@@ -58,14 +58,14 @@ header .header-wrapper {
 header .header-wrapper:hover {
   background-color: var(--point-color);
   border-radius: 0;
-  color:var(--txt-color);
+  color: var(--txt-color);
 }
 header .header-wrapper .side a {
   border-radius: 10px;
   padding: 10px 30px;
 }
 header .header-wrapper .side a:hover {
-  background-color:#222;
+  background-color: #222;
 }
 header .global-nav {
   font-family: var(--en-menu-font);
@@ -80,7 +80,7 @@ header .global-nav .side2:hover,
 header .global-nav .side3:hover,
 header .global-nav .side4:hover {
   background-color: var(--point-color);
-  color:var(--txt-color);
+  color: var(--txt-color);
   width: fit-content;
 }
 header .global-nav li a {
@@ -91,7 +91,7 @@ header .global-nav li a {
 header .global-nav li a:hover {
   background-color: #222;
   border-radius: 7px;
-  color:var(--txt-color);
+  color: var(--txt-color);
 }
 
 /***** contents *****/
@@ -152,7 +152,7 @@ header .global-nav li a:hover {
 .main-title .main .upTo img {
   width: 100%;
   height: 100%;
-  color:#fff;
+  color: #fff;
   padding: 10px;
 }
 .main-title .main .upTo:hover {
@@ -260,8 +260,8 @@ header .global-nav li a:hover {
   display: flex;
   gap: 50px;
   transform-style: preserve-3d;
-  user-select:none;
-  perspective:2000px;
+  user-select: none;
+  perspective: 2000px;
 }
 .main-project .project_box .project_img {
   display: flex;
@@ -348,7 +348,7 @@ header .global-nav li a:hover {
   font-weight: 500;
 }
 .main-contact .contact a:hover {
-  background: linear-gradient(90deg, #fdfdfd,#cd5888, #fdfdfd,#cd5888);
+  background: linear-gradient(90deg, #fdfdfd, #cd5888, #fdfdfd, #cd5888);
   background-clip: 'text';
   -webkit-background-clip: text; /* 웹킷 브라우저 지원을 위해 추가 */
   background-position-x: 0;
@@ -389,5 +389,5 @@ footer .sns p:nth-child(2) {
 }
 footer .sns p:nth-child(2):hover {
   transform: translateX(5%);
-  color:var(--point-color);
+  color: var(--point-color);
 }
