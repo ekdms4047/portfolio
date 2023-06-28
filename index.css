@@ -1,7 +1,8 @@
 @charset "utf-8";
+/* 다은아!!! project 해라!!!! */
 /* 스크롤바 */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background-color: var(--bg-color);
@@ -30,15 +31,17 @@ html {
 }
 
 .txt h3 {
-  font-size: var(--font-size-40);
+  font-size: var(--font-size-34);
   font-family: var(--kr-font);
+  line-height: 1.8;
+  word-spacing: -3px;
 }
 
 /***** header *****/
 header {
   width: 100%;
   font-weight: bold;
-  padding: 20px 50px;
+  padding: 30px 50px;
   color: var(--point-color);
   display: flex;
   justify-content: space-between;
@@ -51,9 +54,10 @@ header .header-wrapper {
   font-size: var(--font-size-30);
   font-style: italic;
   background-color: rgba(32, 38, 46, 0.5);
-  transition: 0.4s;
+  transition: 0.5s;
   padding: 10px 0;
   border-radius: 10px;
+  word-spacing: -3px;
 }
 header .header-wrapper:hover {
   background-color: var(--point-color);
@@ -69,7 +73,7 @@ header .header-wrapper .side a:hover {
 }
 header .global-nav {
   font-family: var(--en-menu-font);
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-26);
   text-transform: uppercase;
   background-color: rgba(32, 38, 46, 0.5);
   border-radius: 10px;
@@ -81,12 +85,11 @@ header .global-nav .side3:hover,
 header .global-nav .side4:hover {
   background-color: var(--point-color);
   color: var(--txt-color);
-  width: fit-content;
 }
 header .global-nav li a {
   padding: 10px 30px;
   display: block;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 header .global-nav li a:hover {
   background-color: #222;
@@ -109,10 +112,18 @@ header .global-nav li a:hover {
   align-items: center;
   height: 100vh;
 }
+.main-title .main img {
+  width: 690px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .main-title .main .main_slide {
   font-family: var(--en-txt-font);
   color: var(--point-color);
-  font-size: var(--font-size-380);
+  /* font-size: var(--font-size-380); */
+  font-size: 360px;
   font-style: italic;
   display: flex;
   overflow: hidden;
@@ -120,24 +131,9 @@ header .global-nav li a:hover {
 }
 .main-title .main .main_slide h1 {
   flex-shrink: 0;
-  animation: slide 5s linear infinite;
-  /* letter-spacing: -5px; */
+  animation: slide 10s linear infinite;
+  letter-spacing: -5px;
 }
-/* .main-title .main .upTo {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 40px;
-  height: 40px;
-  z-index: 99;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 1.5rem;
-  font-family: var(--kr-font);
-  line-height: 40px;
-  color: var(--txt-color);
-  text-align: center;
-  transition: 0.4s;
-} */
 .main-title .main .upTo {
   width: 30px;
   height: 30px;
@@ -158,14 +154,6 @@ header .global-nav li a:hover {
 .main-title .main .upTo:hover {
   background-color: rgba(0, 0, 0, 0.7);
   transform: translateY(-10%);
-}
-.main-title .main img {
-  width: 750px;
-  height: 760px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .main-title .main .suv_title {
   width: 100%;
@@ -190,14 +178,17 @@ header .global-nav li a:hover {
   color: var(--txt-color);
 }
 .main-about .about {
-  padding: 200px 80px 120px;
+  padding: 50px 80px ;
 }
 .main-about .about .menu {
   display: flex;
   justify-content: flex-end;
 }
+.main-about .about .txt {
+  padding-top: 30px;
+}
 .main-about .about .txt p {
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-26);
 }
 .main-about .about .img_box {
   display: flex;
@@ -208,7 +199,8 @@ header .global-nav li a:hover {
 }
 .main-about .about .img_box h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: var(--font-size-34);
 }
 .main-about .about .img_box .plus {
   width: 40px;
@@ -216,32 +208,28 @@ header .global-nav li a:hover {
   margin-top: 58px;
 }
 .main-about .about .img_box .img_01 {
-  padding: 0 65px 0 0;
+  padding: 0 35px 0 0;
 }
 .main-about .about .img_box .img_02 {
-  padding: 0 65px 0 65px;
+  padding: 0 35px 0 35px;
 }
 .main-about .about .img_box .img_03 {
-  padding: 0 0 0 65px;
+  padding: 0 0 0 35px;
 }
 .main-about .about .img_box .img_01 img {
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   background: url(./images/about_01.png) no-repeat 50% / 102px;
 }
 .main-about .about .img_box .img_02 img {
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   background: url(./images/about_02.png) no-repeat 50% / 100px;
 }
 .main-about .about .img_box .img_03 img {
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   background: url(./images/about_03.png) no-repeat 50% / 140px;
-}
-.main-about .about .img_box h3 {
-  font-size: var(--font-size-40);
-  font-weight: 500;
 }
 .main-about .about .img_box img {
 }
@@ -276,26 +264,26 @@ header .global-nav li a:hover {
 
 .main-project .project_box .project_img h4 {
   font-size: 18px;
+  letter-spacing: 1px;
 }
 .main-project .project_box .project_img p {
   align-self: flex-start;
   font-size: 15px;
-  font-weight: bold;
+  line-height: 1.7;
 }
 .main-project .project_box .project_img img {
   width: 750px;
   height: 423px;
-  margin-bottom: 30px;
+  margin: 10px 0 30px;
 }
 /*** main-skills ***/
 .main-skills {
   background-color: var(--bg-color);
   color: var(--txt-color);
-  /* height: 500px; */
 }
 .main-skills .skills {
   padding: 0 80px;
-  height: 110vh;
+  height: 120vh;
 }
 .main-skills .skills .txt {
   width: 35%;
@@ -319,8 +307,7 @@ header .global-nav li a:hover {
 }
 .main-skills .skills .txt_box li h3 {
   font-family: var(--en-txt-font);
-  font-weight: 500;
-  font-size: var(--font-size-50);
+  font-size: var(--font-size-44);
 }
 .main-skills .skills .txt_box li p {
   font-family: var(--kr-font);
@@ -333,21 +320,14 @@ header .global-nav li a:hover {
   text-align: center;
 }
 .main-contact .contact {
+
 }
 .main-contact .contact img {
-  width: 1447px;
-  /* animation: shadow 1s infinite; */
-  transition: 0.4s;
-}
-.main-contact .contact img:hover {
-  /* animation: shadow 0.8s; */
+  width: 1100px;
 }
 .main-contact .contact a {
   font-family: var(--en-txt-font);
-  font-size: var(--bold-size-80);
-  font-weight: 500;
-}
-.main-contact .contact a:hover {
+  font-size: var(--font-size-70);
   background: linear-gradient(90deg, #fdfdfd, #cd5888, #fdfdfd, #cd5888);
   background-clip: 'text';
   -webkit-background-clip: text; /* 웹킷 브라우저 지원을 위해 추가 */
@@ -358,7 +338,7 @@ header .global-nav li a:hover {
 }
 .main-contact .contact p {
   font-family: var(--kr-font);
-  font-size: var(--font-size-36);
+  font-size: var(--font-size-30);
 }
 /***** footer *****/
 footer {
@@ -374,7 +354,7 @@ footer {
 footer .time img {
   width: 47px;
   height: 47px;
-  margin-right: 12px;
+  margin-right: 20px;
   float: left;
 }
 footer .time {

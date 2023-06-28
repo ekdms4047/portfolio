@@ -1,3 +1,5 @@
+
+// 이름 배열 순서 랜덤으로 바꿔서 여러번 출력 후 원래 배열로 돌아오기
 const elements = document.getElementsByClassName('mixing');
 // console.log(elements);
 
@@ -29,6 +31,7 @@ function mixstr(str) {
   return mixed;
 }
 
+// 하단에 나오는 실시간
 var Target = document.getElementById('clock');
 function clock() {
   var time = new Date();
