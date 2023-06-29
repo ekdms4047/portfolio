@@ -1,4 +1,3 @@
-
 // 이름 배열 순서 랜덤으로 바꿔서 여러번 출력 후 원래 배열로 돌아오기
 const elements = document.getElementsByClassName('mixing');
 // console.log(elements);
@@ -44,3 +43,46 @@ function clock() {
   }`;
 }
 clock();
+
+// 하단 사인 이미지 흔들기
+const touch = document.querySelector('.contact img');
+
+addEventListener('mousemove', (evt) => {
+  let x = evt.clientX,
+    y = evt.clientY;
+  console.log(x, y);
+
+  touch.style.transform = `translate(${x / 50}px,${y / 50}px)`;
+});
+
+// 부드러운 스크롤
+$('.btn').on('click', (evt) => {
+  evt.preventDefault();
+  scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+// 다시해야될듯!!! 안올라감 ㅎ
+$('.touch').on('click', (evt) => {
+  evt.preventDefault();
+  scrollTo({
+    behavior: 'smooth',
+  });
+});
+
+// 안보였다가 스크롤 내리면 나타나기
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $('.about,.project,.skills,.contact,.time,.sns').each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: '1' }, 700);
+      }
+    });
+  });
+});

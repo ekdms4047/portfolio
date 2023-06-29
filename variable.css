@@ -22,6 +22,7 @@
   --font-size-44: 2.75rem;
   --font-size-45: 2.813rem;
   --font-size-50: 3.125rem;
+  --font-size-60: 3.75rem;
   --font-size-70: 4.375rem;
   --bold-size-80: 5rem;
   --font-size-380: 23.75rem;
@@ -55,12 +56,23 @@
   }
 }
 
-  @keyframes slide {
-      0% {
-          transform: translateX(0%);
-      }
-
-      100% {
-          transform: translateX(calc(-100% - 10vw));
-      }
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
   }
+
+  100% {
+    transform: translateX(calc(-100% - 10vw));
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
