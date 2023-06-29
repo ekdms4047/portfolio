@@ -339,12 +339,21 @@ footer .footer-info h2 {
   font-weight: 500;
   margin-bottom: 30px;
   padding: 15px 20px;
-  color: #fff;
-  border: 1px solid #777;
-  transition: 0.3s;
-}
-footer .footer-info h2:hover {
-  background-color: #68b984;
+  background: linear-gradient(
+    90deg,
+    #3C8E58,
+    #68b984,
+    #fff,
+    #3C8E58,
+    #68b984
+  );
+  background-clip: 'text';
+  -webkit-background-clip: text; /* 웹킷 브라우저 지원을 위해 추가 */
+  background-position-x: 0;
+  background-size: 200%;
+  color: transparent;
+  animation: gradient 5s ease-in-out infinite;
+  animation: gradient 5s ease-in-out infinite;
 }
 footer .footer-info .footer-info-list {
   line-height: 1.6;

@@ -50,7 +50,7 @@ const touch = document.querySelector('.contact img');
 addEventListener('mousemove', (evt) => {
   let x = evt.clientX,
     y = evt.clientY;
-  console.log(x, y);
+  // console.log(x, y);
 
   touch.style.transform = `translate(${x / 50}px,${y / 50}px)`;
 });

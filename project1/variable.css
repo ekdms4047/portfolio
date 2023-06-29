@@ -17,6 +17,7 @@
   --font-size-17: 1.059rem;
   /* 19.04px */
   --font-size-19: 1.19rem;
+  --font-size-20: 1.25rem;
   /* 30.94 */
   --font-size-31: 1.943rem;
   /* 38.92px */
@@ -30,24 +31,21 @@
 
   --kr-font: 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont,
     'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
-
-  /* =================== */
-
-  --font-size-15: 0.938rem;
-  --font-size-16: 1rem;
-  --font-size-17: 1.063rem;
-  --font-size-18: 1.125rem;
-  --font-size-20: 1.25rem;
-  --font-size-21: 1.313rem;
-  --font-size-24: 1.5rem;
-  --font-size-28: 1.75rem;
-  --font-size-32: 2rem;
-  /* 36.05px */
-  --font-size-36: 2.253rem;
-  /* 50.3167px */
-  --font-size-50: 3.145rem;
-  --font-size-56: 3.5rem;
-  --font-size-72: 4.5rem;
-
-  /* =================== */
+}
+@keyframes gradient {
+  0% {
+    background-position-x: 0;
+  }
+  25% {
+    background-position-x: -100%;
+  }
+  50% {
+    background-position-x: -200%;
+  }
+  75% {
+    background-position-x: -300%;
+  }
+  100% {
+    background-position-x: -400%;
+  }
 }
