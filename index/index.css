@@ -3,6 +3,8 @@
 /* 다은아!!!!!!!!!!! 메뉴클릭시 부드럽게 넘어가기 해라 */
 /* 오픈그래프 다시 해 이미지 !! */
 /* 프로젝트에 들어갈 이미지 !! (프로젝트1,준비중입니다) */
+
+/***** common *****/
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -110,7 +112,6 @@ header .global-nav li a:hover {
   background-color: var(--bg-color);
   font-weight: bold;
   position: relative;
-  /* overflow: hidden; */
 }
 .main-title .upTo {
   width: 40px;
@@ -313,13 +314,7 @@ header .global-nav li a:hover {
   transition: 0.4s;
 }
 .main-skills .skills .txt_box li:hover {
-  background: linear-gradient(
-    90deg,
-    #eff0f2,
-    #8b3156,
-    #eff0f2,
-    #cd5888
-  );
+  background: linear-gradient(90deg, #eff0f2, #8b3156, #eff0f2, #cd5888);
   background-clip: 'text';
   -webkit-background-clip: text;
   background-position-x: 0;
@@ -334,9 +329,6 @@ header .global-nav li a:hover {
   font-family: var(--en-txt-font);
   font-size: var(--font-size-44);
   transition: 0.4s;
-}
-.main-skills .skills .txt_box li h3:hover {
-  /* transform: translateX(10px); */
 }
 .main-skills .skills .txt_box li p {
   font-family: var(--kr-font);
@@ -359,15 +351,10 @@ header .global-nav li a:hover {
 .main-contact .contact a {
   font-family: var(--en-txt-font);
   font-size: var(--font-size-60);
-  background: linear-gradient(
-    90deg,
-    #8b3156,
-    #cd5888,
-    #eff0f2,
-    #8b3156
-  );
+  background: linear-gradient(90deg, #8b3156, #cd5888, #eff0f2, #8b3156);
   background-clip: 'text';
-  -webkit-background-clip: text; /* 웹킷 브라우저 지원을 위해 추가 */
+  /* 웹킷 브라우저 지원을 위해 추가 */
+  -webkit-background-clip: text;
   background-position-x: 0;
   background-size: 200%;
   color: transparent;

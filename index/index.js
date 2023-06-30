@@ -55,8 +55,8 @@ addEventListener('mousemove', (evt) => {
   touch.style.transform = `translate(${x / 50}px,${y / 50}px)`;
 });
 
-// 부드러운 스크롤
-$('.btn').on('click', (evt) => {
+// 화면 제일 상단으로 부드러운 스크롤
+$('.button').on('click', (evt) => {
   evt.preventDefault();
   scrollTo({
     top: 0,
@@ -64,16 +64,19 @@ $('.btn').on('click', (evt) => {
   });
 });
 
-// 다시해야될듯!!! 안올라감 ㅎ
-$('.touch').on('click', (evt) => {
+// 해당 박스로 부드러운 스크롤 다시해야될듯!!! 안올라감 ㅎ
+$('.touch1').on('click', (evt) => {
   evt.preventDefault();
+
+  const touch1 = $('#box1').offset().top;
+
   scrollTo({
+    top: box1,
     behavior: 'smooth',
   });
 });
 
 // 안보였다가 스크롤 내리면 나타나기
-
 $(document).ready(function () {
   $(window).scroll(function () {
     $('.about,.project,.skills,.contact,.time,.sns').each(function (i) {
