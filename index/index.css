@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* 다은아!!! project 해라!!!! */
 /* 다은아!!!!!!!!!!! 메뉴클릭시 부드럽게 넘어가기 해라 */
-/* 오픈그래프 다시 해 이미지 !! */
 /* 프로젝트에 들어갈 이미지 !! (프로젝트1,준비중입니다) */
 
 /***** common *****/
@@ -126,7 +125,7 @@ header .global-nav li a:hover {
 .main-title .upTo:hover {
   transform: translateY(-10%);
 }
-.main-title .upTo .btn {
+.main-title .upTo .button {
   width: 100%;
   height: 100%;
   display: flex;
@@ -244,47 +243,60 @@ header .global-nav li a:hover {
 .main-about .about .img_box img {
 }
 /*** main-project ***/
-.main-project {
-  background-color: var(--bg-color);
-  color: var(--txt-color);
-  font-family: var(--kr-font);
-  padding-bottom: 130px;
-  overflow: hidden;
+.project_part {
+  position: relative;
+  height: 500px;
+  width: 100%;
 }
-.main-project .menu {
-  /* padding: 80px 0 인 상태임*/
-}
-.main-project .project_box {
-  display: flex;
-  gap: 50px;
+.main-project, .project, .project_box, .project_img {
+  width:100%;
+  height: 100%;
   transform-style: preserve-3d;
-  user-select: none;
-  perspective: 2000px;
+  user-select:none;
+  position: absolute;
 }
-.main-project .project_box .project_img {
+.mini {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  /* width: 100%;
+  height: 115%; */
   align-items: flex-end;
+  font-family: var(--kr-font);
+  color: var(--txt-color);
+  position: relative;
 }
-.main-project .project_box .project_img h3 {
-  font-size: var(--font-size-24);
-  margin-bottom: 20px;
+.mini h3 {
+  position: relative;
+  top: -20px;
+  font-family: var(--en-txt-font);
 }
-
-.main-project .project_box .project_img h4 {
-  font-size: 18px;
-  letter-spacing: 1px;
+.main-project {
+  overflow: hidden;
+  /* background:#000;  */
+  background-color: var(--bg-color);
 }
-.main-project .project_box .project_img p {
-  align-self: flex-start;
-  font-size: 15px;
-  line-height: 1.7;
+.main-project .mixing {
+  color:var(--point-color);
+  font-family: var(--en-menu-font);
+  font-size: var(--font-size-20);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 80px;
+  width: fit-content;
 }
-.main-project .project_box .project_img img {
+.project {
+  perspective: 4000px;
   width: 750px;
-  height: 423px;
-  margin: 10px 0 30px;
+  height: 400px;  
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+.image {
+  display: block;
+  width: 100%;
+  height: 400px;
+  position: relative;
 }
 /*** main-skills ***/
 .main-skills {
@@ -311,16 +323,13 @@ header .global-nav li a:hover {
   width: 100%;
   justify-content: space-between;
   padding: 90px 0 10px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .main-skills .skills .txt_box li:hover {
-  background: linear-gradient(90deg, #eff0f2, #8b3156, #eff0f2, #cd5888);
-  background-clip: 'text';
-  -webkit-background-clip: text;
-  background-position-x: 0;
-  background-size: 200%;
-  color: transparent;
-  animation: gradient 10s ease-in-out infinite;
+  color:var(--point-color);
+}
+.main-skills .skills .txt_box li:hover h3 {
+  transform: translateX(12px);
 }
 .main-skills .skills .txt_box li:nth-child(1) {
   padding: 0 0 10px;
