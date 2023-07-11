@@ -25,19 +25,18 @@
   --font-size-60: 3.75rem;
   --font-size-70: 4.375rem;
   --bold-size-80: 5rem;
-  --font-size-380: 23.75rem;
-
+  --font-size-360: 22.5rem;
   --en-menu-font: 'Space Mono', monospace;
   --en-txt-font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Malgun Gothic',
     '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
   --kr-font: 'Noto Sans KR', sans-serif-apple-system, BlinkMacSystemFont,
     'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo';
-
   --point-color: #cd5888;
   --txt-color: #eff0f2;
   --bg-color: #20262e;
 }
 
+/* 애니메이션 */
 @keyframes gradient {
   0% {
     background-position-x: 0;

@@ -1,5 +1,10 @@
 
-//////이름 배열 순서 랜덤으로 바꿔서 여러번 출력 후 원래 배열로 돌아오기
+////// 화면 켰을때 안보였다가 몇초 뒤에 나타남
+window.addEventListener("load", () => {
+  document.body.classList.add("fade_out");
+});
+
+////// 이름 배열 순서 랜덤으로 바꿔서 여러번 출력 후 원래 배열로 돌아오기
 const elements = document.getElementsByClassName('mixing');
 
 for (let i = 0; i < elements.length; i++) {
@@ -58,36 +63,30 @@ $('.button').on('click', (evt) => {
   });
 });
 
-// 해당 박스로 부드러운 스크롤 다시해야될듯!!! 안올라감 ㅎ
-// $('.global-nav a').each(function(idx) {
-//   $(this).on('click',function (e) {
-//     e.preventDefault();
+// 해당 박스로 부드러운 스크롤
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
 
-//     const 
-//   })
-// })
+      var target = this.hash;
+      var $target = $(target);
 
-// 안보였다가 스크롤 내리면 나타나기,올라올때도 해야되는데? 다시 내려가도 또 그래야되는데?
-// 다은아 수정해라
-// https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API
-
-$(document).ready(function () {
-  $(window).scroll(function () {
-    $('.about,.project,.skills,.contact,.time,.sns').each(function (i) {
-      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      if (bottom_of_window > bottom_of_element) {
-        $(this).animate({ opacity: '1' }, 700);
-      }
-    });
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+          window.location.hash = target;
+      });
   });
 });
 
 ////// project 이미지 넘기기
 let xPos = 0;
 let scroll = false;
-const urls = ['images/project_01.png', 'images/project_02.png', 'images/project_03.png','images/project_01.png', 'images/project_02.png', 'images/project_03.png','images/project_01.png', 'images/project_02.png', 'images/project_03.png','images/project_01.png']
+const urls = ['images/project_01.png', 'images/Preparing.png',
+'images/Preparing.png','images/Preparing.png', 
+'images/Preparing.png','images/project_01.png',
+'images/Preparing.png', 'images/Preparing.png',
+'images/Preparing.png','images/Preparing.png']
 const position = 1200;
 gsap.timeline()
   .set('.project_box', { rotationY: 180, cursor: 'grab' }) //set initial rotationY so the parallax jump happens off screen
