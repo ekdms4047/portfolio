@@ -18,6 +18,7 @@
   background-color: var(--txt-color);
   color: var(--point-color);
 }
+
 .menu {
   font-family: var(--en-menu-font);
   font-size: var(--font-size-20);
@@ -35,14 +36,14 @@
   line-height: 1.8;
   word-spacing: -3px;
 }
-.about,
+/* .about,
 .project,
 .skills,
 .contact,
 .time,
 .sns {
   opacity: 0;
-}
+} */
 
 /***** header *****/
 header {
@@ -55,6 +56,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 9999;
+  user-select: none;
 }
 header .header-wrapper {
   font-family: var(--en-txt-font);
@@ -111,6 +113,8 @@ header .global-nav li a:hover {
   background-color: var(--bg-color);
   font-weight: bold;
   position: relative;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .main-title .upTo {
   width: 40px;
@@ -123,7 +127,7 @@ header .global-nav li a:hover {
   transition: 0.4s;
 }
 .main-title .upTo:hover {
-  transform: translateY(-10%);
+  transform: translateY(-30%);
 }
 .main-title .upTo .button {
   width: 100%;
@@ -175,6 +179,10 @@ header .global-nav li a:hover {
   justify-content: space-between;
   position: absolute;
   bottom: 0;
+}
+.main-title .main .suv_title h3 {
+  -webkit-user-select: text;
+  user-select: text;
 }
 .main-title .main .suv_title h3:last-child {
   text-align: right;
@@ -248,11 +256,14 @@ header .global-nav li a:hover {
   height: 500px;
   width: 100%;
 }
-.main-project, .project, .project_box, .project_img {
-  width:100%;
+.main-project,
+.project,
+.project_box,
+.project_img {
+  width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  user-select:none;
+  user-select: none;
   position: absolute;
 }
 .mini {
@@ -276,7 +287,7 @@ header .global-nav li a:hover {
   background-color: var(--bg-color);
 }
 .main-project .mixing {
-  color:var(--point-color);
+  color: var(--point-color);
   font-family: var(--en-menu-font);
   font-size: var(--font-size-20);
   text-transform: uppercase;
@@ -287,10 +298,10 @@ header .global-nav li a:hover {
 .project {
   perspective: 4000px;
   width: 750px;
-  height: 400px;  
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .image {
   display: block;
@@ -326,7 +337,7 @@ header .global-nav li a:hover {
   transition: 0.3s;
 }
 .main-skills .skills .txt_box li:hover {
-  color:var(--point-color);
+  color: var(--point-color);
 }
 .main-skills .skills .txt_box li:hover h3 {
   transform: translateX(12px);
@@ -355,13 +366,13 @@ header .global-nav li a:hover {
 }
 .main-contact .contact img {
   width: 1000px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .main-contact .contact a {
   font-family: var(--en-txt-font);
   font-size: var(--font-size-60);
   background: linear-gradient(90deg, #8b3156, #cd5888, #eff0f2, #8b3156);
-  background-clip: 'text';
+  background-clip: "text";
   /* 웹킷 브라우저 지원을 위해 추가 */
   -webkit-background-clip: text;
   background-position-x: 0;
@@ -398,9 +409,9 @@ footer .sns {
   text-align: right;
 }
 footer .sns p:nth-child(2) {
-  transition: 0.5s;
+  transition: 0.4s;
 }
 footer .sns p:nth-child(2):hover {
-  transform: translateX(-5%);
+  /* transform: translateX(-5%); */
   color: var(--point-color);
 }
