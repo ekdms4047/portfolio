@@ -162,7 +162,7 @@ header .global-nav li a:hover {
   animation: slide 10s linear infinite;
   letter-spacing: -5px;
   position: relative;
-  top:-40px;
+  top: -40px;
 }
 .main-title .main .main_slide img {
   width: 690px;
@@ -255,10 +255,10 @@ header .global-nav li a:hover {
   height: 800px;
   width: 100%;
   font-family: var(--kr-font);
+  background-color: var(--bg-color);
 }
 .project_part .main-project {
   overflow: hidden;
-  background-color: var(--bg-color);
   padding: 120px 0;
 }
 .project_part .main-project .mixing {
@@ -277,7 +277,7 @@ header .global-nav li a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color:var(--txt-color);
+  color: var(--txt-color);
 }
 .project_part .main-project .project .project_box .project_img .mini_top {
   /* justify-content: space-between;
@@ -291,13 +291,12 @@ header .global-nav li a:hover {
 }
 .project_part .main-project .project .project_box .project_img .mini_bottom {
   position: relative;
-  top:10px;
+  top: 10px;
   font-size: var(--font-size-20);
   justify-content: space-between;
 }
 .project_part .main-project .project .project_box .project_img .mini_bottom h3 {
   font-family: var(--en-txt-font);
-
 }
 .project_part .main-project .project .project_box .project_img .mini_bottom p {
   text-align: right;
@@ -365,6 +364,7 @@ header .global-nav li a:hover {
 .main-skills .skills .txt_box li p {
   font-family: var(--kr-font);
   font-size: var(--font-size-20);
+  text-align: right;
 }
 /*** main-contact ***/
 .main-contact {
@@ -374,7 +374,7 @@ header .global-nav li a:hover {
 .main-contact .contact {
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 .main-contact .contact img {
   width: 1000px;
@@ -424,11 +424,13 @@ footer .sns p:nth-child(2) {
 }
 footer .sns a {
   border: 1px solid var(--txt-color);
-  border-radius: 15px;
+  border-radius: 20px;
   text-align: center;
   padding: 5px 15px;
+  transition: 0.5s;
 }
-footer .sns p:nth-child(2):hover {
+footer .sns a:hover {
   /* transform: translateX(-5%); */
   color: var(--point-color);
+  background-color: var(--txt-color);
 }

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <!-- 다은아 프로젝트에 들어갈 이미지 정리하자!!! -->
-<!-- 다은아 페이드인 효과 다시 구현하자!! -->
-<!-- 다은아 스킬에 들어갈 내용 수정해 -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,7 @@
   <meta property="og:image" content="https://ekdms4047.github.io/portfolio/images/og.png">
   <meta property="og:url" content="https://ekdms4047.github.io/portfolio/index.html">
   <!-- favicon -->
-  <link rel="shortcut icon" href="./common/favicon.ico/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./common/favicon.ico/favicon-16x16.png" type="image/x-icon">
   <!-- reset -->
   <link rel="stylesheet" href="./common/reset.css">
   <!-- css -->
@@ -22,7 +21,7 @@
   <link rel="stylesheet" href="./index.css">
   <!-- script -->
   <script src="./common/jquery-3.7.0.min.js"></script>
-  <script src="./common/jquery-ui.min.js"></script>
+  <!-- <script src="./common/jquery-ui.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
   <script src="./common/aos@3.0.0-beta.6_dist_aos.js"></script>
@@ -50,12 +49,11 @@
       </ul>
     </div>
   </header>
-
   <!-- main-title -->
   <article class="main-title" id="title">
     <div class="upTo">
       <a href="#" class="button flex">
-        <img src="./images/arrow.svg" alt="">
+        <img src="./images/arrow.svg" alt="위로 올라간 화살표">
       </a>
     </div>
     <div class="main flex">
@@ -75,13 +73,13 @@
   <article class="main-about" id="about">
     <div class="about">
       <h2 class="menu mixing flex">about</h2>
-      <div class="txt">
+      <div class="txt" data-aos="fade-up" data-aos-duration="3000">
         <p>안녕하세요 오다은입니다.</p>
         <h3>첫째, 저는 모든 일에 신중하고 꼼꼼한 사람입니다!</h3>
         <h3>둘째, 주도성이 강하고 솔선수범하는 사람입니다!</h3>
         <h3>셋째, 도전적인 사람입니다!</h3>
       </div>
-      <div class="img_box flex">
+      <div class="img_box flex" data-aos="fade-up" data-aos-duration="3000">
         <div class="img_01">
           <h3>신중함</h3>
           <img src="./images/about_bg.png" alt="머리 위에 연필이 그려진 웃고 있는 로봇 아이콘">
@@ -102,7 +100,7 @@
 
   <!-- main-project -->
   <article class="project_part" id="project">
-    <div class="main-project">
+    <div class="main-project" data-aos="fade-up" data-aos-duration="2500">
       <h2 class="mixing">project</h2>
       <div class="project">
         <div class="project_box">
@@ -138,7 +136,7 @@
             <div class="mini_top flex">
               <h3>project 5</h3>
             </div>
-            <div class="image" href="https://ekdms4047.github.io/portfolio/project1/project1.html"></div>
+            <div class="image" href="#"></div>
             <div class="mini_bottom flex">
               <h3></h3>
               <p></p>
@@ -147,13 +145,14 @@
 
           <div class="project_img">
             <div class="mini_top flex">
-              <h3>리싸이클오피스</h3>
+              <h3>반응형 웹 사이트 제작</h3>
             </div>
-            <div class="image" href="#"></div>
+            <div class="image" href="./project1/project1.html"></div>
             <div class="mini_bottom flex">
               <h3>project 1</h3>
               <p>개인프로젝트100%
-              <br>HTML5 CSS3 반응형 웹사이트</p>
+                <br>HTML5 CSS3 반응형 웹사이트
+              </p>
             </div>
           </div>
 
@@ -194,34 +193,35 @@
   <article class="main-skills" id="skills">
     <div class="skills">
       <h2 class="menu mixing">skills</h2>
-      <div class="txt">
+      <div class="txt" data-aos="fade-up" data-aos-duration="2500">
         <h3>정직하게 자기개발을 위해<br>꾸준히 도모하겠습니다.</h3>
       </div>
-      <ul class="txt_box flex">
+      <ul class="txt_box flex" data-aos="fade-up" data-aos-duration="2500">
         <li>
           <h3><span class="mixing">HTML5</span>&<span class="mixing">CSS</span></h3>
           <p>웹 접근성을 고려한 시맨틱 마크업, 미디어쿼리를 이용한 반응형 웹 제작
-            <br>flex grid position을 이용한 레이아웃 구성
+            <br>Open Graph, favicon, SVG 적용
+            <br>flex, grid, position을 활용한 레이아웃 구성
             <br>CSS Animation을 활용한 모션 구현
           </p>
         </li>
         <li>
           <h3><span class="mixing">JavaScript</span>&<span class="mixing">jQuery</span></h3>
           <p>ES6+ 문법, 비동기 통신 ​Ajax를 이용한 JSON 데이터 활용
-            <br>
-            <br>
+            <br>DOM 조작 및 제어
+            <br>jQuery 라이브러리 적용
           </p>
         </li>
         <li>
           <h3 class="mixing">Tool</h3>
-          <p>VSCode, Figma - 프로토타입 제작, photoshop & illustrator
-            <br>VSCode, Figma - 프로토타입 제작, photoshop & illustrator
+          <p>Figma - 프로토타입 제작
+            <br>VScode & photoshop & illustrator 활용
           </p>
         </li>
         <li>
           <h3 class="mixing">Etc</h3>
-          <p>gitHub를 통해 팀 프로젝트 실시간 공유 및 협업 경험
-            <br>UI 디자인, open API, 카카오 API 활용
+          <p>gitHub - Repositories 관리, Organizations를 통해 팀 프로젝트 실시간 공유 및 협업 경험
+            <br>UI 디자인, open API, Kakao API, kakao map API 활용
           </p>
         </li>
       </ul>
@@ -230,7 +230,7 @@
 
   <!-- main-contact -->
   <article class="main-contact" id="contact">
-    <div class="contact flex">
+    <div class="contact flex" data-aos="fade-up" data-aos-duration="2500">
       <img src="./images/name.png" alt="ohdaeun">
       <a href="mailto:dh5ek@naver.com">dh5ek@naver.com</a>
       <p>겸손한 자세로 배워나가겠습니다!</p>
