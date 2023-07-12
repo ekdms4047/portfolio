@@ -93,12 +93,12 @@ let scroll = false;
 const urls = [
   "images/project_01.png",
   "images/project_02.png",
-  "images/Preparing.png",
+  "images/project_03.png",
   "images/Preparing.png",
   "images/Preparing.png",
   "images/project_01.png",
   "images/project_02.png",
-  "images/Preparing.png",
+  "images/project_03.png",
   "images/Preparing.png",
   "images/Preparing.png",
 ];
