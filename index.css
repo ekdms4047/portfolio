@@ -301,6 +301,7 @@ header .global-nav li a:hover {
 .project_part .main-project .project .project_box .project_img .mini_bottom p {
   text-align: right;
   line-height: 1.5;
+  word-spacing: 3px;
 }
 .main-project,
 .project,
