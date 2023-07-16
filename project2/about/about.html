@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>about</title>
+  <!-- 오픈그라피 -->
+  <meta property="og:title" content="Urbanic30" />
+  <meta property="og:description" content="JYP 프로젝트 포트폴리오입니다." />
+  <meta property="og:image" content="../common/openbg.png" />
+  <meta property="og:url" content="https://jyp-j-p.github.io/JYP_Project/" />
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="../common/favicon_io/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../common/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../common/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../common/favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="../common/favicon_io/site.webmanifest" />
+  <!-- css -->
+  <link rel="stylesheet" href="../common/reset.css" />
+  <link rel="stylesheet" href="../common/variable.css" />
+  <link rel="stylesheet" href="../common/aos@3.0.0-beta.6_dist_aos.css" />
+  <link rel="stylesheet" href="./about.css" />
+  <!-- jQuery -->
+  <script src="../common/jquery-3.7.0.min.js"></script>
+  <script src="../common/aos@3.0.0-beta.6_dist_aos.js"></script>
+  <script defer src="../common/header.js"></script>
+  <script type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c8c1456460f4eb5d4ce3a953ff5f795d"></script>
+  <script defer src="./kakaoApi.js"></script>
+  <script defer src="./about.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="header_bar flex">
+      <!-- <div class="logo"><a href="../main.html">로고</a></div> -->
+      <div class="logo"><a href="../index.html">로고</a></div>
+      <ul class="flex">
+        <li><a href="../shop/shop.html">shop</a></li>
+        <li><a href="../collection/collection.html">collection</a></li>
+        <li><a href="../about/about.html">about</a></li>
+      </ul>
+      <menu class="private flex">
+        <li><a href="../account/account.html">account</a></li>
+        <li><a href="../cart/cart.html">cart</a></li>
+      </menu>
+    </nav>
+  </header>
+  <!-- title -->
+  <section class="title">
+    <h2>store addresses</h2>
+  </section>
+  <!-- map -->
+  <section class="store_continer" data-aos="fade-up" data-aos-duration="2000">
+    <div class="store_wrap flex">
+      <div class="store_map">
+        <div id="map" style="width: 100%; height: 100%"></div>
+      </div>
+      <div class="store_box">
+        <div class="store_txt flex">
+          <div class="store_addresses w97">
+            <!-- <h3 data-aos="fade-left" data-aos-duration="5500">abkn_shop</h3> -->
+            <h3>abkn_shop</h3>
+            <p class="under">address</p>
+            <p class="under">
+              서울 강남구 신사동 644-10 1층 (언주로 168길 23)
+            </p>
+            <p class="under">telephone</p>
+            <p class="under">02 - 3443 - 1068</p>
+          </div>
+          <div class="store_info w97">
+            <p>
+              얼바닉30 본사인 에디토컴퍼니에서 운영하고 있는 오프라인 매장인
+              ‘에보키니샵’이 있습니다. 에보키니 샵에서는 얼바닉30의 일부
+              제품들이 판매되고 있으며, 제품들을 직접 착용하고 구매하실 수
+              있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- title -->
+  <section class="title">
+    <h2>contacts</h2>
+  </section>
+  <!-- contacts -->
+  <section class="contacts_continer">
+    <div class="contacts_wrap flex">
+      <div class="contacts_box flex">
+        <div class="contacts_addresses w97">
+          <p class="under" data-aos="fade-right" data-aos-duration="1500">
+            서울시 강남구 압구정로 42길 50, 우진빌딩B/D 201호
+          </p>
+          <p class="under" data-aos="fade-right" data-aos-duration="2500">
+            02-3443-1078
+          </p>
+        </div>
+        <div class="contacts_email w97">
+          <p class="under" data-aos="fade-right" data-aos-duration="2000">
+            urbanic30@edito-company.com
+          </p>
+        </div>
+      </div>
+      <div class="contacts_box working_box" data-aos="fade-left">
+        <div class="working_bg"></div>
+        <h3>working hours</h3>
+        <div class="contacts_week">mon - sat : 12:00 ~ 20:00</div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="foot_sns flex">
+      <ul class="sns flex">
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">instagram</a></li>
+        <li><a href="#">blog</a></li>
+      </ul>
+      <div class="foot_key flex">
+        <h2>FAQ</h2>
+        <div class="keybox"></div>
+        <h2>Q&A</h2>
+      </div>
+      <ul class="foot_name flex">
+        <li><img src="../common/github-mark.png" alt="github"></li>
+        <li><a href="https://win401.github.io/SungWoo-s-Portfolio/" target="_blank">이성우</a></li>
+        <li><a href="https://knknkn0928.github.io/Portfolio/" target="_blank">김나현</a></li>
+        <li><a href="https://hyunk07.github.io/Portfolio/" target="_blank">이현경</a></li>
+        <li><a href="https://ekdms4047.github.io/portfolio/index.html" target="_blank">오다은</a></li>
+      </ul>
+    </div>
+
+    <div class="foot_git flex">
+      <a href="https://github.com/JYP-J-P/JYP_Project" target="_blank">© 2023 ABSOLUT PROJECT JYP</a>
+      <h3>Thanks for watch</h3>
+      <h3>2023.07.02</h3>
+    </div>
+  </footer>
+</body>
+
+</html>

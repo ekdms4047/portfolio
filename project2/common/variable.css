@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* font-family: 'Abhaya Libre', serif; --en-txt-font */
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+
+/* font-family: 'Pretendard', san-serif; --kr-txt-font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+/* font-family: 'Gowun Batang', serif; --kr-sub-font */
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
+
+/* 변수 선언 */
+:root {
+  /* 컬러 */
+  --bg-color: #f4f4f4;
+  --txt-color: #131313;
+  --txt-sub-color: #858585;
+  /* 폰트 사이즈 */
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-28: 1.75rem;
+  --font-size-34: 2.125rem;
+  --font-size-40: 2.5rem;
+  --font-size-50: 3.125rem;
+
+  --main-size-60: 3.75rem;
+  --sub-size-24: 1.5rem;
+  /* 폰트 패밀리 */
+  --en-txt-font: "Abhaya Libre", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
+  --kr-txt-font: "pretendard", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --kr-sub-font: "Gowun Batang", Georgia, "Times New Roman", Times, serif;
+}
+
+::selection {
+  background-color: var(--txt-color);
+  color: var(--bg-color);
+}
+
+body {
+  opacity: 0;
+  transition-duration: 3s;
+  transition-property: opacity text-shadow;
+  text-shadow: 0 0 10px transparent;
+}
+
+body.fade_out {
+  opacity: 1;
+  text-shadow: 0 0 0 transparent;
+}
+header,
+footer {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

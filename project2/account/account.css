@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bg-color);
+  font-family: var(--en-txt-font);
+  color: var(--txt-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.flex {
+  display: flex;
+}
+
+/***** header *****/
+.header_bar {
+  position: fixed;
+  top: 0;
+  left: 1%;
+  text-transform: uppercase;
+  width: 98%;
+  margin: 10px auto;
+  height: 50px;
+  /* background-color: var(--bg-color); */
+  justify-content: space-between;
+  font-size: var(--font-size-20);
+  z-index: 9999;
+  transition: 0.5s;
+}
+.header_bar .logo {
+  background: #ffffff url(../common/logo.png) no-repeat 50% / 80%;
+  width: 10%;
+  border-radius: 5px;
+  text-indent: -9999pc;
+}
+.header_bar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header_bar ul {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 68%;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_bar .private {
+  justify-content: space-around;
+  background-color: #ffffff;
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/***** login *****/
+.sub_login {
+  padding: 120px 0 40px;
+  text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+}
+.sub_login img {
+  width: 50px;
+  margin: 30px 0 10px;
+  transform: rotate(-17deg);
+}
+.sub_login h2 {
+  font-weight: bold;
+  font-size: var(--font-size-50);
+  margin-bottom: 20px;
+}
+.sub_login .login {
+  flex-direction: column;
+}
+input[type="text"] {
+  border: 0;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--txt-color);
+  color: var(--txt-sub-color);
+  font-family: var(--en-txt-font);
+  width: 400px;
+  padding: 5px 10px;
+  font-size: var(--sub-size-24);
+}
+input[name="userPw"] {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+button {
+  text-transform: uppercase;
+  border: 1px solid #131313;
+  padding: 15px 0;
+  font-size: var(--font-size-28);
+  font-family: var(--en-txt-font);
+  transition: 0.4s;
+  margin: 10px 0;
+}
+button a {
+  display: block;
+}
+button:hover {
+  background-color: var(--txt-color);
+  color: var(--bg-color);
+}
+.sub_login .top li:nth-child(1),
+.sub_login .middle li:nth-child(1),
+.sub_login .bottom li:nth-child(1) {
+  color: var(--txt-color);
+  font-weight: bold;
+  font-size: var(--font-size-20);
+}
+.sub_login .top li:nth-child(2),
+.sub_login .middle li:nth-child(2),
+.sub_login .bottom li:nth-child(2) {
+  color: var(--txt-sub-color);
+  font-family: var(--kr-sub-font);
+  font-size: var(--font-size-16);
+}
+.sub_login .reserch {
+  margin: 15px 0 0;
+  font-size: var(--font-size-20);
+  color: var(--txt-sub-color);
+  position: relative;
+  justify-content: space-between;
+  width: 250px;
+}
+.sub_login .reserch p:nth-child(1)::after {
+  content: "/";
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: translateX(-45%);
+}
+.sub_login .top a,
+.sub_login .middle a,
+.sub_login .bottom a {
+  width: 400px;
+  border-bottom: 1px solid #131313;
+  padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_login .bottom {
+  margin-bottom: 100px;
+}
+/***** footer *****/
+footer {
+  text-transform: uppercase;
+  width: 98%;
+  margin: 0 auto 20px;
+}
+footer .footer_info {
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--txt-color);
+  border-bottom: 1px solid var(--txt-color);
+  padding: 10px;
+}
+footer .footer_info ul {
+  justify-content: space-around;
+  width: 20%;
+  color: var(--txt-color);
+  font-weight: 700;
+}
+footer .footer_info h3 {
+  color: var(--txt-sub-color);
+  width: 40%;
+}
+footer .footer_info h3:last-child {
+  text-align: right;
+}
