@@ -15,10 +15,10 @@ body.fade_out {
   text-shadow: 0 0 0 transparent;
 }
 .left h2 {
-  font-family: var(--en-menu-font);
+  /* font-family: var(--en-menu-font); */
   color: var(--point-color);
-  font-weight: bold;
-  font-size: var(--font-size-50);
+  /* font-weight: bold; */
+  font-size: var(--font-size-40);
 }
 img {
   user-select: none;
@@ -104,49 +104,116 @@ header .global-nav li a:hover {
 /***** contents *****/
 /*** project ***/
 .main-project {
-  padding: 220px 200px 0;
+  background: url(./images/sub03_main.png) no-repeat 50% / cover;
+  height: 80vh;
 }
 .main-project .project {
-  padding-bottom: 100px;
-  border-bottom: 1px solid var(--txt-color);
-  align-items: center;
+  padding: 300px 200px 0;
 }
-.main-project .project .left {
-  width: 60%;
-}
-.main-project .project .left h1 {
+.main-project .project .pull h1 {
   color: var(--point-color);
   font-size: var(--font-size-44);
   font-weight: bold;
   padding-bottom: 50px;
 }
-.main-project .project .left ul li {
+.main-project .project .pull ul li {
   font-size: var(--font-size-24);
   padding: 7px 0;
 }
-.main-project .project .right {
-  /* width: %; */
-}
-.main-project .project .right img {
-  width: 400px;
-}
-/*** goals ***/
-.main-goals {
+/*** 프로젝트 소개 ***/
+.main-introduce {
   padding: 150px 200px 0;
 }
-.main-goals .goals {
+.main-introduce .introduce {
   padding-bottom: 150px;
   border-bottom: 1px solid var(--txt-color);
 }
-.main-goals .goals .left {
-  width: 52%;
+.main-introduce .introduce .left {
+  width: 55%;
+  padding-top: 140px;
 }
-.main-goals .goals .right ul li {
+.main-introduce .introduce .right p {
+  padding-bottom: 100px;
+  font-size: var(--font-size-20);
+  text-indent: -20px;
+}
+.main-introduce .introduce .right ul li {
   list-style: disc;
-  line-height: 2;
+  line-height: 2.5;
 }
-.main-goals .goals .right ul li:nth-child(1) {
-  margin-bottom: 30px;
+/*** 진행 과정 ***/
+.main-process {
+  padding: 150px 200px 0;
+}
+.main-process .process {
+  padding-bottom: 150px;
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-process .process .left {
+  width: 55%;
+  padding-top: 70px;
+}
+.main-process .process .right ul li {
+  list-style: disc;
+  line-height: 2.5;
+}
+/*** 담당업무 ***/
+.main-task {
+  padding: 150px 200px 0;
+}
+.main-task .task {
+  padding-bottom: 150px;
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-task .task .left {
+  width: 55%;
+}
+.main-task .task .right ul li {
+  list-style: disc;
+  line-height: 2.5;
+}
+/*** 기존 앱의 문제점 ***/
+.main-problem {
+  padding: 170px 200px 0;
+}
+.main-problem .problem {
+  padding-bottom: 150px;
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-problem .problem .left {
+  width: 50%;
+  padding-top: 130px;
+}
+.main-problem .problem .right img {
+  width: 170px;
+}
+.main-problem .problem .right p {
+  text-align: center;
+  padding-top: 10px;
+}
+.main-problem .problem .right .center_box {
+  padding: 0 100px;
+}
+/*** ux vision ***/
+.main-vision {
+  padding: 150px 200px;
+}
+.main-vision .vision {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 170px;
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-vision .vision h2 {
+  font-family: var(--en-menu-font);
+  color: var(--point-color);
+  font-weight: bold;
+  font-size: var(--font-size-40);
+  word-spacing: -12px;
+  padding-bottom: 120px;
+}
+.main-vision .vision p {
+  font-size: 30px;
 }
 /*** design ***/
 .main-design {
@@ -154,12 +221,14 @@ header .global-nav li a:hover {
 }
 .main-design .design {
   border-bottom: 1px solid var(--txt-color);
-  flex-wrap: wrap;
-  padding-bottom: 120px;
+  padding-bottom: 150px;
 }
 .main-design .design .left {
   width: 50%;
-  padding-top: 400px;
+}
+.main-design .design .left h2 {
+  font-family: var(--en-menu-font);
+  font-weight: bold;
 }
 .main-design .design .left h3 {
   padding: 40px 0 30px;
@@ -172,143 +241,39 @@ header .global-nav li a:hover {
   padding: 5px 20px;
   margin-right: 15px;
 }
-.main-design .design .right {
-  width: 50%;
+.main-design .design .right h4 {
+  font-size: var(--font-size-30);
+  font-family: var(--en-txt-font);
+  padding-bottom: 30px;
 }
 .main-design .design .right .top_box {
   font-family: var(--en-txt-font);
 }
-.main-design .design .right .top_box h4 {
-  font-size: var(--font-size-30);
-  padding-bottom: 30px;
-}
-.main-design .design .right .top_box p {
-  font-size: 16px;
-}
 .main-design .design .right .top_box .top {
-  width: 100px;
   flex-direction: column;
+  width: 100px;
 }
-.main-design .design .right .top_box .top img {
+.main-design .design .right .top_box img {
   padding: 20px 0 10px;
 }
 .main-design .design .right .top_box .top p {
-  align-self: center;
   padding-bottom: 30px;
-}
-.main-design .design .right .top_box .middle {
-  width: 180px;
-  flex-direction: column;
-}
-.main-design .design .right .top_box .middle img {
-  padding: 20px 0 10px;
-}
-.main-design .design .right .top_box .middle p {
-  width: 50%;
   text-align: center;
-  padding-bottom: 30px;
 }
 .main-design .design .right .top_box .bottom {
-  width: 350px;
-  flex-direction: column;
+  width: 400px;
 }
 .main-design .design .right .top_box .bottom p {
-  width: 25%;
+  width: 20%;
   text-align: center;
   padding-bottom: 80px;
-}
-.main-design .design .right .top_box .bottom img {
-  padding: 20px 0 10px;
-}
-.main-design .design .right .bottom_box {
-  width: 80%;
-}
-.main-design .design .right .bottom_box h4 {
-  font-size: var(--font-size-30);
-  font-family: var(--en-txt-font);
-  padding-bottom: 30px;
-}
-.main-design .design .right .bottom_box p {
   line-height: 2;
 }
 .main-design .design .right .bottom_box .txt_box {
   padding-right: 160px;
 }
-.main-design .design .right .bottom_box .title_box p {
-  width: 90px;
-}
 .main-design .design .right .bottom_box .basic_box {
   flex-direction: column;
   justify-content: flex-end;
-}
-/*** publishing ***/
-.main-publishing {
-  padding: 0 200px;
-}
-.main-publishing .publishing {
-  padding-bottom: 120px;
-  border-bottom: 1px solid var(--txt-color);
-}
-.main-publishing .publishing .left {
-  width: 52%;
-}
-.main-publishing .publishing .right ul li {
-  list-style: disc;
-  line-height: 3;
-}
-/*** problem ***/
-.main-problem {
-  padding: 150px 200px 50px;
-}
-.main-problem .problem {
-  border-bottom: 1px solid var(--txt-color);
-  /* padding-bottom: 200px; */
-}
-.main-problem .problem .left {
-  width: 50%;
-}
-.main-problem .problem .left h2 {
-  padding-top: 120px;
-}
-.main-problem .problem .left h2 br {
-}
-.main-problem .problem .right {
-}
-.main-problem .problem .right dl {
-  line-height: 2;
-  /* position: relative; */
-}
-.main-problem .problem .right dl dt {
-  /* font-weight: bold; */
-}
-.main-problem .problem .right dl dd {
-  padding-bottom: 40px;
-  text-indent: 25px;
-  position: relative;
-}
-.main-problem .problem .right dl span {
-  height: 100%;
-  position: absolute;
-  left: -30px;
-  bottom: -4px;
-  display: block;
-}
-.main-problem .problem .right dl span:nth-child(2) {
-  bottom: -60px;
-}
-.main-problem .problem .right p {
-  justify-content: flex-end;
-  padding: 100px 0 50px;
-  width: 650px;
-}
-.main-problem .problem .right a {
-  border: 1px solid var(--txt-color);
-  border-radius: 30px;
-  padding: 10px 20px;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.main-problem .problem .right a:hover {
-  color: var(--point-color);
-  background-color: var(--txt-color);
+  height: 140px;
 }
