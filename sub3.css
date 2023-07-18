@@ -15,7 +15,6 @@ body.fade_out {
   text-shadow: 0 0 0 transparent;
 }
 .left h2 {
-  /* font-family: var(--en-menu-font); */
   color: var(--point-color);
   /* font-weight: bold; */
   font-size: var(--font-size-40);
@@ -362,8 +361,6 @@ header .global-nav li a:hover {
 .main-review .review .left {
   width: 50%;
   padding-top: 200px;
-}
-.main-review .review .left h2 {
 }
 .main-review .review .right {
   width: 50%;

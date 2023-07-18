@@ -15,10 +15,14 @@ body.fade_out {
   text-shadow: 0 0 0 transparent;
 }
 .left h2 {
-  font-family: var(--en-menu-font);
+  font-family: var(--kr-font);
   color: var(--point-color);
-  font-weight: bold;
-  font-size: var(--font-size-50);
+  /* font-weight: bold; */
+  font-size: var(--font-size-40);
+}
+.right p,
+.right li {
+  font-size: 18px;
 }
 img {
   user-select: none;
@@ -104,13 +108,11 @@ header .global-nav li a:hover {
 /***** contents *****/
 /*** project ***/
 .main-project {
-  padding: 220px 200px 0;
+  background: url(./images/sub02_main.png) no-repeat 50% / cover;
 }
 .main-project .project {
-  /* padding-bottom: 100px; */
-  border-bottom: 1px solid var(--txt-color);
+  padding: 300px 200px 100px;
   align-items: center;
-  background: url(./images/);
 }
 .main-project .project .left {
   width: 60%;
@@ -131,27 +133,66 @@ header .global-nav li a:hover {
 .main-project .project .right img {
   width: 400px;
 }
-/*** goals ***/
-.main-goals {
+/*** process ***/
+.main-process {
   padding: 150px 200px 0;
 }
-.main-goals .goals {
+.main-process .process {
   padding-bottom: 150px;
   border-bottom: 1px solid var(--txt-color);
 }
-.main-goals .goals .left {
+.main-process .process .left {
   width: 52%;
+  flex-direction: column;
+  justify-content: center;
 }
-.main-goals .goals .right ul li {
+.main-process .process .right ul li {
+  list-style: decimal;
+  line-height: 2.5;
+}
+/*** task ***/
+.main-task {
+  padding: 150px 200px 0;
+}
+.main-task .task {
+  padding-bottom: 150px;
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-task .task .left {
+  width: 52%;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-task .task .right ul li {
   list-style: disc;
-  line-height: 2;
+  line-height: 2.5;
 }
-.main-goals .goals .right ul li:nth-child(1) {
-  margin-bottom: 30px;
+/*** goals ***/
+.main-goals {
+  padding: 200px;
+}
+.main-goals .goals {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 200px;
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-goals .goals .pull {
+  /* padding-bottom: 200px; */
+}
+.main-goals .goals .pull h2 {
+  font-family: var(--en-menu-font);
+  color: var(--point-color);
+  font-size: var(--font-size-50);
+  font-weight: bold;
+  padding-bottom: 120px;
+}
+.main-goals .goals .pull p {
+  font-size: var(--font-size-26);
 }
 /*** design ***/
 .main-design {
-  padding: 150px 200px;
+  padding: 0 200px 150px;
 }
 .main-design .design {
   border-bottom: 1px solid var(--txt-color);
@@ -159,8 +200,13 @@ header .global-nav li a:hover {
   padding-bottom: 120px;
 }
 .main-design .design .left {
-  width: 45%;
-  padding-top: 150px;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-design .design .left h2 {
+  font-family: var(--en-menu-font);
+  font-weight: bold;
 }
 .main-design .design .left h3 {
   padding: 40px 0 30px;
@@ -173,18 +219,12 @@ header .global-nav li a:hover {
   padding: 5px 20px;
   margin-right: 15px;
 }
-.main-design .design .right {
-  width: 55%;
-}
 .main-design .design .right .top_box {
   font-family: var(--en-txt-font);
 }
 .main-design .design .right .top_box h4 {
   font-size: var(--font-size-30);
   padding-bottom: 30px;
-}
-.main-design .design .right .top_box img {
-  width: ;
 }
 .main-design .design .right .top_box p {
   font-size: 16px;
@@ -197,13 +237,12 @@ header .global-nav li a:hover {
   padding: 20px 0 10px;
 }
 .main-design .design .right .top_box .top p {
-  /* align-self: center; */
   padding-bottom: 80px;
   width: 33.3333%;
   text-align: center;
 }
 .main-design .design .right .bottom_box {
-  width: 80%;
+  padding-right: 160px;
 }
 .main-design .design .right .bottom_box h4 {
   font-size: var(--font-size-30);
@@ -216,82 +255,156 @@ header .global-nav li a:hover {
 .main-design .design .right .bottom_box .txt_box {
   padding-right: 100px;
 }
-.main-design .design .right .bottom_box .title_box p {
-  width: 90px;
-}
 .main-design .design .right .bottom_box .basic_box {
   flex-direction: column;
   justify-content: flex-end;
+}
+/*** imgBox ***/
+.main-imgBox {
+  padding: 0 200px;
+}
+.main-imgBox .imgBox {
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 150px;
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-imgBox .imgBox figure {
+  width: 300px;
+}
+.main-imgBox .imgBox .Box {
+  align-self: center;
+}
+.main-imgBox .imgBox .Box figure:nth-child(1) {
+  padding-bottom: 50px;
+}
+.main-imgBox .imgBox figure:nth-child(1) {
+  align-self: center;
+}
+.main-imgBox .imgBox figure figcaption {
+  padding-top: 10px;
 }
 /*** publishing ***/
 .main-publishing {
   padding: 0 200px;
 }
 .main-publishing .publishing {
-  padding-bottom: 120px;
+  padding: 150px 0;
   border-bottom: 1px solid var(--txt-color);
 }
 .main-publishing .publishing .left {
   width: 52%;
-  padding-top: 250px;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-publishing .publishing .left h2 {
+  font-family: var(--en-menu-font);
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.main-publishing .publishing .left aside p {
+  margin: 40px 0;
+}
+.main-publishing .publishing .left aside p a {
+  font-size: var(--font-size-24);
+  border: 1px solid var(--txt-color);
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.main-publishing .publishing .left aside p a:hover {
+  color: var(--point-color);
+  background-color: var(--txt-color);
 }
 .main-publishing .publishing .right ul li {
   list-style: disc;
   line-height: 3;
+  text-transform: none;
 }
-/*** problem ***/
-.main-problem {
-  padding: 150px 200px 50px;
+/*** result ***/
+.main-result {
+  padding: 150px 200px;
 }
-.main-problem .problem {
+.main-result .result {
   border-bottom: 1px solid var(--txt-color);
-  /* padding-bottom: 200px; */
+  padding-bottom: 150px;
 }
-.main-problem .problem .left {
+.main-result .result .left {
+  width: 50%;
+  padding-top: 30px;
+}
+.main-result .result .right {
   width: 50%;
 }
-.main-problem .problem .left h2 {
-  padding-top: 120px;
+.main-result .result .right p {
+  line-height: 2.2;
+  padding-bottom: 30px;
 }
-.main-problem .problem .left h2 br {
+/*** personal ***/
+.main-personal {
+  padding: 130px 200px;
 }
-.main-problem .problem .right {
+.main-personal .personal {
+  border-bottom: 1px solid var(--txt-color);
+  padding-bottom: 100px;
 }
-.main-problem .problem .right dl {
-  line-height: 2;
-  /* position: relative; */
+.main-personal .personal .left {
+  width: 52%;
+  flex-direction: column;
+  justify-content: center;
 }
-.main-problem .problem .right dl dt {
-  font-weight: bold;
-}
-.main-problem .problem .right dl dd {
-  padding-bottom: 40px;
-  text-indent: 25px;
+.main-personal .personal .right {
   position: relative;
+  width: 48%;
 }
-.main-problem .problem .right dl span {
-  height: 100%;
+.main-personal .personal .right .material-symbols-outlined {
   position: absolute;
-  left: -30px;
-  bottom: -4px;
-  display: block;
+  left: -25px;
+  padding-top: 5px;
 }
-.main-problem .problem .right dl span:nth-child(2) {
-  bottom: -60px;
+.main-personal .personal .right ul {
+  padding-bottom: 60px;
+  line-height: 2;
 }
-.main-problem .problem .right p {
+.main-personal .personal .right ul li {
+  list-style: disc;
+}
+.main-personal .personal .right ul li:nth-child(1) {
+  list-style: none;
+}
+/*** review ***/
+.main-review {
+  padding: 50px 200px;
+}
+.main-review .review {
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-review .review .left {
+  width: 50%;
+  padding-top: 130px;
+}
+.main-review .review .right {
+  width: 50%;
+  text-transform: none;
+}
+.main-review .review .right p {
+  padding-bottom: 40px;
   justify-content: flex-end;
-  padding: 100px 0 50px;
-  width: 540px;
+  line-height: 1.8;
+  font-size: 18px;
 }
-.main-problem .problem .right a {
+.main-review .review .right p:last-child {
+  padding: 100px 20px 50px 0;
+}
+.main-review .review .right p a {
+  justify-content: flex-end;
   border: 1px solid var(--txt-color);
   border-radius: 30px;
   padding: 10px 20px;
-  font-weight: bold;
   transition: 0.5s;
 }
-.main-problem .problem .right a:hover {
+.main-review .review .right p a:hover {
   color: var(--point-color);
   background-color: var(--txt-color);
 }
