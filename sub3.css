@@ -20,6 +20,10 @@ body.fade_out {
   /* font-weight: bold; */
   font-size: var(--font-size-40);
 }
+.right p,
+.right li {
+  font-size: 18px;
+}
 img {
   user-select: none;
 }
@@ -105,10 +109,10 @@ header .global-nav li a:hover {
 /*** project ***/
 .main-project {
   background: url(./images/sub03_main.png) no-repeat 50% / cover;
-  height: 80vh;
+  height: 100%;
 }
 .main-project .project {
-  padding: 300px 200px 0;
+  padding: 300px 200px 100px;
 }
 .main-project .project .pull h1 {
   color: var(--point-color);
@@ -129,12 +133,12 @@ header .global-nav li a:hover {
   border-bottom: 1px solid var(--txt-color);
 }
 .main-introduce .introduce .left {
-  width: 55%;
+  width: 52%;
   padding-top: 140px;
 }
 .main-introduce .introduce .right p {
   padding-bottom: 100px;
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-24);
   text-indent: -20px;
 }
 .main-introduce .introduce .right ul li {
@@ -150,11 +154,11 @@ header .global-nav li a:hover {
   border-bottom: 1px solid var(--txt-color);
 }
 .main-process .process .left {
-  width: 55%;
+  width: 52%;
   padding-top: 70px;
 }
 .main-process .process .right ul li {
-  list-style: disc;
+  list-style: decimal;
   line-height: 2.5;
 }
 /*** 담당업무 ***/
@@ -166,7 +170,7 @@ header .global-nav li a:hover {
   border-bottom: 1px solid var(--txt-color);
 }
 .main-task .task .left {
-  width: 55%;
+  width: 52%;
 }
 .main-task .task .right ul li {
   list-style: disc;
@@ -196,28 +200,36 @@ header .global-nav li a:hover {
 }
 /*** ux vision ***/
 .main-vision {
-  padding: 150px 200px;
+  padding: 200px;
 }
 .main-vision .vision {
   width: 100%;
   text-align: center;
-  padding-bottom: 170px;
+  padding-bottom: 200px;
   border-bottom: 1px solid var(--txt-color);
 }
 .main-vision .vision h2 {
   font-family: var(--en-menu-font);
-  color: var(--point-color);
   font-weight: bold;
-  font-size: var(--font-size-40);
+  font-size: var(--font-size-50);
   word-spacing: -12px;
   padding-bottom: 120px;
+  color: var(--point-color);
 }
 .main-vision .vision p {
-  font-size: 30px;
+  font-size: var(--font-size-30);
+  background: linear-gradient(90deg, #8b3156, #cd5888, #eff0f2, #8b3156);
+  background-clip: "text";
+  /* 웹킷 브라우저 지원을 위해 추가 */
+  -webkit-background-clip: text;
+  background-position-x: 0;
+  background-size: 200%;
+  color: transparent;
+  animation: gradient 5s linear infinite;
 }
 /*** design ***/
 .main-design {
-  padding: 150px 200px;
+  padding: 0 200px;
 }
 .main-design .design {
   border-bottom: 1px solid var(--txt-color);
@@ -225,6 +237,7 @@ header .global-nav li a:hover {
 }
 .main-design .design .left {
   width: 50%;
+  padding-top: 220px;
 }
 .main-design .design .left h2 {
   font-family: var(--en-menu-font);
@@ -276,4 +289,103 @@ header .global-nav li a:hover {
   flex-direction: column;
   justify-content: flex-end;
   height: 140px;
+}
+/*** 프로토타입 이미지 ***/
+.main-prototype {
+  padding: 150px 200px;
+}
+.main-prototype .prototype {
+  border-bottom: 1px solid var(--txt-color);
+  padding-bottom: 150px;
+  justify-content: space-around;
+}
+.main-prototype .prototype figure img {
+  width: 230px;
+  padding-bottom: 10px;
+}
+.main-prototype .prototype figure figcaption {
+  text-align: center;
+}
+/*** 프로젝트 결과 ***/
+.main-result {
+  padding: 50px 200px;
+}
+.main-result .result {
+  border-bottom: 1px solid var(--txt-color);
+  padding-bottom: 150px;
+}
+.main-result .result .left {
+  width: 50%;
+  padding-top: 30px;
+}
+.main-result .result .right p {
+  line-height: 2.2;
+}
+/*** 개인적인 평가 ***/
+.main-personal {
+  padding: 130px 200px;
+}
+.main-personal .personal {
+  border-bottom: 1px solid var(--txt-color);
+  padding-bottom: 100px;
+}
+.main-personal .personal .left {
+  width: 52%;
+  padding-top: 180px;
+}
+.main-personal .personal .right {
+  position: relative;
+}
+.main-personal .personal .right .material-symbols-outlined {
+  position: absolute;
+  left: -25px;
+  /* top: 2px; */
+  padding-top: 5px;
+}
+.main-personal .personal .right ul {
+  padding-bottom: 60px;
+  line-height: 2;
+}
+.main-personal .personal .right ul li {
+  list-style: disc;
+}
+.main-personal .personal .right ul li:nth-child(1) {
+  list-style: none;
+}
+/*** 최종 리뷰 ***/
+.main-review {
+  padding: 50px 200px;
+}
+.main-review .review {
+  border-bottom: 1px solid var(--txt-color);
+}
+.main-review .review .left {
+  width: 50%;
+  padding-top: 200px;
+}
+.main-review .review .left h2 {
+}
+.main-review .review .right {
+  width: 50%;
+}
+.main-review .review .right p {
+  padding-bottom: 40px;
+  justify-content: flex-end;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.main-review .review .right p:last-child {
+  padding: 100px 20px 50px 0;
+}
+.main-review .review .right p a {
+  justify-content: flex-end;
+  border: 1px solid var(--txt-color);
+  border-radius: 30px;
+  padding: 10px 20px;
+  /* font-weight: bold; */
+  transition: 0.5s;
+}
+.main-review .review .right p a:hover {
+  color: var(--point-color);
+  background-color: var(--txt-color);
 }

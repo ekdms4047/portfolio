@@ -6,12 +6,10 @@ body {
   transition-property: opacity text-shadow;
   text-shadow: 0 0 10px transparent;
 }
-
 body.fade_out {
   opacity: 1;
   text-shadow: 0 0 0 transparent;
 }
-
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -26,7 +24,6 @@ body.fade_out {
   background-color: var(--txt-color);
   color: var(--point-color);
 }
-
 .menu {
   font-family: var(--en-menu-font);
   font-size: var(--font-size-20);
@@ -38,7 +35,6 @@ body.fade_out {
   width: fit-content;
   user-select: none;
 }
-
 .txt h3 {
   font-size: var(--font-size-34);
   font-family: var(--kr-font);
@@ -382,7 +378,7 @@ header .global-nav li a:hover {
 }
 .main-contact .contact img {
   width: 1000px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .main-contact .contact a {
   font-family: var(--en-txt-font);
@@ -412,7 +408,6 @@ footer {
 }
 footer .time {
   align-items: center;
-  animation: shake infinite ease-in-out;
 }
 footer .time img {
   width: 47px;

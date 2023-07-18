@@ -2,7 +2,7 @@
 /***** common *****/
 body {
   background-color: var(--bg-color);
-  color:var(--txt-color);
+  color: var(--txt-color);
   font-family: var(--kr-font);
   text-transform: capitalize;
   opacity: 0;
@@ -16,7 +16,7 @@ body.fade_out {
 }
 .left h2 {
   font-family: var(--en-menu-font);
-  color:var(--point-color);
+  color: var(--point-color);
   font-weight: bold;
   font-size: var(--font-size-50);
 }
@@ -41,7 +41,7 @@ img {
   color: var(--point-color);
 }
 .material-symbols-outlined {
-  color: #EFF0F2;
+  color: #eff0f2;
 }
 /***** header *****/
 header {
@@ -107,15 +107,16 @@ header .global-nav li a:hover {
   padding: 220px 200px 0;
 }
 .main-project .project {
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   border-bottom: 1px solid var(--txt-color);
   align-items: center;
+  background: url(./images/);
 }
 .main-project .project .left {
   width: 60%;
 }
 .main-project .project .left h1 {
-  color:var(--point-color);
+  color: var(--point-color);
   font-size: var(--font-size-44);
   font-weight: bold;
   padding-bottom: 50px;
@@ -142,7 +143,7 @@ header .global-nav li a:hover {
   width: 52%;
 }
 .main-goals .goals .right ul li {
-  list-style:disc;
+  list-style: disc;
   line-height: 2;
 }
 .main-goals .goals .right ul li:nth-child(1) {
@@ -192,7 +193,7 @@ header .global-nav li a:hover {
   width: 280px;
   flex-direction: column;
 }
-.main-design .design .right .top_box .top img{
+.main-design .design .right .top_box .top img {
   padding: 20px 0 10px;
 }
 .main-design .design .right .top_box .top p {
@@ -219,8 +220,8 @@ header .global-nav li a:hover {
   width: 90px;
 }
 .main-design .design .right .bottom_box .basic_box {
-flex-direction: column;
-justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 /*** publishing ***/
 .main-publishing {
@@ -235,7 +236,7 @@ justify-content: flex-end;
   padding-top: 250px;
 }
 .main-publishing .publishing .right ul li {
-  list-style:disc;
+  list-style: disc;
   line-height: 3;
 }
 /*** problem ***/
@@ -255,7 +256,6 @@ justify-content: flex-end;
 .main-problem .problem .left h2 br {
 }
 .main-problem .problem .right {
-
 }
 .main-problem .problem .right dl {
   line-height: 2;
@@ -276,12 +276,12 @@ justify-content: flex-end;
   bottom: -4px;
   display: block;
 }
-.main-problem .problem .right dl span:nth-child(2){
+.main-problem .problem .right dl span:nth-child(2) {
   bottom: -60px;
 }
 .main-problem .problem .right p {
   justify-content: flex-end;
-  padding:100px 0 50px;
+  padding: 100px 0 50px;
   width: 540px;
 }
 .main-problem .problem .right a {

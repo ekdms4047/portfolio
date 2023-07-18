@@ -52,7 +52,7 @@ const touch = document.querySelector(".contact img");
 addEventListener("mousemove", (evt) => {
   let x = evt.clientX,
     y = evt.clientY;
-  touch.style.transform = `translate(${x / 50}px,${y / 50}px)`;
+  touch.style.transform = `translate(${x / 30}px,${y / 30}px)`;
 });
 
 ////// 화면 제일 상단으로 올라오기. 부드러운 스크롤

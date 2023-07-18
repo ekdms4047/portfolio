@@ -20,6 +20,10 @@ body.fade_out {
   font-weight: bold;
   font-size: var(--font-size-50);
 }
+.right p,
+.right li {
+  font-size: 18px;
+}
 img {
   user-select: none;
 }
@@ -104,23 +108,19 @@ header .global-nav li a:hover {
 /***** contents *****/
 /*** project ***/
 .main-project {
-  padding: 220px 200px 0;
+  background: url(./images/sub01_main.png) no-repeat 50% / cover;
 }
 .main-project .project {
-  padding-bottom: 100px;
-  border-bottom: 1px solid var(--txt-color);
+  padding: 300px 200px 100px;
   align-items: center;
 }
-.main-project .project .left {
-  width: 60%;
-}
-.main-project .project .left h1 {
+.main-project .project .pull h1 {
   color: var(--point-color);
   font-size: var(--font-size-44);
   font-weight: bold;
   padding-bottom: 50px;
 }
-.main-project .project .left ul li {
+.main-project .project .pull ul li {
   font-size: var(--font-size-24);
   padding: 7px 0;
 }
@@ -164,6 +164,7 @@ header .global-nav li a:hover {
 .main-design .design .left h3 {
   padding: 40px 0 30px;
   line-height: 2;
+  font-size: 18px;
 }
 .main-design .design .left aside p {
   border: 1px solid var(--txt-color);
@@ -171,6 +172,7 @@ header .global-nav li a:hover {
   text-align: center;
   padding: 5px 20px;
   margin-right: 15px;
+  font-size: 18px;
 }
 .main-design .design .right {
   width: 50%;
@@ -234,9 +236,6 @@ header .global-nav li a:hover {
 .main-design .design .right .bottom_box .txt_box {
   padding-right: 160px;
 }
-.main-design .design .right .bottom_box .title_box p {
-  width: 90px;
-}
 .main-design .design .right .bottom_box .basic_box {
   flex-direction: column;
   justify-content: flex-end;
@@ -270,13 +269,13 @@ header .global-nav li a:hover {
 .main-problem .problem .left h2 {
   padding-top: 120px;
 }
-.main-problem .problem .left h2 br {
-}
 .main-problem .problem .right {
+  width: 50%;
 }
 .main-problem .problem .right dl {
   line-height: 2;
   /* position: relative; */
+  font-size: 18px;
 }
 .main-problem .problem .right dl dt {
   /* font-weight: bold; */
@@ -298,14 +297,12 @@ header .global-nav li a:hover {
 }
 .main-problem .problem .right p {
   justify-content: flex-end;
-  padding: 100px 0 50px;
-  width: 650px;
+  padding: 100px 20px 50px 0;
 }
 .main-problem .problem .right a {
   border: 1px solid var(--txt-color);
   border-radius: 30px;
   padding: 10px 20px;
-  font-weight: bold;
   transition: 0.5s;
 }
 .main-problem .problem .right a:hover {
