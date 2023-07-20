@@ -157,6 +157,7 @@ header .global-nav li a:hover {
   letter-spacing: -5px;
   position: relative;
   top: -40px;
+  font-weight: bold;
 }
 .main-title .main .main_slide img {
   width: 690px;

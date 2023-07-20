@@ -145,14 +145,60 @@ gsap
       gsap.to(".project_img", { opacity: 1, ease: "power2.inOut" });
     });
   }, "-=0")
+  // .add(() => {
+  //   $(".image").on("click", function () {
+  //     if (scroll) {
+  //       return;
+  //     }
+  //     const href = $(this).attr("href");
+  //     if (href) {
+  //       window.open(href);
+  //       location.href = link;
+  //     }
   .add(() => {
-    $(".image").on("click", function () {
+    $(".image01").on("click", function () {
       if (scroll) {
         return;
       }
       const href = $(this).attr("href");
       if (href) {
-        window.open(href);
+        location.href = "./sub1.html";
+      }
+    });
+    $(".image02").on("click", function () {
+      if (scroll) {
+        return;
+      }
+      const href = $(this).attr("href");
+      if (href) {
+        location.href = "./sub2.html";
+      }
+    });
+    $(".image03").on("click", function () {
+      if (scroll) {
+        return;
+      }
+      const href = $(this).attr("href");
+      if (href) {
+        location.href = "./sub3.html";
+      }
+    });
+    $(".image04").on("click", function () {
+      if (scroll) {
+        return;
+      }
+      const href = $(this).attr("href");
+      if (href) {
+        location.href = "./sub4.html";
+      }
+    });
+    $(".image05").on("click", function () {
+      if (scroll) {
+        return;
+      }
+      const href = $(this).attr("href");
+      if (href) {
+        location.href = "./sub5.html";
       }
     });
   });
