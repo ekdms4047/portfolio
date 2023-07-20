@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* font-family: 'Pretendard', san-serif; --kr-txt-font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+/* font-family: 'Roboto Mono', monospace; --en-menu-font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+/* font-family: 'Poppins', sans-serif; --en-txt-font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root {
+  --kr-txt-font:"pretendard", -apple-system, BlinkMacSystemFont,
+  "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+  --en-menu-font:'Roboto Mono', monospace;
+
+  --en-txt-font: 'Poppins', sans-serif;
+
+  /* 컬러 */
+  --txt-color: #171717;
+  --txt-sub-color: #888888;
+  --point-color:#0A4D68;
+  /* 폰트 사이즈 */
+  --font-size-14: 0.875rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+  --font-size-46: 2.875rem;
+  --font-size-50: 3.125rem;
+  --font-size-128: 8rem;
+  --font-size-230:14.375rem;
+  --main-size-250:15.625rem;
+
+
+
+  --font-size-20: 1.25rem;
+  --font-size-28: 1.75rem;
+  --font-size-34: 2.125rem;
+  --font-size-40: 2.5rem;
+}
+
+/* 글씨 옆으로 흘러가는거 */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 10vw));
+  }
+}
