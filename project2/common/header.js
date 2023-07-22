@@ -10,10 +10,11 @@ $(window).on("scroll", () => {
 
   // 이전 스크롤값이 크면 트루, 스크루 올리면 헤더보임
   if (prescroll > scroll) {
-    $("nav").css({ top: 0 });
+    // $(".header_bar").css({ top: 0 });
+    $(".header_bar").css({ top: 0 });
   } else {
     // 이후 스크롤값이 크면 풜스, 스크루 올리면 헤더가려짐
-    $("nav").css({ top: -70 });
+    $(".header_bar").css({ top: -70 });
   }
 
   prescroll = scroll;

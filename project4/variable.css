@@ -4,25 +4,25 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
 /* font-family: 'Roboto Mono', monospace; --en-menu-font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
 
 /* font-family: 'Poppins', sans-serif; --en-txt-font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 :root {
-  --kr-txt-font:"pretendard", -apple-system, BlinkMacSystemFont,
-  "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --kr-txt-font: "pretendard", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
-  --en-menu-font:'Roboto Mono', monospace;
+  --en-menu-font: "Roboto Mono", monospace;
 
-  --en-txt-font: 'Poppins', sans-serif;
+  --en-txt-font: "Poppins", sans-serif;
 
   /* 컬러 */
   --txt-color: #171717;
   --txt-sub-color: #888888;
-  --point-color:#0A4D68;
+  --point-color: #0a4d68;
   /* 폰트 사이즈 */
+  --font-size-12: 0.75rem;
   --font-size-14: 0.875rem;
   --font-size-18: 1.125rem;
   --font-size-20: 1.25rem;
@@ -31,10 +31,8 @@
   --font-size-46: 2.875rem;
   --font-size-50: 3.125rem;
   --font-size-128: 8rem;
-  --font-size-230:14.375rem;
-  --main-size-250:15.625rem;
-
-
+  --font-size-230: 14.375rem;
+  --main-size-250: 15.625rem;
 
   --font-size-20: 1.25rem;
   --font-size-28: 1.75rem;
@@ -52,3 +50,20 @@
     transform: translateX(calc(-100% - 10vw));
   }
 }
+
+/* @keyframes menu1 {
+  0%,
+  100% {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+}
+@keyframes menu2 {
+  0%,
+  100% {
+    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+} */
