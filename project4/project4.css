@@ -39,10 +39,6 @@ span {
   background-color: var(--txt-color);
   color: #ffffff;
 }
-/***** header *****/
-header {
-  /* padding: 40px 60px; */
-}
 header .header-wrapper {
   padding: 40px 60px;
   width: 100%;
@@ -91,7 +87,7 @@ header .header-wrapper nav .global-nav li:last-child a {
   font-size: var(--main-size-250);
   letter-spacing: -5px;
   flex-shrink: 0;
-  animation: slide 10s linear infinite;
+  animation: slide 20s linear infinite;
   padding-top: 50px;
 }
 .title {
@@ -156,16 +152,26 @@ header .header-wrapper nav .global-nav li:last-child a {
 .title .left .side02 {
   padding-left: 20px;
 }
-.title .right {
+.title .right,
+.main-sub02 .right {
+  position: relative;
+}
+.title .right img,
+.main-sub02 .right img {
   width: 740px;
   height: 740px;
-  background-color: #ddd;
-  text-indent: -9999px;
-  background: url(./images/main_01.jpg) no-repeat 50% / cover;
-  /* transition: 0.3s; */
+  cursor: pointer;
 }
-.title .right:hover {
-  background: url(./images/main_01bg.png) no-repeat 50% / cover;
+.title .right .correction,
+.main-sub02 .right .correction {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.7s;
+}
+.title .right .correction:hover,
+.main-sub02 .right .correction:hover {
+  opacity: 1;
 }
 /*** sub01 ***/
 .main-sub01 {
@@ -181,6 +187,8 @@ header .header-wrapper nav .global-nav li:last-child a {
   height: 465px;
   background: url(./images/main_02.jpg) no-repeat 50% / cover;
   text-indent: -9999px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .main-sub01 .sub01 .left:hover {
   filter: grayscale(100%);
@@ -215,6 +223,7 @@ header .header-wrapper nav .global-nav li:last-child a {
   border-bottom: 0.5px solid var(--txt-color);
   padding: 15px 0;
   justify-content: space-between;
+  cursor: pointer;
 }
 .main-sub02 .sub02 .order li p {
   transition: 0.5s;
@@ -227,15 +236,6 @@ header .header-wrapper nav .global-nav li:last-child a {
 }
 .main-sub02 .sub02 .order li:last-child {
   border: none;
-}
-.main-sub02 .sub02 .right {
-  width: 740px;
-  height: 740px;
-  background: url(./images/main_03.jpg) no-repeat 50% / cover;
-  text-indent: -9999px;
-}
-.main-sub02 .sub02 .right:hover {
-  background: url(./images/main_03bg.jpg) no-repeat 50% / cover;
 }
 /*** grafen ***/
 .main-grafen {
@@ -277,7 +277,7 @@ header .header-wrapper nav .global-nav li:last-child a {
   width: 1000px;
   height: 500px;
   text-indent: -9999px;
-  background: fixed url(./images/works_01.jpg) no-repeat 50% 80% / cover;
+  background: fixed url(./images/works_01.jpg) no-repeat 300px 80% / cover;
 }
 /*** kahi ***/
 .main-kahi {
@@ -290,7 +290,7 @@ header .header-wrapper nav .global-nav li:last-child a {
   width: 1000px;
   height: 500px;
   text-indent: -9999px;
-  background: fixed url(./images/works_02.png) no-repeat 50% 80% / cover;
+  background: fixed url(./images/works_02.png) no-repeat 80% / cover;
 }
 .main-kahi .kahi .work_right {
   width: calc(100% - 1060px);
@@ -350,7 +350,7 @@ header .header-wrapper nav .global-nav li:last-child a {
 .main-uriage .uriage .work_right {
   width: 1000px;
   height: 500px;
-  background: fixed url(./images/works_03.jpg) no-repeat 20% / cover;
+  background: fixed url(./images/works_03.jpg) no-repeat 300px center / cover;
 }
 /*** product ***/
 .main-product {
@@ -366,39 +366,23 @@ header .header-wrapper nav .global-nav li:last-child a {
   justify-content: space-between;
   padding-top: 60px;
 }
-.main-product .product .img_box01 h3,
-.main-product .product .img_box02 h3,
-.main-product .product .img_box03 h3,
-.main-product .product .img_box04 h3 {
+.main-product .box h3 {
+  position: relative;
+}
+.main-product .box img {
   width: 350px;
   height: 350px;
-  text-indent: -9999px;
-  margin-bottom: 10px;
+  cursor: pointer;
+  object-fit: cover;
 }
-.main-product .product .img_box01 h3 {
-  background: url(./images/product_01.png) no-repeat 50% / cover;
+.main-product .box .correction {
+  position: absolute;
+  top: -350px;
+  opacity: 0;
+  transition: 0.7s;
 }
-.main-product .product .img_box01 h3:hover {
-  /* background: url(./images/product_01bg.png) 50% / cover; */
-  background-image: url(./images/product_01bg.png);
-}
-.main-product .product .img_box02 h3 {
-  background: url(./images/product_02.jpg) no-repeat 50% / cover;
-}
-.main-product .product .img_box02 h3:hover {
-  background-image: url(./images/product_02bg.png);
-}
-.main-product .product .img_box03 h3 {
-  background: url(./images/product_03.jpg) no-repeat 50% / cover;
-}
-.main-product .product .img_box03 h3:hover {
-  background-image: url(./images/product_03bg.png);
-}
-.main-product .product .img_box04 h3 {
-  background: url(./images/product_04.jpg) no-repeat 50% / cover;
-}
-.main-product .product .img_box04 h3:hover {
-  background-image: url(./images/product_04bg.png);
+.main-product .box:hover .correction {
+  opacity: 1;
 }
 .main-product .product .box h2 {
   font-size: var(--font-size-20);
@@ -430,14 +414,14 @@ footer {
   padding: 60px;
   justify-content: space-between;
   align-items: center;
+  line-height: 2;
 }
 footer .information {
   text-transform: uppercase;
 }
-footer .information li {
-  line-height: 2;
-}
 footer .information img {
   width: 120px;
   padding-bottom: 30px;
+}
+footer .information .daeun {
 }
