@@ -25,55 +25,64 @@ window.addEventListener("load", () => {
 ////// fade in 효과
 AOS.init();
 
-// a 기본값 삭제
+////// a 기본값 삭제
 $('a[href="#"]').on("click", (e) => {
   e.preventDefault();
 });
 
-// 지도
-var container = document.getElementById("map");
-var options = {
-  center: new kakao.maps.LatLng(37.53028, 126.919851),
-  level: 3,
-  mapTypeId: kakao.maps.MapTypeId.ROADMAP, // 지도종류
-};
+//////// 화살표 마우스 이벤트
+const follow1 = document.querySelector(".follow1");
+const follow2 = document.querySelector(".follow2");
+const follow3 = document.querySelector(".follow3");
+addEventListener("mousemove", (evt) => {
+  let x = evt.clientX,
+    y = evt.clientY;
+  // console.log(x, y);
 
-// 타일 로드가 완료되면 지도 중심에 마커를 표시합니다
-kakao.maps.event.addListener(map, "tilesloaded", displayMarker);
+  follow1.style.transform = `translate(${x / 15}px,${y / 15}px)`;
+  follow2.style.transform = `translate(${x / 15}px,${y / 15}px)`;
+  follow3.style.transform = `translate(${x / 15}px,${y / 15}px)`;
+});
 
+var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+  mapOption = {
+    center: new kakao.maps.LatLng(37.530348, 126.91991),
+    level: 3, // 지도의 확대 레벨
+    mapTypeId: kakao.maps.MapTypeId.ROADMAP,
+  };
+
+////// kakao api
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
-var marker = new kakao.maps.Marker();
+// 마커가 표시될 위치입니다
+var markerPosition = new kakao.maps.LatLng(37.530348, 126.91991);
 
-// 타일 로드가 완료되면 지도 중심에 마커를 표시합니다
-kakao.maps.event.addListener(map, "tilesloaded", displayMarker);
-
-function displayMarker() {
-  // 마커의 위치를 지도중심으로 설정합니다
-  marker.setPosition(map.getCenter());
-  marker.setMap(map);
-}
-// 마우스 휠과 모바일 터치를 이용한 지도 확대, 축소를 막는다
-map.setZoomable(false);
-
-// 지도에 확대 축소 컨트롤을 생성
-var zoomControl = new kakao.maps.ZoomControl();
-
-// 지도의 우측에 확대 축소 컨트롤을 추가한다
-map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-
-////// 안보였다가 나타나기
-$(document).ready(function () {
-  /* 1 */
-  $(window).scroll(function () {
-    /* 2 */
-    $(".hidden").each(function (i) {
-      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-      /* 3 */
-      if (bottom_of_window > bottom_of_object / 2) {
-        $(this).animate({ opacity: "1" }, 500);
-      }
-    });
-  });
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+  position: markerPosition,
 });
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);
+
+////// 커서이벤트 작동 안됨..
+// const circle = document.querySelector(".circle");
+
+// document.addEventListener("mousemove", (e) => {
+//   // mousemove이벤트를 이용해 움
+
+//   // 마우스의 좌표는 clientX와 clientY를 이용해 알수 있다. -> 브라우저 window의 좌표값 위치를 전달한다.
+
+//   // pageX, pageY와는 다름.
+
+//   const mouseX = e.clientX;
+
+//   const mouseY = e.clientY;
+
+//   circle.style.left = mouseX + "px";
+
+//   circle.style.top = mouseY + "px";
+// });

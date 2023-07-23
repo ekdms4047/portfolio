@@ -30,15 +30,43 @@ span {
   background-color: var(--txt-color);
   transform: rotate(-50deg);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   align-items: center;
   justify-content: center;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--point-color);
+  border-radius: 10px;
 }
 ::selection {
   background-color: var(--txt-color);
   color: #ffffff;
 }
+.circle {
+  /* 마우스를 따라다니는 원 설정 */
+
+  /* width: 3rem;
+  height: 3rem;
+  border: 2px solid var(--point-color);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background-size, transform;
+  transform-origin: 100% 100%;
+  backdrop-filter: sepia(20%);
+  background-size: cover; */
+}
+/***** header *****/
 header .header-wrapper {
   padding: 40px 60px;
   width: 100%;
@@ -160,7 +188,7 @@ header .header-wrapper nav .global-nav li:last-child a {
 .main-sub02 .right img {
   width: 740px;
   height: 740px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .title .right .correction,
 .main-sub02 .right .correction {
@@ -188,7 +216,7 @@ header .header-wrapper nav .global-nav li:last-child a {
   background: url(./images/main_02.jpg) no-repeat 50% / cover;
   text-indent: -9999px;
   transition: 0.5s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .main-sub01 .sub01 .left:hover {
   filter: grayscale(100%);
@@ -269,6 +297,7 @@ header .header-wrapper nav .global-nav li:last-child a {
 .main-grafen .grafen .work_left p {
   align-items: center;
   text-transform: uppercase;
+  font-family: var(--en-menu-font);
 }
 .main-grafen .grafen .work_left p span {
   margin-right: 7px;
@@ -278,6 +307,19 @@ header .header-wrapper nav .global-nav li:last-child a {
   height: 500px;
   text-indent: -9999px;
   background: fixed url(./images/works_01.jpg) no-repeat 300px 80% / cover;
+  position: relative;
+  cursor: pointer;
+}
+.main-grafen .grafen .work_right .follow1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%);
+  width: 50px;
+  opacity: 0;
+}
+.main-grafen .grafen .work_right:hover .follow1 {
+  opacity: 1;
 }
 /*** kahi ***/
 .main-kahi {
@@ -291,6 +333,19 @@ header .header-wrapper nav .global-nav li:last-child a {
   height: 500px;
   text-indent: -9999px;
   background: fixed url(./images/works_02.png) no-repeat 80% / cover;
+  position: relative;
+  cursor: pointer;
+}
+.main-kahi .kahi .work_left .follow2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%);
+  width: 50px;
+  opacity: 0;
+}
+.main-kahi .kahi .work_left:hover .follow2 {
+  opacity: 1;
 }
 .main-kahi .kahi .work_right {
   width: calc(100% - 1060px);
@@ -315,6 +370,7 @@ header .header-wrapper nav .global-nav li:last-child a {
 .main-kahi .kahi .work_right p {
   align-items: center;
   text-transform: uppercase;
+  font-family: var(--en-menu-font);
 }
 /*** uriage ***/
 .main-uriage {
@@ -343,6 +399,7 @@ header .header-wrapper nav .global-nav li:last-child a {
 .main-uriage .uriage .work_left p {
   align-items: center;
   text-transform: uppercase;
+  font-family: var(--en-menu-font);
 }
 .main-uriage .uriage .work_left p span {
   margin-right: 7px;
@@ -351,6 +408,19 @@ header .header-wrapper nav .global-nav li:last-child a {
   width: 1000px;
   height: 500px;
   background: fixed url(./images/works_03.jpg) no-repeat 300px center / cover;
+  position: relative;
+  cursor: pointer;
+}
+.main-uriage .uriage .work_right .follow3 {
+  width: 50px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%);
+  opacity: 0;
+}
+.main-uriage .uriage .work_right:hover .follow3 {
+  opacity: 1;
 }
 /*** product ***/
 .main-product {
