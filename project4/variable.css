@@ -22,7 +22,7 @@
   --txt-sub-color: #888888;
   --point-color: #159895;
   /* 폰트 사이즈 */
-  --font-size-12: 0.75rem;
+  /* --font-size-12: 0.75rem;
   --font-size-14: 0.875rem;
   --font-size-18: 1.125rem;
   --font-size-20: 1.25rem;
@@ -32,12 +32,18 @@
   --font-size-50: 3.125rem;
   --font-size-128: 8rem;
   --font-size-230: 14.375rem;
-  --main-size-250: 15.625rem;
-
-  --font-size-20: 1.25rem;
-  --font-size-28: 1.75rem;
-  --font-size-34: 2.125rem;
-  --font-size-40: 2.5rem;
+  --main-size-250: 15.625rem; */
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-46: 46px;
+  --font-size-50: 50px;
+  --font-size-128: 128px;
+  --font-size-230: 230px;
+  --main-size-250: 250px;
 }
 
 /* 글씨 옆으로 흘러가는거 */
@@ -50,7 +56,56 @@
     transform: translateX(calc(-100% - 10vw));
   }
 }
+@keyframes horizontal {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-50deg);
+  }
+  50% {
+    transform: translate(35px, -35px) rotate(-50deg);
+  }
+  50.001% {
+    transform: translate(-35px, 35px) rotate(-50deg);
+  }
+  /* 75% {
+    transform: translate(30px, -30px) rotate(-50deg);
+    opacity: 0;
+  } */
+}
 
+@keyframes menu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+}
+@keyframes shrink {
+  0% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
 /* @keyframes menu1 {
   0%,
   100% {
