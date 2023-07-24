@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+@media (max-width: 1440px) {
+  /*** product ***/
+  .main-product .product .box p {
+    flex-direction: column;
+    text-align: left;
+  }
+  .main-product .product .box p span {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 1221px) {
+  /*** title ***/
+  .main-title h1 {
+    font-size: 220px;
+  }
+  .title .left {
+    padding: 30px 0;
+  }
+  .title .left h2 {
+    font-size: 36px;
+  }
+  .title .left .side h3 {
+    font-size: 20px;
+  }
+  /*** sub01 ***/
+  .main-sub01 .sub01 .right {
+    font-size: 36px;
+  }
+  /*** sub02 ***/
+  .main-sub02 .sub02 .left {
+    padding: 30px 0 5px;
+  }
+  .main-sub02 .sub02 .left h2 {
+    font-size: 36px;
+  }
+  .main-sub02 .sub02 .order {
+    font-size: 20px;
+  }
+  .main-sub02 .sub02 .order li {
+    padding: 10px 0;
+  }
+  /*** grafen ***/
+  .main-grafen h2 {
+    font-size: 200px;
+  }
+  .main-grafen .grafen .work_left h5,
+  .main-kahi .kahi .work_right h5,
+  .main-uriage .uriage .work_left h5 {
+    padding-bottom: 7vw;
+  }
+  /*** uriage ***/
+  .main-uriage {
+    padding: 3vw 3vw 5vw;
+  }
+  /*** product ***/
+  .main-product .product .box p {
+    flex-direction: column;
+    text-align: left;
+  }
+  .main-product .product .box p span {
+    padding-top: 5px;
+    width: 160px;
+    /* text-align: right; */
+  }
+}
+@media (max-width: 1000px) {
+  .same {
+    display: inline;
+  }
+  /*** title ***/
+  .title {
+    position: relative;
+    overflow: hidden;
+    height: 135vw;
+    /* height: 100%; */
+    padding: 0 5vw;
+  }
+  .main-title h1 {
+    font-size: 190px;
+  }
+  .title .left {
+    position: absolute;
+    top: 90vw;
+    width: calc(100% - 12vw);
+  }
+  .title .left h2 {
+    font-size: 46px;
+    padding-bottom: 20px;
+  }
+  .title .left p {
+    padding-bottom: 80px;
+  }
+  .title .left .side_box {
+    align-self: flex-start;
+  }
+  .title .right img,
+  .title .right .correction {
+    width: 90vw;
+    height: 90vw;
+    position: absolute;
+    top: 0;
+    /* overflow: hidden; */
+  }
+  /*** sub01 ***/
+  .main-sub01 {
+    position: relative;
+    overflow: hidden;
+    height: 110vw;
+    padding: 0 5vw;
+  }
+  .main-sub01 .sub01 .right {
+    position: absolute;
+    /* bottom: 0; */
+    top: 94vw;
+    padding-bottom: 100px;
+    font-size: 46px;
+    width: calc(100% - 12vw);
+  }
+  .main-sub01 .sub01 .left {
+    width: 90vw;
+    height: 90vw;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+  }
+  /*** sub02 ***/
+  .main-sub02 {
+    position: relative;
+    overflow: hidden;
+    height: 150vw;
+    padding: 3vw 5vw;
+  }
+  .main-sub02 .right {
+    width: 90vw;
+    height: 90vw;
+    position: absolute;
+    top: 0;
+    /* overflow: hidden; */
+  }
+  .main-sub02 .right img {
+    width: 90vw;
+    height: 90vw;
+    position: absolute;
+    overflow: hidden;
+  }
+  .main-sub02 .sub02 .left {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 12vw);
+    padding: 0;
+  }
+  .main-sub02 .sub02 .left h2 {
+    font-size: 46px;
+  }
+  .main-sub02 .sub02 .order li {
+    font-size: 32px;
+    padding: 12px;
+  }
+  .main-sub02 .sub02 .order {
+    font-size: 18px;
+    padding-top: 50px;
+  }
+  /*** grafen ***/
+  .main-grafen {
+    padding: 5vw;
+  }
+  .main-grafen h2 {
+    font-size: 170px;
+  }
+  .main-grafen .grafen .work_left h2,
+  .main-kahi .kahi .work_right h2,
+  .main-uriage .uriage .work_left h2 {
+    font-size: 36px;
+  }
+  .main-grafen .grafen .work_left,
+  .main-kahi .kahi .work_right,
+  .main-uriage .uriage .work_left {
+    padding: 0;
+  }
+  .main-grafen .grafen .work_left h3,
+  .main-kahi .kahi .work_right h3,
+  .main-uriage .uriage .work_left h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .main-grafen .grafen .work_left h5,
+  .main-kahi .kahi .work_right h5,
+  .main-uriage .uriage .work_left h5 {
+    font-size: 14px;
+  }
+  .main-kahi {
+    padding: 0 5vw;
+  }
+  /*** uriage ***/
+  .main-uriage {
+    padding: 5vw;
+  }
+  /*** product ***/
+  .main-product .product {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .main-product .product .box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-product .box img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .main-product .box .correction {
+    top: -40vw;
+  }
+  .main-product .product .box p span {
+    width: 100%;
+  }
+  .main-product .product .img_box01,
+  .img_box02 {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  header .header-wrapper {
+    padding: 20px 5vw;
+  }
+  .title {
+    height: 137vw;
+  }
+  .main .title {
+  }
+  .main-title h1 {
+    font-size: 100px;
+    padding-top: 70px;
+  }
+  .title .left p {
+    padding-bottom: 30px;
+  }
+  .title .left h2,
+  .main-sub01 .sub01 .right,
+  .main-sub02 .sub02 .left h2 {
+    font-size: 36px;
+  }
+  .main-sub02 {
+    height: 150vw;
+  }
+  .main-sub02 .sub02 .order {
+    padding-top: 30px;
+  }
+  .main-sub02 .sub02 .order li {
+    font-size: 24px;
+  }
+  .main-grafen h2 {
+    font-size: 100px;
+  }
+
+  .main-grafen .grafen .work_left,
+  .main-kahi .kahi .work_right,
+  .main-uriage .uriage .work_left {
+    width: calc(100% - 48vw);
+  }
+  .main-grafen .grafen .work_left h5,
+  .main-kahi .kahi .work_right h5,
+  .main-uriage .uriage .work_left h5 {
+    padding-bottom: 1vw;
+  }
+  .main-grafen .grafen .work_right,
+  .main-uriage .uriage .work_right {
+    width: 42vw;
+    height: 42vw;
+    background-position: 170px;
+  }
+  .main-kahi .kahi .work_left {
+    width: 42vw;
+    height: 42vw;
+  }
+  .main-grafen .grafen .work_left h5,
+  .main-kahi .kahi .work_right h5,
+  .main-uriage .uriage .work_left h5 {
+    padding-bottom: 50%;
+  }
+  .main-product {
+    padding: 5vw;
+  }
+  .main-product .product {
+    padding-top: 20px;
+  }
+  .main-product .product .box {
+    width: fit-content;
+  }
+  .main-product h2 {
+    font-size: 48px;
+  }
+  .main-product .box img {
+    width: 43vw;
+    height: 60vw;
+  }
+  .main-product .box .correction {
+    top: -60vw;
+  }
+}
+@media (max-width: 480px) {
+  .main-title h1 {
+    font-size: 60px;
+    letter-spacing: 0;
+  }
+  .title {
+    height: 185vw;
+    /* justify-content: center; */
+  }
+  .title .left {
+    top: 85vw;
+  }
+  .title .right img {
+    /* position: inherit; */
+  }
+  .title .right .correction {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+  }
+  .main-sub01 {
+    height: 125vw;
+  }
+  .main-sub02 {
+    height: 195vw;
+  }
+  .main-grafen h2 {
+    font-size: 44px;
+  }
+  .main-kahi .kahi {
+    flex-direction: column;
+  }
+  .main-grafen .grafen,
+  .main-uriage .uriage {
+    flex-direction: column-reverse;
+    width: fit-content;
+  }
+  .main-grafen .grafen .work_right {
+    background: fixed url(./images/works_01.jpg) no-repeat 50% / cover;
+    width: 88vw;
+    height: 88vw;
+  }
+  .main-kahi .kahi .work_left {
+    background: fixed url(./images/works_02.png) no-repeat 50% / cover;
+    width: 88vw;
+    height: 88vw;
+  }
+  .main-uriage .uriage .work_right {
+    background: fixed url(./images/works_03.jpg) no-repeat 50% / cover;
+    width: 88vw;
+    height: 88vw;
+  }
+  .main-grafen .grafen .work_left,
+  .main-kahi .kahi .work_right,
+  .main-uriage .uriage .work_left {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .main-grafen .grafen .work_left h5,
+  .main-kahi .kahi .work_right h5,
+  .main-uriage .uriage .work_left h5 {
+    padding-bottom: 10%;
+  }
+  .main-product {
+    padding: 5vw 5vw 0;
+  }
+  .main-product .box img {
+    width: 88vw;
+    height: 120vw;
+  }
+  .main-product .box .correction {
+    top: -120vw;
+  }
+  .main-product .product .box h2 {
+    font-size: 24px;
+  }
+  .main-product .product .box p {
+    font-size: 14px;
+    padding-top: 15px;
+  }
+  .main-product .product .box p span {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  .main-product .product .img_box01,
+  .img_box02,
+  .img_box03,
+  .img_box04 {
+    padding-bottom: 30px;
+  }
+  .location {
+    padding: 0 5vw 5vw;
+  }
+  #map {
+    /* width: 100vw; */
+    height: 300px;
+  }
+  footer {
+    flex-direction: column;
+    font-size: 12px;
+  }
+  footer .information {
+    padding-bottom: 50px;
+  }
+  footer .daeun {
+    width: 100%;
+    font-size: 14px;
+  }
+}

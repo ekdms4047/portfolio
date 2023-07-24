@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>project4</title>
   <!-- favicon -->
@@ -15,6 +16,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="./project4.css">
+  <link rel="stylesheet" href="./project4mq.css">
   <!-- script -->
   <script src="../common/jquery-3.7.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
@@ -27,6 +29,9 @@
 
 <body>
   <!-- header -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
   <header class="flex">
     <div class="header-wrapper flex">
       <p>
@@ -48,15 +53,15 @@
     <h1>eco-friendly products</h1>
     <h1>eco-friendly products</h1>
   </article>
-  <div class="title flex" data-aos="fade-up" data-aos-duration="2000">
+  <div class="title flex">
     <div class="left flex">
       <h2>
-        리베이션은 <br>LESS PLASTIC SOLUTION으로<br>플라스틱 대비
-        98%이상의탄소를 <br>절감시켰습니다.
+        리베이션은 <br>LESS PLASTIC SOLUTION으로 플라스틱 <br>대비
+        98% 이상의 탄소를<span class="same"> 절감 시켰습니다.</span>
       </h2>
       <p>
-        The renovation is LESS PLASTIC SOLUTION We've reduced <br>carbon by
-        more than 98% less carbon.
+        The renovation is LESS PLASTIC SOLUTION We've reduced <span class="same">carbon by
+          more than 98% less carbon.</span>
       </p>
       <div class="side_box flex">
         <div class="side01 side flex">
@@ -77,7 +82,8 @@
         </div>
       </div>
     </div>
-    <div class="right">
+    <!-- width 740 px bg -->
+    <div class="right" cursor-class="arrow">
       <!-- width 740px bg-->
       <h2><img src="./images/main_01.jpg" alt=""></h2>
       <h2><img src="./images/main_01bg.png" alt="" class="correction"></h2>
@@ -85,26 +91,26 @@
   </div>
   <!-- sub01 -->
   <article class="main-sub01">
-    <div class="sub01 flex" data-aos="fade-up" data-aos-duration="2000">
-      <div class="left flex">
+    <div class="sub01 flex">
+      <div class="left flex" cursor-class="arrow">
         <!-- width 465 px bg -->
         <h2>이미지</h2>
       </div>
       <div class="right flex">
         <h2>
-          창의적사고, 디테일, 끊임없는 도전을 통해 우리는<br>친환경 제품을
-          만들어갑니다.
+          창의적사고, 디테일, 끊임없는 도전을 통해 <span class="same">우리는 친환경 제품을
+            만들어갑니다.</span>
         </h2>
       </div>
     </div>
   </article>
   <!-- sub02 -->
   <article class="main-sub02">
-    <div class="sub02 flex" data-aos="fade-up" data-aos-duration="2000">
+    <div class="sub02 flex">
       <div class="left flex">
         <h2>
-          지구와 환경을 위한 책임, 지속 가능한 <br>미래를 위해 저희는
-          환경솔루션의 <br>일부가 되기로 하였습니다.
+          지구와 환경을 위한 책임, 지속 가능한 미래를 위해 저희는
+          환경솔루션의 일부가 되기로 하였습니다.
         </h2>
         <ul class="order">
           <li class="flex">
@@ -129,7 +135,7 @@
           </li>
         </ul>
       </div>
-      <div class="right">
+      <div class="right" cursor-class="arrow">
         <!-- width 740 px bg -->
         <h2><img src="./images/main_03.jpg" alt=""></h2>
         <h2>
@@ -142,7 +148,7 @@
   <article class="main-grafen">
     <h2 class="hidden" data-aos="fade-up" data-aos-duration="1500">works</h2>
     <div class="grafen flex">
-      <div class="work_left" data-aos="fade-up" data-aos-duration="3000">
+      <div class="work_left">
         <h2 class="hidden">grafen</h2>
         <h3>Reduce Plastic & Biodegradable paper</h3>
         <h5>그라펜 퍼퓸 빈지노 리미티드 프로젝트</h5>
@@ -165,7 +171,7 @@
         <!-- width : 1000, height : 500 -->
         <img src="./images/arrow_bg.png" alt="arrow" class="follow2">
       </div>
-      <div class="work_right" data-aos="fade-up" data-aos-duration="3000">
+      <div class="work_right">
         <h2 class="hidden">kahi</h2>
         <h3>Reduce Plastic & Biodegradable paper</h3>
         <h5>그라펜 퍼퓸 빈지노 리미티드 프로젝트</h5>
@@ -180,7 +186,7 @@
   <!-- uriage -->
   <article class="main-uriage">
     <div class="uriage flex">
-      <div class="work_left" data-aos="fade-up" data-aos-duration="3000">
+      <div class="work_left">
         <h2 class="hidden">uriage</h2>
         <h3>Durasence & Biodegradable</h3>
         <h5>URIAGE Xemose PSO 스탠드 캡 프로젝트</h5>
@@ -201,7 +207,7 @@
       product
     </h2>
     <div class="product flex">
-      <div class="img_box01 box" data-aos="fade-up" data-aos-duration="2000">
+      <div class="img_box01 box">
         <a href="#">
           <h2>DURASENCE</h2>
           <!-- width 400 px -->
@@ -211,12 +217,12 @@
           </h3>
           <p class="flex">
             듀라 센스
-            <span>우드 바이오 베이스 소재로  탄소 저감이 가능한 소재 <br>기존
+            <span>우드 바이오 베이스 소재로 탄소 저감이 가능한 소재 <br>기존
               플라스틱 만큼 우수한 가격 경쟁력을 제공</span>
           </p>
         </a>
       </div>
-      <div class="img_box02 box" data-aos="fade-up" data-aos-duration="2000">
+      <div class="img_box02 box">
         <a href="#">
           <h2>LIMEX</h2>
           <!-- width 400 -->
@@ -232,7 +238,7 @@
           </p>
         </a>
       </div>
-      <div class="img_box03 box" data-aos="fade-up" data-aos-duration="2000">
+      <div class="img_box03 box">
         <a href="#">
           <h2>COFFEE CHIP</h2>
           <!-- width 400 -->
@@ -248,7 +254,7 @@
           </p>
         </a>
       </div>
-      <div class="img_box04 box" data-aos="fade-up" data-aos-duration="2000">
+      <div class="img_box04 box">
         <a href="#">
           <h2>ECO CHIP</h2>
           <!-- width 400 -->
@@ -258,7 +264,7 @@
           </h3>
           <p class="flex">
             에코 칩
-            <span>PEI 소재를 활용한 신소재국내 최초 레진 R&D 완료 <br>효과와
+            <span>PEI 소재를 활용한 신소재 국내 최초 레진 R&D 완료 <br>효과와
               디자인 표현이 뛰어나 차별화된 디자인 표현 가능
             </span>
           </p>
