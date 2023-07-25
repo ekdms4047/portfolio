@@ -154,7 +154,7 @@ header .header-wrapper nav .global-nav li:last-child {
   letter-spacing: 1px;
   font-weight: 500;
 }
-.title .left h2 .same {
+.title .left .same {
   font-size: var(--font-size-22);
   line-height: 100%;
   font-family: var(--kr-txt-font);
@@ -183,14 +183,14 @@ header .header-wrapper nav .global-nav li:last-child {
 .title .left .side h3 {
   /* color: var(--txt-sub-color); */
   font-size: var(--font-size-20);
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .title .left .side h3::before {
   width: 100%;
   content: "";
   display: block;
   border: 0.5px solid #ddd;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
 }
 .title .left .side h4 strong {
   font-size: var(--font-size-18);
@@ -255,12 +255,13 @@ header .header-wrapper nav .global-nav li:last-child {
   letter-spacing: 1px;
   position: relative;
 }
-.main-sub01 .sub01 .right .same {
+.main-sub01 .sub01 .same {
   font-size: var(--font-size-20);
   line-height: 100%;
   color: var(--txt-sub-color);
   position: absolute;
   bottom: 10%;
+  font-weight: 400;
 }
 /*** sub02 ***/
 .main-sub02 {
@@ -277,22 +278,25 @@ header .header-wrapper nav .global-nav li:last-child {
   flex-direction: column;
   justify-content: space-between;
   /* padding: 60px 0; */
+  position: relative;
 }
 .main-sub02 .sub02 .left h2 {
   /* font-size: var(--font-size-46); */
   font-size: var(--font-size-80);
   text-transform: uppercase;
-  line-height: 96px;
+  line-height: 80px;
 }
-.main-sub02 .sub02 .left h2 .same {
+.main-sub02 .sub02 .same {
   font-size: var(--font-size-20);
   color: var(--txt-sub-color);
   line-height: 100%;
   padding-top: 10px;
+  position: absolute;
+  top: 27%;
 }
 .main-sub02 .sub02 .order {
-  /* font-size: var(--font-size-32); */
-  font-size: var(--font-size-27);
+  /* font-size: var(--font-size-27); */
+  font-size: var(--font-size-22);
 }
 .main-sub02 .sub02 .order li {
   border-bottom: 1px solid var(--txt-sub-color);
@@ -546,7 +550,13 @@ footer .daeun {
   align-items: flex-end;
 }
 footer .daeun p a {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px double #ffffff;
   text-align: right;
   /* font-size: 18px; */
+  line-height: 80%;
+  padding: 5px 0;
+  transition: 0.5s;
+}
+footer .daeun p a:hover {
+  /* transform: scale(1.2); */
 }

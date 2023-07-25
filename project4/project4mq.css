@@ -24,8 +24,6 @@
   .title .left h2 {
     font-size: var(--font-size-66);
   }
-  .title .left h2 .same {
-  }
   .title .left .side h3 {
     font-size: 20px;
   }
@@ -48,17 +46,24 @@
     height: 41vw;
     background: url(./images/main_02.jpg) no-repeat 20% / cover;
   }
+  .main-sub01 .sub01 .right {
+    flex-direction: column;
+  }
   .main-sub01 .sub01 .right .same {
     font-size: var(--font-size-18);
+    padding-top: 5px;
   }
   /*** sub02 ***/
   .main-sub02 .sub02 .left {
     padding: 30px 0 5px;
   }
+  .main-sub02 .sub02 .same {
+    top: 30%;
+  }
   .main-sub02 .sub02 .left h2 {
     font-size: var(--font-size-66);
   }
-  .main-sub02 .sub02 .left h2 .same {
+  .main-sub02 .sub02 .same {
     font-size: var(--font-size-18);
   }
   .main-sub02 .sub02 .order {
@@ -214,7 +219,6 @@
     padding-top: 30px;
   }
   .main-sub02 .sub02 .order li {
-    font-size: 32px;
     padding: 12px;
   }
   .main-sub02 .sub02 .order {
@@ -290,6 +294,14 @@
   .location {
     padding: 5vw;
   }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .daeun {
+    align-items: flex-start;
+    padding-top: 50px;
+  }
 }
 /***** 태블릿 원사이즈 버전 *****/
 @media (max-width: 768px) {
@@ -315,8 +327,9 @@
   .title .left h2 {
     line-height: 100%;
   }
-  .title .left h2 .same {
+  .title .left .same {
     font-size: var(--font-size-18);
+    padding-bottom: 20px;
   }
   .title .left h2,
   .main-sub01 .sub01 .right,
@@ -324,12 +337,6 @@
     font-size: 44px;
     line-height: 100%;
     width: calc(100% - 3vw);
-  }
-  .title .left .side_box {
-    /* flex-direction: column; */
-  }
-  .title .left .side {
-    /* padding-bottom: 15px; */
   }
   .title .left .side02 {
     padding-left: 20px;
@@ -343,25 +350,16 @@
   .title .left .side h4 {
     font-size: var(--font-size-12);
   }
-  .main-sub01 {
-  }
-  .main-sub01 .sub01 .right {
-    /* padding: 0; */
-  }
   .main-sub01 .sub01 .right .same {
     position: inherit;
   }
   .main-sub02 {
   }
   .main-sub02 .sub02 {
-    /* padding: 0; */
     flex-direction: column-reverse;
   }
   .main-sub02 .sub02 .order {
     padding-top: 30px;
-  }
-  .main-sub02 .sub02 .order li {
-    font-size: 24px;
   }
   .main-grafen h2 {
     font-size: 100px;
@@ -454,8 +452,10 @@
   }
   .main-sub01 .sub01 .right .same {
     padding-top: 5px;
+    line-height: 1.5;
   }
-  .main-sub02 {
+  .main-sub02 .sub02 .same {
+    line-height: 1.5;
   }
   .main-grafen h2 {
     font-size: 44px;
