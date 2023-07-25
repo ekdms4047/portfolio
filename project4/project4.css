@@ -54,6 +54,9 @@ span {
   background-color: inherit;
   font-weight: 200;
 }
+header .header-wrapper .mobile_btn {
+  /* display: none; */
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -67,6 +70,9 @@ span {
 ::selection {
   background-color: var(--txt-color);
   color: #ffffff;
+}
+header nav .mobile_btn {
+  display: none;
 }
 /***** header *****/
 header .header-wrapper {

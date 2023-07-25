@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/***** pc 큰 버전 *****/
 @media (max-width: 1440px) {
   /*** product ***/
   .main-product .product .box p {
@@ -10,6 +11,7 @@
     padding-top: 5px;
   }
 }
+/***** pc 작은 버전 *****/
 @media (max-width: 1221px) {
   /*** title ***/
   .main-title h1 {
@@ -90,16 +92,49 @@
     font-size: var(--font-size-12);
   }
 }
+/***** 태블릿 큰 버전 *****/
 @media (max-width: 990px) {
-  .same {
-    /* display: ; */
+  header .header-wrapper nav .global-nav li {
+    display: none;
+  }
+  header .header-wrapper nav .global-nav li:last-child {
+    display: inherit;
+    position: absolute;
+    right: 10%;
+  }
+  header nav .mobile_btn {
+    display: inherit;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+  }
+  header nav .mobile_btn span {
+    display: block;
+    text-indent: -9999px;
+    width: 30px;
+    height: 1px;
+    transition: 0.4s;
+    background-color: #222;
+    border-radius: 16px;
+    position: relative;
+  }
+  header nav .mobile_btn span::before,
+  header nav .mobile_btn span::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    transition: 0.4s;
+    background-color: #222;
+    border-radius: 16px;
+  }
+  header nav .mobile_btn span::after {
+    top: 10px;
   }
   /*** title ***/
   .title {
-    /* position: relative; */
-    /* overflow: hidden; */
-    /* height: 135vw; */
-    /* height: 100%; */
     padding: 0 5vw;
     flex-direction: column-reverse;
   }
@@ -256,10 +291,10 @@
     padding: 5vw;
   }
 }
-/* 태블릿 */
+/***** 태블릿 원사이즈 버전 *****/
 @media (max-width: 768px) {
   header .header-wrapper {
-    padding: 20px 5vw;
+    padding: 30px 5vw;
   }
   .title {
     /* height: 130vw; */
@@ -380,7 +415,7 @@
     top: -60vw;
   }
 }
-/* 모바일 */
+/***** 모바일 *****/
 @media (max-width: 480px) {
   .title .left h2,
   .main-sub01 .sub01 .right,
@@ -390,6 +425,9 @@
   .main-title h1 {
     font-size: 60px;
     letter-spacing: 0;
+  }
+  header .header-wrapper nav .global-nav li:last-child {
+    display: none;
   }
   .title {
     /* justify-content: center; */
