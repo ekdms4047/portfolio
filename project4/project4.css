@@ -276,7 +276,7 @@ header .header-wrapper nav .global-nav li:last-child {
   /* 사진44vw 패딩 3vw */
   width: calc(100% - 47vw);
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* padding: 60px 0; */
   position: relative;
 }
@@ -290,9 +290,9 @@ header .header-wrapper nav .global-nav li:last-child {
   font-size: var(--font-size-20);
   color: var(--txt-sub-color);
   line-height: 100%;
-  padding-top: 10px;
-  position: absolute;
-  top: 27%;
+  padding: 10px 0 120px;
+  /* position: absolute; */
+  /* top: 27%; */
 }
 .main-sub02 .sub02 .order {
   /* font-size: var(--font-size-27); */

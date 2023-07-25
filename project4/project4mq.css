@@ -93,7 +93,6 @@
   .main-product .product .box p span {
     padding-top: 5px;
     width: 100%;
-    /* text-align: right; */
     font-size: var(--font-size-12);
   }
 }
@@ -207,7 +206,6 @@
   .main-sub02 .right img {
     width: 89vw;
     height: 89vw;
-    /* overflow: hidden; */
   }
   .main-sub02 .sub02 .left {
     width: 100%;
@@ -223,7 +221,7 @@
   }
   .main-sub02 .sub02 .order {
     font-size: 18px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
   /*** grafen ***/
   .main-grafen {
@@ -308,17 +306,10 @@
   header .header-wrapper {
     padding: 30px 5vw;
   }
-  .title {
-    /* height: 130vw; */
-  }
-  .main .title {
-  }
   .main-title h1 {
     font-size: 100px;
     padding: 70px 0 20px;
     line-height: 100%;
-  }
-  .title .left {
   }
   .title .left p {
     padding-bottom: 30px;
@@ -353,18 +344,15 @@
   .main-sub01 .sub01 .right .same {
     position: inherit;
   }
-  .main-sub02 {
-  }
   .main-sub02 .sub02 {
     flex-direction: column-reverse;
   }
-  .main-sub02 .sub02 .order {
-    padding-top: 30px;
+  .main-sub02 .sub02 .same {
+    padding: 10px 0 60px;
   }
   .main-grafen h2 {
     font-size: 100px;
   }
-
   .main-grafen .grafen .work_left,
   .main-kahi .kahi .work_right,
   .main-uriage .uriage .work_left {
@@ -427,12 +415,6 @@
   header .header-wrapper nav .global-nav li:last-child {
     display: none;
   }
-  .title {
-    /* justify-content: center; */
-  }
-  .title .left {
-    /* top: 85vw; */
-  }
   .title .left p {
     bottom: 25vw;
   }
@@ -440,15 +422,10 @@
     align-self: flex-start;
     padding-top: 0;
   }
-  .title .right img {
-    /* position: inherit; */
-  }
   .title .right .correction {
     position: absolute;
     top: 0;
     overflow: hidden;
-  }
-  .main-sub01 {
   }
   .main-sub01 .sub01 .right .same {
     padding-top: 5px;
@@ -456,6 +433,7 @@
   }
   .main-sub02 .sub02 .same {
     line-height: 1.5;
+    padding: 10px 0;
   }
   .main-grafen h2 {
     font-size: 44px;
@@ -525,7 +503,6 @@
     padding: 0 5vw 5vw;
   }
   #map {
-    /* width: 100vw; */
     height: 300px;
   }
   footer {
