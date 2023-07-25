@@ -6,11 +6,6 @@
 /* font-family: 'Roboto Mono', monospace; --en-menu-font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
 
-/* font-family: 'Poppins', sans-serif; --en-txt-font */
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"); */
-
-/* font-family: 'Inter', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 /* font-family: 'Nunito Sans', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap");
 
@@ -20,11 +15,12 @@
 
   --en-menu-font: "Roboto Mono", monospace;
 
-  --en-txt-font: "Nunito Sans", sans-serif;
+  --en-txt-font: "Nunito Sans", "Roboto", -apple-system, BlinkMacSystemFont,
+    sans-serif;
 
   /* 컬러 */
   --txt-color: #171717;
-  --txt-sub-color: rgba(17, 17, 17, 0.7);
+  --txt-sub-color: #666666;
   --point-color: #159895;
   /* 폰트 사이즈 */
   /* --font-size-12: 0.75rem;
@@ -83,10 +79,6 @@
   50.001% {
     transform: translate(-35px, 35px) rotate(-50deg);
   }
-  /* 75% {
-    transform: translate(30px, -30px) rotate(-50deg);
-    opacity: 0;
-  } */
 }
 /* menu span 두개 */
 @keyframes menu {
@@ -141,8 +133,8 @@
     margin-top: -50%;
     margin-left: -50%;
     border-radius: 50%;
-    border: solid 1px rgba(227, 222, 193, 0.64);
-    background-color: violet;
+    /* border: solid 1px rgba(227, 222, 193, 0.64); */
+    /* background-color: violet; */
     transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),

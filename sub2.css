@@ -219,6 +219,9 @@ header .global-nav li a:hover {
   padding: 5px 20px;
   margin-right: 15px;
 }
+.main-design .design .right {
+  width: 50%;
+}
 .main-design .design .right .top_box {
   font-family: var(--en-txt-font);
 }
@@ -242,7 +245,7 @@ header .global-nav li a:hover {
   text-align: center;
 }
 .main-design .design .right .bottom_box {
-  padding-right: 160px;
+  /* padding-right: 160px; */
 }
 .main-design .design .right .bottom_box h4 {
   font-size: var(--font-size-30);

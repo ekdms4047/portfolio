@@ -2,6 +2,9 @@
 
 /***** pc 큰 버전 *****/
 @media (max-width: 1440px) {
+  .main-sub02 .sub02 .same {
+    padding: 10px 0 10%;
+  }
   /*** product ***/
   .main-product .product .box p {
     flex-direction: column;

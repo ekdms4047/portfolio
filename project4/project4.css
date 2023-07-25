@@ -54,9 +54,6 @@ span {
   background-color: inherit;
   font-weight: 200;
 }
-header .header-wrapper .mobile_btn {
-  /* display: none; */
-}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -276,7 +273,7 @@ header .header-wrapper nav .global-nav li:last-child {
   /* 사진44vw 패딩 3vw */
   width: calc(100% - 47vw);
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   /* padding: 60px 0; */
   position: relative;
 }
@@ -290,12 +287,9 @@ header .header-wrapper nav .global-nav li:last-child {
   font-size: var(--font-size-20);
   color: var(--txt-sub-color);
   line-height: 100%;
-  padding: 10px 0 120px;
-  /* position: absolute; */
-  /* top: 27%; */
+  padding: 10px 0 15vw;
 }
 .main-sub02 .sub02 .order {
-  /* font-size: var(--font-size-27); */
   font-size: var(--font-size-22);
 }
 .main-sub02 .sub02 .order li {
@@ -357,9 +351,7 @@ header .header-wrapper nav .global-nav li:last-child {
   margin-right: 7px;
 }
 .main-grafen .grafen .work_right {
-  /* width: 1000px; */
   width: 52vw;
-  /* height: 500px; */
   height: 26vw;
   background: fixed url(./images/works_01.jpg) no-repeat 300px 80% / cover;
   position: relative;
@@ -434,7 +426,6 @@ header .header-wrapper nav .global-nav li:last-child {
   justify-content: space-between;
 }
 .main-uriage .uriage .work_left {
-  /* 사진 52vw 패딩 3vw */
   width: calc(100% - 55vw);
   padding: 1.5vw 0;
 }
@@ -461,9 +452,7 @@ header .header-wrapper nav .global-nav li:last-child {
   margin-right: 7px;
 }
 .main-uriage .uriage .work_right {
-  /* width: 1000px; */
   width: 52vw;
-  /* height: 500px; */
   height: 26vw;
   background: fixed url(./images/works_03.jpg) no-repeat 300px center / cover;
   position: relative;
@@ -487,9 +476,7 @@ header .header-wrapper nav .global-nav li:last-child {
   position: relative;
 }
 .main-product .box img {
-  /* width: 320px; */
   width: 20vw;
-  /* height: 320px; */
   height: 20vw;
   cursor: pointer;
   object-fit: cover;
@@ -509,7 +496,6 @@ header .header-wrapper nav .global-nav li:last-child {
   font-family: var(--en-menu-font);
 }
 .main-product .product .box p {
-  /* font-size: var(--font-size-16); */
   justify-content: space-between;
   text-align: right;
   padding-top: 10px;
@@ -552,11 +538,7 @@ footer .daeun {
 footer .daeun p a {
   border-bottom: 1px double #ffffff;
   text-align: right;
-  /* font-size: 18px; */
   line-height: 80%;
   padding: 5px 0;
   transition: 0.5s;
-}
-footer .daeun p a:hover {
-  /* transform: scale(1.2); */
 }
