@@ -133,8 +133,8 @@
     margin-top: -50%;
     margin-left: -50%;
     border-radius: 50%;
-    /* border: solid 1px rgba(227, 222, 193, 0.64); */
-    /* background-color: violet; */
+    border: solid 1px rgba(227, 222, 193, 0.64);
+    background-color: violet;
     transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
