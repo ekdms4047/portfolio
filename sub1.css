@@ -255,6 +255,8 @@ header .global-nav li a:hover {
 }
 .main-publishing .publishing .left {
   width: 52%;
+  flex-direction: column;
+  justify-content: center;
 }
 .main-publishing .publishing .right ul li {
   list-style: disc;
