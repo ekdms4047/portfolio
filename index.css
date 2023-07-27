@@ -5,7 +5,6 @@ body {
   transition-duration: 3s;
   transition-property: opacity text-shadow;
   text-shadow: 0 0 10px transparent;
-  cursor: none;
 }
 body.fade_out {
   opacity: 1;
@@ -47,20 +46,6 @@ img {
 }
 .flex {
   display: flex;
-}
-.cursor {
-  width: 30px;
-  height: 30px;
-  background-color: var(--point-color);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease;
-  /* transition-property: background-size, transform; */
-  transform-origin: 100% 100%;
-  backdrop-filter: sepia(20%);
-  background-size: cover;
 }
 /***** header *****/
 header {
