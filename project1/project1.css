@@ -411,7 +411,6 @@ input[id="hamburger"]:checked + label + div {
   line-height: 1.5;
 }
 .main-rental .rental .rental-box1:hover {
-  background: url(./images/vision02.png);
 }
 .main-rental .rental .rental-box1 h3 {
   font-size: var(--font-size-31);
