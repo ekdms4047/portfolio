@@ -1,0 +1,50 @@
+@media (min-width: 1600px) {
+  /***** header  *****/
+  header .header-wrapper {
+    padding: 25px 2vw;
+  }
+  header .header-wrapper .mobile_btn span {
+    display: none;
+  }
+
+  /***** main-innovation *****/
+  .main-innovation {
+    padding: 200px 5vw 150px;
+  }
+  /***** main-slide *****/
+  .mySwiper1 {
+    width: 90vw;
+  }
+  /***** main-attention *****/
+  .main-attention {
+    padding: 90px 5vw;
+  }
+  /***** main-vision *****/
+  .main-vision {
+    padding: 70px 15px 10px 5vw;
+  }
+  /***** main-rental *****/
+  .main-rental {
+    padding: 20px 5vw 200px;
+  }
+  .main-rental .rental .rental-box1 {
+    width: 836px;
+    height: 1050px;
+  }
+  .main-rental .rental .rental-box2 {
+    width: 634px;
+    height: 320px;
+  }
+  .main-rental .rental .rental-box3 {
+    width: 634px;
+    height: 320px;
+  }
+  .main-rental .rental .rental-box4 {
+    width: 634px;
+    height: 320px;
+  }
+  /***** footer *****/
+  footer {
+    padding: 90px 5vw;
+  }
+}
