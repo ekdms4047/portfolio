@@ -107,38 +107,125 @@
   header .header-wrapper nav .global-nav li:last-child {
     display: inherit;
     position: absolute;
-    right: 10%;
+    right: 12vw;
   }
+
   header nav .mobile_btn {
-    display: inherit;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-  }
-  header nav .mobile_btn span {
     display: block;
-    text-indent: -9999px;
-    width: 30px;
-    height: 1px;
-    transition: 0.4s;
-    background-color: #222;
-    border-radius: 16px;
-    position: relative;
-  }
-  header nav .mobile_btn span::before,
-  header nav .mobile_btn span::after {
-    content: "";
     position: absolute;
-    top: -10px;
-    left: 0;
-    width: 30px;
-    height: 1px;
-    transition: 0.4s;
-    background-color: #222;
-    border-radius: 16px;
+    top: 38%;
+    right: 5vw;
   }
-  header nav .mobile_btn span::after {
-    top: 10px;
+
+  input[id="hamburger"] {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  input[id="hamburger"] + label {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  input[id="hamburger"] + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 30px;
+    background: var(--txt-color);
+    transition: all 0.35s;
+  }
+
+  input[id="hamburger"] + label span:nth-child(1) {
+    top: 0;
+  }
+
+  input[id="hamburger"] + label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input[id="hamburger"] + label span:nth-child(3) {
+    bottom: 0;
+  }
+
+  input[id="hamburger"]:checked + label {
+    z-index: 99;
+  }
+
+  input[id="hamburger"]:checked + label span {
+    /* background: black; */
+  }
+
+  input[id="hamburger"]:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  input[id="hamburger"]:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  input[id="hamburger"]:checked + label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+
+  div[class="sidebar"] {
+    width: 89vw;
+    height: 50%;
+    background: var(--txt-color);
+    position: fixed;
+    top: 8vw;
+    right: -100%;
+    z-index: 98;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+
+  input[id="hamburger"]:checked + label + div {
+    left: 5vw;
+    top: 12%;
+    opacity: 1;
+  }
+
+  .nav_mobile {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    width: fit-content;
+  }
+
+  .sidebar .nav_mobile li {
+    font-family: var(--en-menu-font);
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    /* float: left; */
+    width: fit-content;
+    font-size: 14px;
+    /* border-bottom: 1px solid #ccc; */
+
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* text-align: center; */
+  }
+
+  .sidebar li a {
+    transition: all 0.4s;
+  }
+
+  .sidebar li a:hover,
+  .sidebar ul li:hover a {
+    /* color: #eee; */
+    /* padding: 0;
+      margin: 0;
+      border: 0px; */
   }
   /*** title ***/
   .title {
@@ -417,6 +504,12 @@
   }
   header .header-wrapper nav .global-nav li:last-child {
     display: none;
+  }
+  input[id="hamburger"]:checked + label + div {
+    top: 8%;
+  }
+  div[class="sidebar"] {
+    height: 37%;
   }
   .title .left p {
     bottom: 25vw;

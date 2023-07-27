@@ -82,11 +82,10 @@ $(window).on("scroll", () => {
   prescroll = scroll;
 });
 
-////// 메뉴 클릭 페이지 변경시 안보였다가 몇초 뒤에 나타남
+////// 페이지 열 때 안보였다가 몇초 뒤에 나타남
 window.addEventListener("load", () => {
   document.body.classList.add("fade_out");
 });
-
 ////// fade in 효과
 AOS.init();
 

@@ -28,6 +28,8 @@
   <script type="text/javascript"
     src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=516aebb7a22a66ba7ef7d464d649e3a3"></script>
   <script defer src="./project4.js"></script>
+  <style>
+  </style>
 </head>
 
 <body>
@@ -48,9 +50,28 @@
           <li><a href="#"><span>news</span><span>news</span></a></li>
           <li><a href="#"><span>contact us</span><span>contact us</span></a></li>
         </menu>
-        <a href="#" class="mobile_btn">
+        <!-- <a href="#" class="mobile_btn">
           <span>모바일 메뉴</span>
-        </a>
+        </a> -->
+        <div class="mobile_btn">
+          <input type="checkbox" id="hamburger">
+          <label for="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="sidebar">
+            <!-- <h2 style="text-align: center; position: relative; top: 75px;"><a href="#">로고</a></h2> -->
+            <!-- <hr style="position: relative; top:100px; border: solid 1px black;"> -->
+            <ul class="nav_mobile">
+              <li><a href="#">what we do</a></li>
+              <li><a href="#">products</a></li>
+              <li><a href="#">works</a></li>
+              <li><a href="#">news</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
