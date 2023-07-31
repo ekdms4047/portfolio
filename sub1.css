@@ -109,10 +109,11 @@ header .global-nav li a:hover {
 /*** project ***/
 .main-project {
   padding: 200px 200px 0;
+  background: url(./images/sub01_main.png) no-repeat 50% / cover;
 }
 .main-project .project {
   align-items: center;
-  border-bottom: 1px solid var(--txt-color);
+  /* border-bottom: 1px solid var(--txt-color); */
   padding-bottom: 100px;
 }
 .main-project .project .left {
