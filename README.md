@@ -1,11 +1,18 @@
 # 포트폴리오 제작 일지
 portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.github.io/portfolio/)
 
-## 디렉토리 구조
-<img width="80%" src="https://github.com/ekdms4047/portfolio/assets/127369419/1dd35ce9-a7fb-4a30-b0ca-4f580edaac88">
-
 ## 목적
 깔끔하고 꼼꼼하게 완성하되 늦어지지 말고 완성도 높게 해내보자!
+
+## 디렉토리 구조
+<img width="80%" src="https://github.com/ekdms4047/portfolio/assets/127369419/1dd35ce9-a7fb-4a30-b0ca-4f580edaac88">
+- 프로젝트별 html, css, js, variable 분류 및 정리  
+- 서브페이지 내용은 최상위 index 페이지와 같은 위치에 분류
+
+## 사용 기술
+- html, css
+- javascript & jQuery
+- tool : VScode & Figma, photoshop & illustrator
 
 ## 디자인에서 고려한 점
 가독성을 가장 중요시했고 꾸밈의 값은 그다음으로 중요시했다.
