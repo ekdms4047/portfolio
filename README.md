@@ -10,10 +10,27 @@ portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.gith
 - 프로젝트별 html, css, js, variable 분류 및 정리  
 - 서브페이지 내용은 최상위 index 페이지와 같은 위치에 분류
 
-## 사용 기술
-- html, css
-- javascript & jQuery
-- tool : VScode & Figma, photoshop & illustrator
+## 퍼블리싱 작업
+
+html 레이아웃 제작
+- header
+- 컨텐츠 별 분류 (title, about, project, skills, contact)
+- footer
+
+css 작업
+- 위 부터 순차적으로 한 덩어리씩 작업 (header->contents->footer)
+- 공통적으로 들어가는 값은 css 맨 위쪽 common 으로 주석처리 한 곳에 작성 
+- 공통적으로 들어가는 서체 관련, 애니메이션은 variable.css 에 저장
+
+ js 작업
+- 화면 켰을 때 안보였다가 몇초 뒤에 스르륵 나타남
+- fade in 효과
+- 이름 배열 순서 랜덤으로 바꿔서 여러번 출력 후 원래 배열로 돌아오기
+- 현재 시간 나오게 하기
+- 마우스의 움직임에 따라 이미지 흔들리기
+- 화살표 클릭시 화면 제일 상단으로 부드럽게 올라오기
+- 메뉴 클릭시 해당 영역으로 부드럽게 이동하기
+- 좌,우 드래그로 이미지 넘기기 (살짝 펴진 원형이 느껴지는 틀)
 
 ## 디자인에서 고려한 점
 가독성을 가장 중요시했고 꾸밈의 값은 그다음으로 중요시했다.
