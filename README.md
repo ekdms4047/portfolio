@@ -12,17 +12,17 @@ portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.gith
 
 ## 퍼블리싱 작업
 
-html 레이아웃 제작
+**html 레이아웃 제작**
 - header
 - 컨텐츠 별 분류 (title, about, project, skills, contact)
 - footer
 
-css 작업
+**css 작업**
 - 위 부터 순차적으로 한 덩어리씩 작업 (header->contents->footer)
 - 공통적으로 들어가는 값은 css 맨 위쪽 common 으로 주석처리 한 곳에 작성 
 - 공통적으로 들어가는 서체 관련, 애니메이션은 variable.css 에 저장
 
- js 작업
+** js 작업**
 - 화면 켰을 때 안보였다가 몇초 뒤에 스르륵 나타남
 - fade in 효과
 - 이름 배열 순서 랜덤으로 바꿔서 여러번 출력 후 원래 배열로 돌아오기
