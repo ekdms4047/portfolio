@@ -5,7 +5,7 @@ portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.gith
 깔끔하고 꼼꼼하게 완성하되 늦어지지 말고 완성도 높게 해내보자!
 
 ## 디렉토리 구조
-<img width="80%" src="https://github.com/ekdms4047/portfolio/assets/127369419/1dd35ce9-a7fb-4a30-b0ca-4f580edaac88">
+<img width="60%" src="https://github.com/ekdms4047/portfolio/assets/127369419/1dd35ce9-a7fb-4a30-b0ca-4f580edaac88">
 
 - 프로젝트별 html, css, js, variable 분류 및 정리  
 - 서브페이지 내용은 최상위 index 페이지와 같은 위치에 분류
