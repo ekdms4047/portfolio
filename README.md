@@ -2,7 +2,7 @@
 portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.github.io/portfolio/)
 
 ## 디렉토리 구조
-<img width="80%" src="https://user-images.githubusercontent.com/127369419/257980857-f3646acd-371c-411a-b826-d25c9c817dce.png">
+<img width="80%" src="https://github.com/ekdms4047/portfolio/assets/127369419/1dd35ce9-a7fb-4a30-b0ca-4f580edaac88">
 
 ## 목적
 깔끔하고 꼼꼼하게 완성하되 늦어지지 말고 완성도 높게 해내보자!
