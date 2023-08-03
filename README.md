@@ -10,6 +10,13 @@ portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.gith
 - 프로젝트별 html, css, js, variable 분류 및 정리  
 - 서브페이지 내용은 최상위 index 페이지와 같은 위치에 분류
 
+
+## 디자인에서 고려한 점
+가독성을 가장 중요시했고 꾸밈의 값은 그다음으로 중요시했다.
+
+## 퍼블리싱에서 고려한 점
+모든 게 어렵게 느껴지지만 css 까지는 내 힘으로 해내보고 javascript는 구글과 지인에게 도움을 청하되 "왜 이게 됐는지" 이해하기
+
 ## 퍼블리싱 작업
 
 **html 레이아웃 제작**
@@ -21,7 +28,6 @@ portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.gith
 - 위 부터 순차적으로 한 덩어리씩 작업 (header->contents->footer)
 - 공통적으로 들어가는 값은 css 맨 위쪽 common 으로 주석처리 한 곳에 작성 
 - 공통적으로 들어가는 서체 관련, 애니메이션은 variable.css 에 저장
-
 **js 작업**
 - 화면 켰을 때 안보였다가 몇초 뒤에 스르륵 나타남
 - fade in 효과
@@ -31,12 +37,6 @@ portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.gith
 - 화살표 클릭시 화면 제일 상단으로 부드럽게 올라오기
 - 메뉴 클릭시 해당 영역으로 부드럽게 이동하기
 - 좌,우 드래그로 이미지 넘기기 (살짝 펴진 원형이 느껴지는 틀)
-
-## 디자인에서 고려한 점
-가독성을 가장 중요시했고 꾸밈의 값은 그다음으로 중요시했다.
-
-## 퍼블리싱에서 고려한 점
-모든 게 어렵게 느껴지지만 css 까지는 내 힘으로 해내보고 javascript는 구글과 지인에게 도움을 청하되 "왜 이게 됐는지" 이해하기
 
 ## 작업하면서 어려웠던 점
 아무래도 javascript가 아직은 어렵게 느껴지기 때문에 구현하고자 하는 효과 같은 것들은 있지만 어떤 식으로 찾아야 할지
