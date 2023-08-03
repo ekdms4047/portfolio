@@ -1,4 +1,9 @@
 # 포트폴리오 제작 일지
+portfolio URL :  [https://ekdms4047.github.io/portfolio/](https://ekdms4047.github.io/portfolio/)
+
+## 디렉토리 구조
+<img width="80%" src="https://user-images.githubusercontent.com/127369419/257980857-f3646acd-371c-411a-b826-d25c9c817dce.png">
+
 ## 목적
 깔끔하고 꼼꼼하게 완성하되 늦어지지 말고 완성도 높게 해내보자!
 
@@ -7,9 +12,6 @@
 
 ## 퍼블리싱에서 고려한 점
 모든 게 어렵게 느껴지지만 css 까지는 내 힘으로 해내보고 javascript는 구글과 지인에게 도움을 청하되 "왜 이게 됐는지" 이해하기
-
-##디렉토리 구조
-<img width="80%" src="https://user-images.githubusercontent.com/127369419/257980857-f3646acd-371c-411a-b826-d25c9c817dce.png">
 
 ## 작업하면서 어려웠던 점
 아무래도 javascript가 아직은 어렵게 느껴지기 때문에 구현하고자 하는 효과 같은 것들은 있지만 어떤 식으로 찾아야 할지
