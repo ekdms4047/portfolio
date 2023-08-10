@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* ani_pants  p 수정해 다은아!!! */
+/***** common *****/
+.flex {
+  display: flex;
+}
+body {
+  font-family: var(--txt-font);
+  color: var(--txt-color);
+}
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+/***** header *****/
+header {
+  background: url(./images/bg_01.png) no-repeat 50% / cover;
+  height: 100vh;
+  /* width: 100%; */
+  color: var(--point-color);
+  font-family: var(--em-font);
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 1300px;
+  aspect-ratio: 2 / 1;
+}
+header h1 {
+  position: absolute;
+  text-transform: capitalize;
+  font-size: 120px;
+}
+header h2 {
+  position: absolute;
+  bottom: 30px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+/***** contect *****/
+/*** process ***/
+.main_process {
+  padding: 100px 150px;
+  position: relative;
+}
+.main_process .process {
+  justify-content: space-between;
+}
+.main_process .process .group {
+}
+.main_process .process .title {
+  text-transform: capitalize;
+  font-size: 90px;
+  width: 38%;
+  line-height: 1.6;
+  align-self: center;
+}
+.main_process .process .title h4 {
+  display: flex;
+  align-items: center;
+}
+.main_process .process .title h4:nth-child(1)::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: var(--txt-color);
+  display: block;
+  margin: 0 0 0 20px;
+}
+.main_process .process .title h4:nth-child(2)::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: var(--txt-color);
+  display: block;
+  margin: 0 20px 0 0;
+}
+.main_process .process .title h4:nth-child(3)::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: var(--txt-color);
+  display: block;
+  margin: 0 0 0 20px;
+}
+.main_process .process .txt {
+  font-family: var(--kr-font);
+  color: #6b6c6f;
+  align-self: center;
+}
+.main_process .process .txt p {
+  padding: 30px 0;
+  line-height: 1.7;
+}
+.main_process .process .txt_img {
+  width: 500px;
+}
+.main_process .process .txt_img .model {
+  width: 100%;
+}
+.main_process .process .txt_img .etc_button {
+  width: 90px;
+  position: absolute;
+  top: 90px;
+  right: 100px;
+}
+/*** ani_pants ***/
+.main_ani_pants {
+  background-color: #f3f8fa;
+  position: relative;
+  justify-content: center;
+  padding: 120px 0;
+  overflow: hidden;
+}
+.main_ani_pants p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.main_ani_pants p:nth-child(2) {
+  left: 600px;
+}
+.main_ani_pants p:nth-child(3) {
+  left: 1300px;
+  overflow: hidden;
+  width: 100%;
+}
+.main_ani_pants .ani_pants {
+  /* gap: 8vw; */
+}
+.main_ani_pants .ani_pants img {
+  width: 520px;
+  aspect-ratio: 3 / 4;
+  /* height: 730px; */
+  object-fit: cover;
+  /* margin: 20px; */
+}
+.main_ani_pants .ani_pants:nth-child(3) img {
+  margin: 200px;
+}
+.main_ani_pants .ani_pants .bg {
+  position: absolute;
+}
+.main_ani_pants .ani_pants .bg01 {
+  top: 50px;
+  left: 400px;
+  width: 90px;
+  height: 90px;
+}
+.main_ani_pants .ani_pants .bg02 {
+  width: 35px;
+  height: 45px;
+  bottom: 80px;
+  right: 33%;
+}
+/*** denim_img ***/
+.main_denim_img {
+}
+.main_denim_img .denim_img {
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px;
+  background-color: var(--point-color);
+}
+.main_denim_img .denim_img img {
+  width: 600px;
+  border-radius: 50%;
+}
+.main_denim_img .denim_img h2 {
+  font-family: var(--em-font);
+  font-size: 140px;
+  text-transform: capitalize;
+}
+/*** short ***/
+.main_short,
+.main_long {
+  padding: 100px 50px 60px;
+}
+.main_short h3,
+.main_long h3 {
+  padding: 0 100px 50px;
+}
+.short,
+.long {
+  width: 350px;
+  object-fit: cover;
+  gap: 3vw;
+  position: relative;
+}
+.short .shortBg01 {
+  width: 44px;
+  height: 36px;
+  position: absolute;
+  top: -20px;
+  left: 430px;
+}
+.short .shortBg02 {
+  width: 58px;
+  height: 24px;
+  position: absolute;
+  bottom: -24px;
+  left: 1170px;
+}
+/*** long ***/
+.main_long {
+  position: relative;
+}
+.long .longBg01 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+.long .longBg02 {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  left: 1550px;
+  top: 20px;
+}
+/* footer */
+footer {
+  justify-content: space-between;
+  padding: 50px 150px 100px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+footer p:nth-child(2) {
+  font-family: var(--kr-font);
+}

@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   font-family: var(--kr-font);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 .txt_Box h2 {
   /* padding-bottom: 200px; */
