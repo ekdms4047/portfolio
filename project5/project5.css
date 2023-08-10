@@ -196,10 +196,14 @@ header h2 {
   width: 600px;
   border-radius: 50%;
 }
+.main_denim_img .denim_img h2:hover {
+  transform: scale(1.1);
+}
 .main_denim_img .denim_img h2 {
   font-family: var(--em-font);
   font-size: 140px;
   text-transform: capitalize;
+  transition: 0.4s;
 }
 /*** short ***/
 .main_short,
