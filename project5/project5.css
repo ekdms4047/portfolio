@@ -1,16 +1,45 @@
 @charset "utf-8";
-/* ani_pants  p 수정해 다은아!!! */
+/* 다은아!!! 파비콘!! + 선생님께 컨펌!!! */
 /***** common *****/
 .flex {
   display: flex;
 }
-body {
-  font-family: var(--txt-font);
-  color: var(--txt-color);
+.block {
+  /* display: block; */
 }
 h3 {
   font-size: 24px;
   text-transform: uppercase;
+}
+img {
+  user-select: none;
+}
+::selection {
+  color: var(--point-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  /* color: var(--point-color); */
+  background-color: var(--point-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  /* background-color: var(--txt-color); */
+}
+body {
+  font-family: var(--txt-font);
+  color: var(--txt-color);
+  opacity: 0;
+  transition-duration: 3s;
+  transition-property: opacity text-shadow;
+  text-shadow: 0 0 10px transparent;
+  background-color: #f5f6f7;
+}
+body.fade_out {
+  opacity: 1;
+  text-shadow: 0 0 0 transparent;
 }
 /***** header *****/
 header {
@@ -114,23 +143,22 @@ header h2 {
   padding: 120px 0;
   overflow: hidden;
 }
-.main_ani_pants p {
+.main_ani_pants .ani_box {
+  width: 100%;
+  gap: 10vw;
+}
+.main_ani_pants h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 50px;
+  font-size: 46px;
   text-transform: capitalize;
-}
-.main_ani_pants p:nth-child(2) {
-  left: 600px;
-}
-.main_ani_pants p:nth-child(3) {
-  left: 1300px;
-  overflow: hidden;
-  width: 100%;
+  animation: slide 12s linear infinite;
+  /* width: 100%; */
+  gap: 12vw;
 }
 .main_ani_pants .ani_pants {
-  /* gap: 8vw; */
+  gap: 8vw;
 }
 .main_ani_pants .ani_pants img {
   width: 520px;
@@ -139,14 +167,11 @@ header h2 {
   object-fit: cover;
   /* margin: 20px; */
 }
-.main_ani_pants .ani_pants:nth-child(3) img {
-  margin: 200px;
-}
 .main_ani_pants .ani_pants .bg {
   position: absolute;
 }
 .main_ani_pants .ani_pants .bg01 {
-  top: 50px;
+  top: 70px;
   left: 400px;
   width: 90px;
   height: 90px;
@@ -154,8 +179,8 @@ header h2 {
 .main_ani_pants .ani_pants .bg02 {
   width: 35px;
   height: 45px;
-  bottom: 80px;
-  right: 33%;
+  bottom: 100px;
+  right: 33.3333%;
 }
 /*** denim_img ***/
 .main_denim_img {
@@ -165,6 +190,7 @@ header h2 {
   align-items: center;
   padding: 150px;
   background-color: var(--point-color);
+  background-color: #f9f4f0;
 }
 .main_denim_img .denim_img img {
   width: 600px;
@@ -179,6 +205,15 @@ header h2 {
 .main_short,
 .main_long {
   padding: 100px 50px 60px;
+}
+.main_short .short img,
+.main_long .long img {
+  filter: grayscale(80%);
+  transition: 0.4s;
+}
+.main_short .short img:hover,
+.main_long .long img:hover {
+  filter: grayscale(0);
 }
 .main_short h3,
 .main_long h3 {
@@ -215,6 +250,7 @@ header h2 {
   position: absolute;
   bottom: -10px;
   left: -10px;
+  z-index: 99;
 }
 .long .longBg02 {
   width: 40px;

@@ -7,15 +7,22 @@
   <title>project5</title>
   <!-- css -->
   <link rel="stylesheet" href="../common/reset.css">
+  <link rel="stylesheet" href="../common/aos@3.0.0-beta.6_dist_aos.css">
   <link rel="stylesheet" href="./variable.css">
   <link rel="stylesheet" href="./project5.css">
   <!-- js -->
+  <script src="../common/jquery-3.7.0.min.js"></script>
+  <script src="../common/aos@3.0.0-beta.6_dist_aos.js"></script>
+  <script defer src="./project5.js"></script>
 </head>
 
 <body>
   <!-- header -->
   <header class="flex">
-    <img src="./images/bg_center.png" alt="일러스트가 그려진 세가지 이미지">
+    <div id="cursor">
+      <div class="cursor__circle"></div>
+    </div>
+    <img src="./images/bg_center.png" alt="일러스트가 그려진 세가지 이미지" data-aos="fade-up" data-aos-duration="2500">
     <h1>out of trend</h1>
     <h2>oot</h2>
   </header>
@@ -47,30 +54,29 @@
         </p>
       </div>
       <div class="txt_img">
-        <img src="./images/process_img.png" alt="" class="model">
-        <img src="./images/process_bg.png" alt="" class="etc_button">
+        <img src="./images/process_img.png" alt="머메이드 롱스커트 착샷" class="model" data-aos="fade-up"
+          data-aos-duration="2000">
+        <img src="./images/process_bg.png" alt="단추 일러스트" class="etc_button">
       </div>
     </div>
   </article>
   <!-- ani_pants -->
   <article class="main_ani_pants flex">
+    <h3 class="flex"><span>Washing greyish</span><span>
+        brown denim pants</span><span>Washing point Bootcut</span>
+    </h3>
     <div class="ani_pants flex">
-      <div class="ani_box">
-        <p>Washing greyish</p>
-        <p>brown denim pants</p>
-        <p>Washing Point Bootcut</p>
-      </div>
-      <img src="./images/ani_pants01.png" alt="">
-      <img src="./images/ani_pants01bg.png" alt="" class="bg bg01">
-      <img src="./images/ani_pants02.jpg" alt="">
-      <img src="./images/ani_pants02bg.png" alt="" class="bg bg02">
-      <img src="./images/ani_pants03.png" alt="">
+      <img src="./images/ani_pants01.png" alt="워싱 그레이시 팬츠 착샷">
+      <img src="./images/ani_pants01bg.png" alt="가위 일러스트" class="bg bg01">
+      <img src="./images/ani_pants02.jpg" alt="브라운 생지 데님 착샷">
+      <img src="./images/ani_pants02bg.png" alt="실 일러스트" class="bg bg02">
+      <img src="./images/ani_pants03.png" alt="샌드 포인트 부츠컷 착샷">
     </div>
   </article>
   <!-- denim_img -->
   <article class="main_denim_img">
     <div class="denim_img flex">
-      <img src="./images/denim_img.jpg" alt="데님 자수">
+      <img src="./images/denim_img.jpg" alt="데님 자수" data-aos="fade-up" data-aos-duration="2000">
       <h2>denim
         <br>pants
         <br>design
@@ -80,31 +86,31 @@
   <!-- short -->
   <article class="main_short">
     <h3>short</h3>
-    <div class="short flex">
-      <img src="./images/short01.png" alt="">
-      <img src="./images/short02.png" alt="">
-      <img src="./images/short02_bg.png" alt="" class="shortBg01">
-      <img src="./images/short03.png" alt="">
-      <img src="./images/short04.png" alt="">
-      <img src="./images/short04_bg.png" alt="" class="shortBg02">
+    <div class="short flex" data-aos="fade-up" data-aos-duration="2000">
+      <img src="./images/short01.png" alt="스톤 구제 핫팬츠 착샷">
+      <img src="./images/short02.png" alt="샌드 포인트 핫팬츠 착샷">
+      <img src="./images/short02_bg.png" alt="바늘꽂이 일러스트" class="shortBg01">
+      <img src="./images/short03.png" alt="핀턱 주름 스커트 착샷">
+      <img src="./images/short04.png" alt="샌드 컬러 5부 팬츠 착샷">
+      <img src="./images/short04_bg.png" alt="다리미 일러스트" class="shortBg02">
     </div>
   </article>
   <!-- long -->
   <article class="main_long">
     <h3>long</h3>
-    <div class="long flex">
-      <img src="./images/long01_bg.png" alt="" class="longBg01">
-      <img src="./images/long01.png" alt="">
-      <img src="./images/long02.png" alt="">
-      <img src="./images/long03.png" alt="">
-      <img src="./images/long04.png" alt="">
-      <img src="./images/long04_bg.png" alt="" class="longBg02">
+    <div class="long flex" data-aos="fade-up" data-aos-duration="2000">
+      <img src="./images/long01_bg.png" alt="옷핀 일러스트" class="longBg01">
+      <img src="./images/long01.png" alt="머메이드 롱스커트 착샷">
+      <img src="./images/long02.png" alt="다대 우라 포인트 블랙 팬츠 착샷">
+      <img src="./images/long03.png" alt="그런지 롱스커트 착샷">
+      <img src="./images/long04.png" alt="다대 에스닉 패턴 조거 팬츠 착샷">
+      <img src="./images/long04_bg.png" alt="제봉틀 일러스트" class="longBg02">
     </div>
   </article>
   <!-- footer -->
   <footer class="flex">
     <p>copyright 2023 Oh da eun</p>
-    <p>포트폴리오 바로가기</p>
+    <p><a href="">포트폴리오 바로가기</a></p>
   </footer>
 </body>
 
