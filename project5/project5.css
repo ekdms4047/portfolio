@@ -148,6 +148,7 @@ header h2 {
   gap: 10vw;
 }
 .main_ani_pants h3 {
+  color: var(--point-color);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -156,6 +157,7 @@ header h2 {
   animation: slide 12s linear infinite;
   /* width: 100%; */
   gap: 12vw;
+  z-index: 99;
 }
 .main_ani_pants .ani_pants {
   gap: 8vw;
@@ -188,7 +190,7 @@ header h2 {
 .main_denim_img .denim_img {
   justify-content: space-between;
   align-items: center;
-  padding: 150px;
+  padding: 150px 250px;
   background-color: var(--point-color);
   background-color: #f9f4f0;
 }
@@ -196,14 +198,14 @@ header h2 {
   width: 600px;
   border-radius: 50%;
 }
-.main_denim_img .denim_img h2:hover {
-  transform: scale(1.1);
-}
 .main_denim_img .denim_img h2 {
   font-family: var(--em-font);
-  font-size: 140px;
+  font-size: 120px;
   text-transform: capitalize;
   transition: 0.4s;
+}
+.main_denim_img .denim_img h2:hover {
+  transform: scale(1.1);
 }
 /*** short ***/
 .main_short,
