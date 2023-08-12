@@ -95,12 +95,12 @@ const urls = [
   "images/project_02.png",
   "images/project_03.png",
   "images/project_04.png",
-  "images/Preparing.png",
+  "images/project_05.png",
   "images/project_01.png",
   "images/project_02.png",
   "images/project_03.png",
   "images/project_04.png",
-  "images/Preparing.png",
+  "images/project_05.png",
 ];
 const position = 1200;
 gsap

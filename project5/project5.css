@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* 다은아!!! 파비콘!! + 선생님께 컨펌!!! */
 /***** common *****/
 .flex {
   display: flex;
@@ -76,8 +75,6 @@ header h2 {
 }
 .main_process .process {
   justify-content: space-between;
-}
-.main_process .process .group {
 }
 .main_process .process .title {
   text-transform: capitalize;
@@ -193,6 +190,7 @@ header h2 {
   padding: 150px 250px;
   background-color: var(--point-color);
   background-color: #f9f4f0;
+  background-color: #93b360;
 }
 .main_denim_img .denim_img img {
   width: 600px;
@@ -268,9 +266,19 @@ header h2 {
 /* footer */
 footer {
   justify-content: space-between;
-  padding: 50px 150px 100px;
-  font-size: 20px;
+  align-items: center;
+  padding: 60px 150px;
+  font-size: 18px;
   text-transform: capitalize;
+  background-color: #93b360;
+  line-height: 1.6;
+  text-align: right;
+}
+footer .img_box {
+  gap: 10px;
+}
+footer .img_box img {
+  width: 100px;
 }
 footer p:nth-child(2) {
   font-family: var(--kr-font);
