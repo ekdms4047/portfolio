@@ -70,7 +70,9 @@ header h2 {
 /***** contect *****/
 /*** process ***/
 .main_process {
+  background-color: #ffffff;
   padding: 100px 150px;
+  overflow: hidden;
   position: relative;
 }
 .main_process .process {
@@ -121,16 +123,23 @@ header h2 {
   line-height: 1.7;
 }
 .main_process .process .txt_img {
-  width: 500px;
+  /* width: 100%; */
 }
 .main_process .process .txt_img .model {
-  width: 100%;
+  width: 500px;
 }
 .main_process .process .txt_img .etc_button {
   width: 90px;
   position: absolute;
   top: 90px;
   right: 100px;
+}
+.main_process .process .txt_img .etc_bg01 {
+  width: 450px;
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  z-index: 9999;
 }
 /*** ani_pants ***/
 .main_ani_pants {
@@ -139,6 +148,7 @@ header h2 {
   justify-content: center;
   padding: 120px 0;
   overflow: hidden;
+  background: url(./images/bg_flower02.png) no-repeat 35% 100% / 350px;
 }
 .main_ani_pants .ani_box {
   width: 100%;
@@ -158,6 +168,12 @@ header h2 {
 }
 .main_ani_pants .ani_pants {
   gap: 8vw;
+}
+.main_ani_pants .ani_pants .etc_bg02 {
+  /* width: 300px;
+  height: 300px;
+  bottom: 0;
+  left: 30%; */
 }
 .main_ani_pants .ani_pants img {
   width: 520px;
@@ -182,15 +198,13 @@ header h2 {
   right: 33.3333%;
 }
 /*** denim_img ***/
-.main_denim_img {
-}
 .main_denim_img .denim_img {
   justify-content: space-between;
   align-items: center;
   padding: 150px 250px;
   background-color: var(--point-color);
   background-color: #f9f4f0;
-  background-color: #93b360;
+  /* background-color: #93b360; */
 }
 .main_denim_img .denim_img img {
   width: 600px;
@@ -206,9 +220,14 @@ header h2 {
   transform: scale(1.1);
 }
 /*** short ***/
+.main_short {
+  background: url(./images/bg_flower03.png) no-repeat 18% 100% / 350px,
+    url(./images/bg_flower05.png) no-repeat 110% -10% /350px;
+  background-color: #ffffff;
+}
 .main_short,
 .main_long {
-  padding: 100px 50px 60px;
+  padding: 100px 50px;
 }
 .main_short .short img,
 .main_long .long img {
@@ -247,6 +266,9 @@ header h2 {
 /*** long ***/
 .main_long {
   position: relative;
+  background: url(./images/bg_flower02.png) no-repeat 88% 0 /350px,
+    url(./images/bg_flower04.png) no-repeat -10% 100% / 400px;
+  background-color: #ffffff;
 }
 .long .longBg01 {
   width: 30px;
@@ -270,7 +292,7 @@ footer {
   padding: 60px 150px;
   font-size: 18px;
   text-transform: capitalize;
-  background-color: #93b360;
+  background-color: #f9f4f0;
   line-height: 1.6;
   text-align: right;
 }
