@@ -228,6 +228,8 @@ header h2 {
 .main_short,
 .main_long {
   padding: 100px 50px;
+  width: 100%;
+  overflow: hidden;
 }
 .main_short .short img,
 .main_long .long img {
@@ -244,9 +246,9 @@ header h2 {
 }
 .short,
 .long {
-  width: 350px;
+  width: calc(25% - 25px);
   object-fit: cover;
-  gap: 3vw;
+  gap: 2vw;
   position: relative;
 }
 .short .shortBg01 {
@@ -269,6 +271,7 @@ header h2 {
   background: url(./images/bg_flower02.png) no-repeat 88% 0 /350px,
     url(./images/bg_flower04.png) no-repeat -10% 100% / 400px;
   background-color: #ffffff;
+  width: 100%;
 }
 .long .longBg01 {
   width: 30px;
@@ -282,8 +285,9 @@ header h2 {
   width: 40px;
   height: 50px;
   position: absolute;
-  left: 1550px;
+  left: 93.5vw;
   top: 20px;
+  z-index: 99;
 }
 /* footer */
 footer {
@@ -304,4 +308,15 @@ footer .img_box img {
 }
 footer p:nth-child(2) {
   font-family: var(--kr-font);
+}
+@media (min-width: 1800px) {
+  .main_ani_pants .ani_pants .bg01 {
+    left: 25vw;
+  }
+  .main_ani_pants .ani_pants .bg02 {
+    left: 63vw;
+  }
+  .long .longBg02 {
+    left: 94.2vw;
+  }
 }
