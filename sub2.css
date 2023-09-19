@@ -109,6 +109,7 @@ header .global-nav li a:hover {
 /*** project ***/
 .main-project {
   background: url(./images/sub02_main.png) no-repeat 50% / cover;
+  text-transform: none;
 }
 .main-project .project {
   padding: 300px 200px 100px;
@@ -153,6 +154,7 @@ header .global-nav li a:hover {
 /*** task ***/
 .main-task {
   padding: 150px 200px 0;
+  text-transform: none;
 }
 .main-task .task {
   padding-bottom: 150px;

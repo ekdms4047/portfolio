@@ -233,6 +233,7 @@ header .global-nav li a:hover {
 /*** publishing ***/
 .main-publishing {
   padding: 0 200px;
+  text-transform: lowercase;
 }
 .main-publishing .publishing {
   padding-bottom: 120px;
@@ -250,6 +251,7 @@ header .global-nav li a:hover {
 /*** problem ***/
 .main-problem {
   padding: 150px 200px 50px;
+  text-transform: lowercase;
 }
 .main-problem .problem {
   border-bottom: 1px solid var(--txt-color);
